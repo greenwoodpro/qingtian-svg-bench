@@ -1,0 +1,3 @@
+images/*.png binary
+thumbs/*.jpg binary
+svg/*.svg text

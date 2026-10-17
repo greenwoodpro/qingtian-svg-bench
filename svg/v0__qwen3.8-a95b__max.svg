@@ -1,0 +1,1076 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="pTitle pDesc">
+  <title id="pTitle">晴天 · SUNNY DAY — 周杰倫 MV 海報</title>
+  <desc id="pDesc">純 SVG 手繪海報：雨後初晴的校園。烏雲退向左側，陽光自右上方穿雲而下，大樹與空鞦韆、撐著琥珀色雨傘走遠的女孩、揹著吉他仰望的男孩，前景是隨風飄落的小黃花。</desc>
+
+  <defs>
+    <!-- ============ 天空 ============ -->
+    <linearGradient id="skyBase" gradientUnits="userSpaceOnUse" x1="140" y1="0" x2="440" y2="1120">
+      <stop offset="0" stop-color="#0a141d"/>
+      <stop offset="0.22" stop-color="#132636"/>
+      <stop offset="0.46" stop-color="#26455c"/>
+      <stop offset="0.68" stop-color="#4d6e7e"/>
+      <stop offset="0.85" stop-color="#8a9a92"/>
+      <stop offset="1" stop-color="#c0b193"/>
+    </linearGradient>
+
+    <radialGradient id="sunBloom" gradientUnits="userSpaceOnUse" cx="892" cy="236" r="840">
+      <stop offset="0" stop-color="#fffdf0" stop-opacity="0.98"/>
+      <stop offset="0.1" stop-color="#fff4d2" stop-opacity="0.9"/>
+      <stop offset="0.26" stop-color="#ffe0a0" stop-opacity="0.62"/>
+      <stop offset="0.5" stop-color="#f2bd74" stop-opacity="0.3"/>
+      <stop offset="0.76" stop-color="#d99a5c" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#c98a52" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="horizonHaze" gradientUnits="userSpaceOnUse" x1="0" y1="660" x2="0" y2="940">
+      <stop offset="0" stop-color="#ecdcc0" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#e6d4b2" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#dcc9a6" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- ============ 雲 ============ -->
+    <linearGradient id="cloudDark" gradientUnits="userSpaceOnUse" x1="60" y1="20" x2="300" y2="440">
+      <stop offset="0" stop-color="#070f16"/>
+      <stop offset="0.45" stop-color="#14252f"/>
+      <stop offset="1" stop-color="#2c4757"/>
+    </linearGradient>
+    <linearGradient id="cloudMid" gradientUnits="userSpaceOnUse" x1="300" y1="120" x2="700" y2="520">
+      <stop offset="0" stop-color="#22404f"/>
+      <stop offset="0.5" stop-color="#4a6a76"/>
+      <stop offset="1" stop-color="#8ea39c"/>
+    </linearGradient>
+    <linearGradient id="cloudLit" gradientUnits="userSpaceOnUse" x1="900" y1="140" x2="1120" y2="560">
+      <stop offset="0" stop-color="#fffaee"/>
+      <stop offset="0.45" stop-color="#ffe7b6"/>
+      <stop offset="1" stop-color="#d9b183"/>
+    </linearGradient>
+
+    <!-- ============ 光 ============ -->
+    <linearGradient id="ray" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff7dd" stop-opacity="0.85"/>
+      <stop offset="0.3" stop-color="#ffeab6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#ffd98f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flareStreak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd98f" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff6dc" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffd98f" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sunCore">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff8e2"/>
+      <stop offset="1" stop-color="#ffe6a6" stop-opacity="0.2"/>
+    </radialGradient>
+
+    <!-- ============ 地 ============ -->
+    <linearGradient id="ground" gradientUnits="userSpaceOnUse" x1="200" y1="880" x2="900" y2="1600">
+      <stop offset="0" stop-color="#75806a"/>
+      <stop offset="0.14" stop-color="#4e5c43"/>
+      <stop offset="0.42" stop-color="#33412f"/>
+      <stop offset="0.75" stop-color="#1d2820"/>
+      <stop offset="1" stop-color="#0e1611"/>
+    </linearGradient>
+    <linearGradient id="road" gradientUnits="userSpaceOnUse" x1="600" y1="880" x2="640" y2="1600">
+      <stop offset="0" stop-color="#6d7b78"/>
+      <stop offset="0.22" stop-color="#43515a"/>
+      <stop offset="0.6" stop-color="#2c383e"/>
+      <stop offset="1" stop-color="#1b2429"/>
+    </linearGradient>
+    <linearGradient id="sunRefl" gradientUnits="userSpaceOnUse" x1="0" y1="880" x2="0" y2="1600">
+      <stop offset="0" stop-color="#ffe3a4" stop-opacity="0.62"/>
+      <stop offset="0.45" stop-color="#ffcf85" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffb765" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="reflDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070d11" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#070d11" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ============ 樹 ============ -->
+    <linearGradient id="bark" gradientUnits="userSpaceOnUse" x1="990" y1="600" x2="1200" y2="1300">
+      <stop offset="0" stop-color="#241a12"/>
+      <stop offset="0.5" stop-color="#140f0a"/>
+      <stop offset="1" stop-color="#0a0c09"/>
+    </linearGradient>
+    <linearGradient id="barkRim" gradientUnits="userSpaceOnUse" x1="1000" y1="600" x2="1120" y2="1200">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#c98a4a" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- ============ 人物 ============ -->
+    <linearGradient id="rimG" gradientUnits="userSpaceOnUse" x1="0" y1="-280" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff0c8"/>
+      <stop offset="0.5" stop-color="#ffd08a"/>
+      <stop offset="1" stop-color="#e09a52"/>
+    </linearGradient>
+    <radialGradient id="umbG" gradientUnits="userSpaceOnUse" cx="52" cy="-266" r="104">
+      <stop offset="0" stop-color="#fff2c4" stop-opacity="0.97"/>
+      <stop offset="0.42" stop-color="#f7c463" stop-opacity="0.9"/>
+      <stop offset="0.8" stop-color="#d98b34" stop-opacity="0.86"/>
+      <stop offset="1" stop-color="#a85f22" stop-opacity="0.82"/>
+    </radialGradient>
+    <radialGradient id="umbGlow">
+      <stop offset="0" stop-color="#ffdf9c" stop-opacity="0.75"/>
+      <stop offset="0.6" stop-color="#ffc46a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffab4d" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ============ 花 ============ -->
+    <linearGradient id="petalG" x1="0.1" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#d18a15"/>
+      <stop offset="0.4" stop-color="#f4c53a"/>
+      <stop offset="1" stop-color="#fff3bd"/>
+    </linearGradient>
+    <linearGradient id="petalG2" x1="0.1" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#8a5c12"/>
+      <stop offset="0.5" stop-color="#c39a2c"/>
+      <stop offset="1" stop-color="#e8cf82"/>
+    </linearGradient>
+    <radialGradient id="coreG">
+      <stop offset="0" stop-color="#9a6a1e"/>
+      <stop offset="0.55" stop-color="#5e3a10"/>
+      <stop offset="1" stop-color="#33200a"/>
+    </radialGradient>
+    <linearGradient id="stemG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#16211a"/>
+      <stop offset="1" stop-color="#4a6132"/>
+    </linearGradient>
+    <radialGradient id="bokeh">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.13"/>
+      <stop offset="0.55" stop-color="#ffe9a8" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#fff8dc" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ============ 調色 / 暗角 ============ -->
+    <radialGradient id="vig" gradientUnits="userSpaceOnUse" cx="620" cy="740" r="920">
+      <stop offset="0.42" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.76" stop-color="#050a0d" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#03070a" stop-opacity="0.74"/>
+    </radialGradient>
+    <linearGradient id="bottomFade" gradientUnits="userSpaceOnUse" x1="0" y1="1360" x2="0" y2="1600">
+      <stop offset="0" stop-color="#050a0c" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#050a0c" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#04080a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="warmGrade" gradientUnits="userSpaceOnUse" x1="0" y1="200" x2="1200" y2="700">
+      <stop offset="0" stop-color="#3f739c"/>
+      <stop offset="0.5" stop-color="#8d9279"/>
+      <stop offset="1" stop-color="#ffb45e"/>
+    </linearGradient>
+    <radialGradient id="titleShade" gradientUnits="userSpaceOnUse" cx="200" cy="400" r="330">
+      <stop offset="0" stop-color="#04090d" stop-opacity="0.62"/>
+      <stop offset="0.6" stop-color="#04090d" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#04090d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleInk" gradientUnits="userSpaceOnUse" x1="80" y1="150" x2="320" y2="650">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.55" stop-color="#f6ecd8"/>
+      <stop offset="1" stop-color="#e2d3b6"/>
+    </linearGradient>
+
+    <!-- ============ 雨 ============ -->
+    <linearGradient id="rainFade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="880" y2="260">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#ffffff" stop-opacity="0.62"/>
+      <stop offset="0.72" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="rainMask">
+      <rect width="1200" height="1600" fill="url(#rainFade)"/>
+    </mask>
+    <pattern id="rainPat" width="120" height="180" patternUnits="userSpaceOnUse" patternTransform="rotate(13)">
+      <g stroke="#dceaf4" stroke-linecap="round" fill="none">
+        <path d="M8,6 L8,64" stroke-width="1.5" opacity="0.5"/>
+        <path d="M34,44 L34,118" stroke-width="1.1" opacity="0.34"/>
+        <path d="M58,96 L58,146" stroke-width="1.8" opacity="0.42"/>
+        <path d="M76,14 L76,72" stroke-width="1" opacity="0.28"/>
+        <path d="M98,124 L98,176" stroke-width="1.4" opacity="0.45"/>
+        <path d="M20,128 L20,172" stroke-width="1.2" opacity="0.3"/>
+        <path d="M110,58 L110,102" stroke-width="0.9" opacity="0.24"/>
+        <path d="M46,4 L46,34" stroke-width="1.3" opacity="0.36"/>
+        <path d="M66,20 L66,50" stroke-width="0.8" opacity="0.2"/>
+        <path d="M88,84 L88,132" stroke-width="1.2" opacity="0.32"/>
+      </g>
+    </pattern>
+
+    <!-- ============ 濾鏡 ============ -->
+    <filter id="wisp" x="-45%" y="-90%" width="190%" height="280%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.007 0.014" numOctaves="5" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="120" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="5"/>
+    </filter>
+    <filter id="wispSoft" x="-45%" y="-90%" width="190%" height="280%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.011" numOctaves="5" seed="29" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="96" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="12"/>
+    </filter>
+    <filter id="wispLeaf" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.03" numOctaves="4" seed="41" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.5"/>
+    </filter>
+    <filter id="b1"><feGaussianBlur stdDeviation="1"/></filter>
+    <filter id="b2"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="b3"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="b5"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="b8"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="b14"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="b26"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="b44"><feGaussianBlur stdDeviation="44"/></filter>
+    <filter id="glowSun" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="16" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="inkEdge" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.055" numOctaves="3" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="4" seed="7" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0 0.5  0.36 0.36 0.36 0 -0.16"/>
+    </filter>
+
+    <!-- ============ 可重用圖形 ============ -->
+    <path id="lf" d="M0,0 C5,-6.5 14,-9.5 22.5,-6.5 C15,0.5 6,3.5 0,0 Z"/>
+    <g id="spray">
+      <path d="M0,0 C26,-4 54,-6.5 84,-4.5" fill="none" stroke="#131f17" stroke-width="2.6" stroke-linecap="round"/>
+      <use href="#lf" transform="translate(10,-2) rotate(-40) scale(0.9)"/>
+      <use href="#lf" transform="translate(20,0) rotate(30) scale(0.85)"/>
+      <use href="#lf" transform="translate(32,-3) rotate(-44) scale(1)"/>
+      <use href="#lf" transform="translate(44,-1) rotate(26) scale(0.95)"/>
+      <use href="#lf" transform="translate(56,-4) rotate(-38) scale(0.9)"/>
+      <use href="#lf" transform="translate(66,-2) rotate(32) scale(0.8)"/>
+      <use href="#lf" transform="translate(78,-4) rotate(-22) scale(0.85)"/>
+      <use href="#lf" transform="translate(85,-4) rotate(8) scale(0.7)"/>
+    </g>
+
+    <path id="ptl" d="M0,0 C-6.5,-9 -7.6,-22 0,-31 C7.6,-22 6.5,-9 0,0 Z"/>
+    <path id="ptlS" d="M0,0 C-5,-7 -5.8,-17 0,-24 C5.8,-17 5,-7 0,0 Z"/>
+    <g id="flwA">
+      <use href="#ptl"/><use href="#ptl" transform="rotate(51.4)"/><use href="#ptl" transform="rotate(102.9)"/>
+      <use href="#ptl" transform="rotate(154.3)"/><use href="#ptl" transform="rotate(205.7)"/><use href="#ptl" transform="rotate(257.1)"/>
+      <use href="#ptl" transform="rotate(308.6)"/>
+      <circle r="5.8" fill="url(#coreG)"/>
+      <circle r="2.1" fill="#ffe9a8" opacity="0.7"/>
+    </g>
+    <g id="flwB">
+      <use href="#ptlS"/><use href="#ptlS" transform="rotate(60)"/><use href="#ptlS" transform="rotate(120)"/>
+      <use href="#ptlS" transform="rotate(180)"/><use href="#ptlS" transform="rotate(240)"/><use href="#ptlS" transform="rotate(300)"/>
+      <circle r="4.4" fill="url(#coreG)"/>
+      <circle r="1.6" fill="#ffe9a8" opacity="0.65"/>
+    </g>
+    <g id="bud">
+      <path d="M0,0 C-6,-8 -6.4,-20 0,-27 C6.4,-20 6,-8 0,0 Z"/>
+      <path d="M0,-2 C-3,-9 -3,-18 0,-24" fill="none" stroke="#8a6a1c" stroke-width="1" opacity="0.5"/>
+    </g>
+    <path id="blade" d="M0,0 C-2,-30 -8,-58 -21,-84 C-6,-62 2.5,-32 4.5,0 Z"/>
+    <path id="blade2" d="M0,0 C3,-40 12,-78 31,-112 C10,-80 4.5,-40 5.5,0 Z"/>
+
+    <!-- 手繪向量漢字（不依賴系統字體） -->
+    <g id="charZhou">
+      <path d="M16,8 Q16,3 21,3 Q26,3 26,8 L25,90 Q25,96 20,95 Q15,94 15,89 Z"/>
+      <path d="M18,8 C40,4 66,3 84,4 Q90,4 90,10 L88,84 Q88,92 82,94 Q76,96 72,90 Q69,85 75,83 Q80,82 81,86 L82,14 C64,13 40,15 20,18 Q14,19 14,13 Q14,8 18,8 Z"/>
+      <path d="M32,30 C44,27 58,26 68,26 Q73,26 73,31 Q73,36 68,36 C58,36 44,38 33,40 Q28,41 28,35 Q28,30 32,30 Z"/>
+      <path d="M48,18 Q48,13 53,13 Q58,13 58,18 L58,52 Q58,57 53,57 Q48,57 48,52 Z"/>
+      <path d="M30,52 C44,49 60,48 70,48 Q75,48 75,53 Q75,58 70,58 C60,58 44,60 31,62 Q26,63 26,57 Q26,52 30,52 Z"/>
+      <path d="M34,66 Q34,61 39,61 Q44,61 43,66 L42,86 Q42,91 37,90 Q33,89 33,85 Z"/>
+      <path d="M36,66 C48,63 60,62 68,62 Q73,62 73,67 L72,86 Q72,91 67,90 Q63,89 63,85 L64,71 C54,71 44,73 37,75 Q32,76 32,71 Q32,66 36,66 Z"/>
+      <path d="M36,84 C46,81 58,80 68,80 Q73,80 73,85 Q73,90 68,90 C58,90 46,92 37,94 Q32,95 32,89 Q32,84 36,84 Z"/>
+    </g>
+    <g id="charJie">
+      <path d="M14,34 C34,30 62,28 84,29 Q90,29 90,35 Q90,41 84,40 C62,39 34,42 15,45 Q9,46 9,40 Q9,34 14,34 Z"/>
+      <path d="M46,10 Q46,4 52,4 Q58,4 58,10 L57,62 Q57,68 51,68 Q46,68 46,62 Z"/>
+      <path d="M44,40 C36,52 26,62 14,70 Q9,73 6,68 Q4,63 10,60 C21,53 30,45 36,36 Q39,31 44,34 Q47,37 44,40 Z"/>
+      <path d="M60,38 C68,48 78,56 90,62 Q95,65 92,70 Q89,74 84,71 C72,64 62,55 55,44 Q52,39 56,36 Q59,34 60,38 Z"/>
+      <path d="M18,80 Q14,86 12,92 Q11,97 16,97 Q21,97 22,91 Q23,85 22,80 Q20,76 18,80 Z"/>
+      <path d="M38,78 Q36,85 36,91 Q36,97 41,96 Q46,95 45,89 Q44,83 42,78 Q40,74 38,78 Z"/>
+      <path d="M58,78 Q57,85 57,91 Q57,97 62,96 Q67,95 66,89 Q65,83 63,78 Q61,74 58,78 Z"/>
+      <path d="M78,78 Q80,85 82,91 Q84,97 89,95 Q93,93 91,87 Q89,81 85,77 Q81,74 78,78 Z"/>
+    </g>
+    <g id="charLun">
+      <path d="M30,8 C26,20 20,30 12,38 Q8,42 5,38 Q3,34 8,30 C15,23 21,14 24,6 Q26,1 30,3 Q33,5 30,8 Z"/>
+      <path d="M20,34 Q20,29 25,29 Q30,29 29,34 L28,90 Q28,96 23,95 Q18,94 19,89 Z"/>
+      <path d="M56,6 C52,16 46,24 38,30 Q34,33 31,29 Q29,25 34,22 C41,17 47,10 50,3 Q52,-1 56,1 Q59,3 56,6 Z"/>
+      <path d="M58,10 C64,18 72,24 82,28 Q87,30 85,35 Q83,39 78,36 C68,31 60,24 54,15 Q51,10 55,8 Q58,7 58,10 Z"/>
+      <path d="M40,40 C54,37 70,36 82,36 Q87,36 87,41 Q87,46 82,46 C70,46 54,48 41,50 Q36,51 36,45 Q36,40 40,40 Z"/>
+      <path d="M42,54 Q42,49 47,49 Q52,49 51,54 L50,88 Q50,93 45,92 Q41,91 41,87 Z"/>
+      <path d="M44,54 C58,51 72,50 82,50 Q87,50 87,55 L86,86 Q86,92 81,93 Q76,94 74,89 Q73,85 78,84 L79,59 C68,59 56,61 46,63 Q41,64 41,59 Q41,54 44,54 Z"/>
+      <path d="M56,56 Q56,52 60,52 Q64,52 64,56 L63,86 Q63,90 59,90 Q55,90 55,86 Z"/>
+      <path d="M68,55 Q68,51 72,51 Q76,51 76,55 L75,85 Q75,89 71,89 Q67,89 67,85 Z"/>
+      <path d="M40,68 C54,65 70,64 84,64 Q89,64 89,69 Q89,74 84,74 C70,74 54,76 41,78 Q36,79 36,73 Q36,68 40,68 Z"/>
+    </g>
+  </defs>
+
+  <!-- ================= 1. 天空 ================= -->
+  <rect width="1200" height="1600" fill="#0a141d"/>
+  <rect width="1200" height="1140" fill="url(#skyBase)"/>
+  <rect width="1200" height="1140" fill="url(#sunBloom)" style="mix-blend-mode:screen"/>
+
+  <!-- ================= 2. 遠處亮雲 ================= -->
+  <g filter="url(#wispSoft)" style="mix-blend-mode:screen" opacity="0.9">
+    <ellipse cx="880" cy="336" rx="310" ry="66" fill="#ffe6b0"/>
+    <ellipse cx="1086" cy="176" rx="250" ry="92" fill="#fff4d6"/>
+    <ellipse cx="704" cy="252" rx="205" ry="52" fill="#ffd99a"/>
+    <ellipse cx="1004" cy="470" rx="268" ry="48" fill="#f7d9a4"/>
+    <ellipse cx="620" cy="392" rx="180" ry="38" fill="#e8c79a"/>
+    <ellipse cx="1160" cy="392" rx="180" ry="70" fill="#fff0cc"/>
+  </g>
+
+  <!-- ================= 4. 中層雲 ================= -->
+  <g filter="url(#wisp)" opacity="0.92">
+    <ellipse cx="700" cy="146" rx="268" ry="78" fill="#3d5f70"/>
+    <ellipse cx="512" cy="330" rx="304" ry="66" fill="#4a6b78"/>
+    <ellipse cx="906" cy="424" rx="286" ry="56" fill="#6d8790"/>
+    <ellipse cx="330" cy="470" rx="290" ry="60" fill="#3a5a68"/>
+    <ellipse cx="760" cy="556" rx="330" ry="46" fill="#7b8f8c"/>
+    <ellipse cx="1080" cy="580" rx="240" ry="44" fill="#93a294"/>
+    <ellipse cx="150" cy="600" rx="260" ry="52" fill="#2f4c5b"/>
+  </g>
+
+  <!-- ================= 5. 暴雲（左上） ================= -->
+  <g filter="url(#wisp)">
+    <ellipse cx="40" cy="30" rx="392" ry="152" fill="url(#cloudDark)"/>
+    <ellipse cx="304" cy="112" rx="308" ry="118" fill="#101f2a"/>
+    <ellipse cx="-30" cy="234" rx="336" ry="132" fill="#0c1a24"/>
+    <ellipse cx="430" cy="52" rx="266" ry="98" fill="#15283a"/>
+    <ellipse cx="196" cy="308" rx="288" ry="88" fill="#182d3c"/>
+    <ellipse cx="566" cy="184" rx="224" ry="78" fill="#20394a"/>
+    <ellipse cx="20" cy="430" rx="300" ry="96" fill="#122430"/>
+    <ellipse cx="380" cy="380" rx="230" ry="70" fill="#1b3242"/>
+  </g>
+
+  <!-- 暴雲核心（增加結構） -->
+  <g filter="url(#b8)" opacity="0.55">
+    <ellipse cx="70" cy="70" rx="210" ry="84" fill="#0a141c"/>
+    <ellipse cx="260" cy="150" rx="170" ry="62" fill="#0d1822"/>
+    <ellipse cx="120" cy="310" rx="190" ry="72" fill="#0b1620"/>
+    <ellipse cx="330" cy="390" rx="160" ry="56" fill="#0e1c26"/>
+  </g>
+
+  <!-- ================= 6. 積雨雲塔（右） ================= -->
+  <g filter="url(#wispSoft)" opacity="0.95">
+    <path d="M962,556 C918,504 940,438 1006,428 C1018,372 1096,350 1140,394 C1196,372 1240,428 1216,482 C1258,514 1246,580 1180,586 C1120,592 1020,590 962,556 Z" fill="url(#cloudLit)"/>
+    <path d="M1046,392 C1030,352 1058,314 1100,318 C1122,290 1172,296 1180,330 C1214,332 1226,368 1204,388 C1160,404 1090,406 1046,392 Z" fill="#fff8e4" opacity="0.85"/>
+  </g>
+  <g filter="url(#wispSoft)" opacity="0.5">
+    <path d="M962,556 C1010,584 1090,592 1180,586 C1150,606 1060,610 990,596 Z" fill="#8d7a63"/>
+  </g>
+
+  <!-- ================= 3. 耶穌光（雲隙間） ================= -->
+  <g style="mix-blend-mode:screen" opacity="1">
+    <g transform="translate(892,236)" filter="url(#b5)">
+      <g transform="rotate(97)"><path d="M0,-11 L1750,-104 L1750,104 L0,11 Z" fill="url(#ray)" opacity="0.42"/></g>
+      <g transform="rotate(107)"><path d="M0,-5 L1750,-42 L1750,42 L0,5 Z" fill="url(#ray)" opacity="0.72"/></g>
+      <g transform="rotate(116)"><path d="M0,-16 L1750,-140 L1750,140 L0,16 Z" fill="url(#ray)" opacity="0.3"/></g>
+      <g transform="rotate(125)"><path d="M0,-7 L1750,-58 L1750,58 L0,7 Z" fill="url(#ray)" opacity="0.6"/></g>
+      <g transform="rotate(134)"><path d="M0,-4 L1750,-30 L1750,30 L0,4 Z" fill="url(#ray)" opacity="0.8"/></g>
+      <g transform="rotate(143)"><path d="M0,-19 L1750,-160 L1750,160 L0,19 Z" fill="url(#ray)" opacity="0.26"/></g>
+      <g transform="rotate(152)"><path d="M0,-8 L1750,-70 L1750,70 L0,8 Z" fill="url(#ray)" opacity="0.55"/></g>
+      <g transform="rotate(161)"><path d="M0,-5 L1750,-38 L1750,38 L0,5 Z" fill="url(#ray)" opacity="0.68"/></g>
+      <g transform="rotate(170)"><path d="M0,-14 L1750,-120 L1750,120 L0,14 Z" fill="url(#ray)" opacity="0.34"/></g>
+      <g transform="rotate(179)"><path d="M0,-6 L1750,-50 L1750,50 L0,6 Z" fill="url(#ray)" opacity="0.3"/></g>
+      <g transform="rotate(188)"><path d="M0,-10 L1750,-88 L1750,88 L0,10 Z" fill="url(#ray)" opacity="0.16"/></g>
+      <g transform="rotate(72)"><path d="M0,-6 L1750,-52 L1750,52 L0,6 Z" fill="url(#ray)" opacity="0.3"/></g>
+      <g transform="rotate(56)"><path d="M0,-4 L1750,-34 L1750,34 L0,4 Z" fill="url(#ray)" opacity="0.22"/></g>
+    </g>
+  </g>
+
+  <!-- ================= 7. 太陽 + 鏡頭光暈 ================= -->
+  <g style="mix-blend-mode:screen">
+    <ellipse cx="892" cy="236" rx="540" ry="3.6" fill="url(#flareStreak)" opacity="0.5" filter="url(#b3)"/>
+    <ellipse cx="892" cy="236" rx="150" ry="1.6" fill="#fffdf2" opacity="0.7" filter="url(#b1)"/>
+    <circle cx="426" cy="1137" r="36" fill="none" stroke="#ffcf8a" stroke-width="5" opacity="0.14" filter="url(#b3)"/>
+    <circle cx="330" cy="1330" r="19" fill="#8fd0d8" opacity="0.1" filter="url(#b3)"/>
+    <circle cx="524" cy="960" r="11" fill="#ffd9a0" opacity="0.16" filter="url(#b2)"/>
+    <circle cx="640" cy="700" r="7" fill="#ffe6bc" opacity="0.2" filter="url(#b2)"/>
+  </g>
+  <circle cx="892" cy="236" r="96" fill="url(#sunCore)" opacity="0.55" filter="url(#b14)"/>
+  <circle cx="892" cy="236" r="52" fill="url(#sunCore)" filter="url(#glowSun)"/>
+  <circle cx="892" cy="236" r="30" fill="#ffffff" opacity="0.95"/>
+
+  <!-- ================= 8. 飛鳥 ================= -->
+  <g fill="none" stroke="#22323c" stroke-linecap="round" opacity="0.55" transform="translate(-240,270)">
+    <path d="M742,318 c9,-8 16,-8 23,0 c7,-8 14,-8 23,0" stroke-width="2.6"/>
+    <path d="M806,286 c7,-6 12,-6 17,0 c5,-6 10,-6 17,0" stroke-width="2.1"/>
+    <path d="M694,364 c6,-5 10,-5 15,0 c4,-5 9,-5 15,0" stroke-width="1.8"/>
+    <path d="M858,344 c5,-4 8,-4 12,0 c3,-4 7,-4 12,0" stroke-width="1.5"/>
+    <path d="M646,300 c4,-3 7,-3 10,0 c3,-3 6,-3 10,0" stroke-width="1.3"/>
+  </g>
+
+  <!-- ================= 9. 紙飛機 ================= -->
+  <g opacity="0.8">
+    <path d="M268,690 C300,676 336,660 372,646" fill="none" stroke="#e6dcc4" stroke-width="1.4" stroke-dasharray="7 9" opacity="0.4"/>
+    <g transform="translate(378,642) rotate(-16)">
+      <path d="M0,0 L74,-14 L30,12 Z" fill="#f2ecdb"/>
+      <path d="M30,12 L74,-14 L38,30 Z" fill="#c6c0ac"/>
+      <path d="M30,12 L38,30 L25,20 Z" fill="#9d978a"/>
+      <path d="M0,0 L74,-14" fill="none" stroke="#fffaf0" stroke-width="1" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- ================= 10. 遠山 ================= -->
+  <path d="M0,872 C110,842 214,856 318,834 C428,812 520,842 640,826 C762,810 862,838 982,824 C1082,812 1142,830 1200,820 L1200,960 L0,960 Z" fill="#5f7482" opacity="0.5" filter="url(#b5)"/>
+  <path d="M0,896 C130,876 240,890 360,872 C470,856 560,880 680,868 C800,856 900,878 1020,866 C1110,857 1160,870 1200,864 L1200,980 L0,980 Z" fill="#46595f" opacity="0.62" filter="url(#b3)"/>
+
+  <!-- 地平線霧 -->
+  <rect y="660" width="1200" height="300" fill="url(#horizonHaze)"/>
+
+  <!-- ================= 11. 校園 ================= -->
+  <g opacity="0.95" filter="url(#b1)">
+    <path d="M176,892 L176,774 L560,774 L560,892 Z" fill="#3a4c58"/>
+    <path d="M164,774 L572,774 L560,756 L176,756 Z" fill="#283742"/>
+    <path d="M330,756 L330,690 L412,690 L412,756 Z" fill="#41545e"/>
+    <path d="M320,690 L422,690 L371,654 Z" fill="#26343e"/>
+    <path d="M371,654 L371,632" stroke="#26343e" stroke-width="3"/>
+    <circle cx="371" cy="716" r="14" fill="#e6dabd" opacity="0.75"/>
+    <path d="M371,716 L371,707 M371,716 L378,719" stroke="#2b3a44" stroke-width="1.6" fill="none"/>
+    <!-- 旗桿 -->
+    <path d="M604,892 L604,700" stroke="#4d5f68" stroke-width="3"/>
+    <path d="M604,706 C620,712 632,704 646,710 C636,718 622,724 604,722 Z" fill="#8c4a3c" opacity="0.8"/>
+    <!-- 窗（暗） -->
+    <g fill="#22313b">
+      <rect x="188" y="792" width="16" height="20"/><rect x="218" y="792" width="16" height="20"/>
+      <rect x="248" y="792" width="16" height="20"/><rect x="278" y="792" width="16" height="20"/>
+      <rect x="308" y="792" width="16" height="20"/><rect x="420" y="792" width="16" height="20"/>
+      <rect x="450" y="792" width="16" height="20"/><rect x="480" y="792" width="16" height="20"/>
+      <rect x="510" y="792" width="16" height="20"/><rect x="540" y="792" width="16" height="20"/>
+      <rect x="188" y="826" width="16" height="20"/><rect x="218" y="826" width="16" height="20"/>
+      <rect x="248" y="826" width="16" height="20"/><rect x="278" y="826" width="16" height="20"/>
+      <rect x="308" y="826" width="16" height="20"/><rect x="420" y="826" width="16" height="20"/>
+      <rect x="450" y="826" width="16" height="20"/><rect x="480" y="826" width="16" height="20"/>
+      <rect x="510" y="826" width="16" height="20"/><rect x="540" y="826" width="16" height="20"/>
+      <rect x="188" y="860" width="16" height="20"/><rect x="218" y="860" width="16" height="20"/>
+      <rect x="248" y="860" width="16" height="20"/><rect x="278" y="860" width="16" height="20"/>
+      <rect x="308" y="860" width="16" height="20"/><rect x="420" y="860" width="16" height="20"/>
+      <rect x="450" y="860" width="16" height="20"/><rect x="480" y="860" width="16" height="20"/>
+      <rect x="510" y="860" width="16" height="20"/><rect x="540" y="860" width="16" height="20"/>
+      <rect x="344" y="736" width="14" height="18"/><rect x="384" y="736" width="14" height="18"/>
+    </g>
+    <!-- 窗（亮） -->
+    <g fill="#ffcf87">
+      <rect x="218" y="792" width="16" height="20" opacity="0.85"/>
+      <rect x="450" y="792" width="16" height="20" opacity="0.7"/>
+      <rect x="540" y="792" width="16" height="20" opacity="0.55"/>
+      <rect x="308" y="826" width="16" height="20" opacity="0.8"/>
+      <rect x="420" y="826" width="16" height="20" opacity="0.6"/>
+      <rect x="248" y="860" width="16" height="20" opacity="0.75"/>
+      <rect x="510" y="860" width="16" height="20" opacity="0.65"/>
+      <rect x="384" y="736" width="14" height="18" opacity="0.7"/>
+    </g>
+    <g filter="url(#b5)" style="mix-blend-mode:screen" opacity="0.5">
+      <rect x="216" y="790" width="20" height="24" fill="#ffcf87"/>
+      <rect x="306" y="824" width="20" height="24" fill="#ffcf87"/>
+      <rect x="246" y="858" width="20" height="24" fill="#ffcf87"/>
+    </g>
+    <!-- 操場圍欄 / 樹列 -->
+    <g fill="#2c3d3a" opacity="0.7">
+      <ellipse cx="120" cy="880" rx="46" ry="26"/><ellipse cx="60" cy="886" rx="40" ry="22"/>
+      <ellipse cx="648" cy="884" rx="42" ry="24"/><ellipse cx="700" cy="888" rx="34" ry="19"/>
+    </g>
+  </g>
+
+  <!-- ================= 12. 地面 ================= -->
+  <path d="M0,884 L1200,872 L1200,1600 L0,1600 Z" fill="url(#ground)"/>
+  <rect y="872" width="1200" height="16" fill="#26362f" opacity="0.55" filter="url(#b3)"/>
+  <!-- 草地紋理 -->
+  <g stroke="#2a3a28" stroke-width="2" opacity="0.4" fill="none" filter="url(#b2)">
+    <path d="M20,940 C60,932 110,936 160,930"/><path d="M180,968 C230,960 290,964 340,958"/>
+    <path d="M40,1010 C100,1000 170,1006 230,998"/><path d="M760,930 C820,924 880,928 940,922"/>
+    <path d="M820,976 C880,968 950,972 1010,966"/><path d="M900,1030 C960,1022 1030,1026 1100,1018"/>
+    <path d="M1000,1090 C1060,1082 1130,1086 1190,1080"/>
+  </g>
+  <g stroke="#7d8a5c" stroke-width="1.6" opacity="0.28" fill="none" filter="url(#b2)">
+    <path d="M700,912 C760,906 830,910 900,904"/><path d="M860,952 C920,946 990,950 1060,944"/>
+    <path d="M960,1004 C1020,998 1090,1002 1160,996"/>
+  </g>
+
+  <!-- 濕潤小路 -->
+  <path d="M566,884 L660,884 C690,980 742,1100 822,1240 C882,1350 942,1470 1002,1600 L238,1600 C320,1460 400,1330 460,1210 C520,1090 552,980 566,884 Z" fill="url(#road)"/>
+  <path d="M566,884 C552,980 520,1090 460,1210 C400,1330 320,1460 238,1600" fill="none" stroke="#141c1a" stroke-width="5" opacity="0.5" filter="url(#b2)"/>
+  <path d="M660,884 C690,980 742,1100 822,1240 C882,1350 942,1470 1002,1600" fill="none" stroke="#141c1a" stroke-width="5" opacity="0.5" filter="url(#b2)"/>
+  <!-- 路面反光 -->
+  <path d="M636,888 L676,888 C716,1020 796,1240 900,1600 L690,1600 C656,1300 644,1060 636,888 Z" fill="url(#sunRefl)" style="mix-blend-mode:screen" filter="url(#b14)" opacity="0.38"/>
+  <g style="mix-blend-mode:screen" opacity="0.18" filter="url(#b8)">
+    <ellipse cx="600" cy="1010" rx="70" ry="9" fill="#ffe0a4"/>
+    <ellipse cx="640" cy="1140" rx="110" ry="12" fill="#ffd28e"/>
+    <ellipse cx="700" cy="1330" rx="160" ry="16" fill="#ffc478"/>
+    <ellipse cx="500" cy="1240" rx="90" ry="10" fill="#e8d6ae"/>
+  </g>
+  <!-- 水窪 -->
+  <g opacity="0.55">
+    <ellipse cx="430" cy="1180" rx="86" ry="17" fill="#7f929c" filter="url(#b3)"/>
+    <ellipse cx="430" cy="1178" rx="70" ry="11" fill="#b9c6c8" opacity="0.5" filter="url(#b3)"/>
+    <ellipse cx="820" cy="1420" rx="130" ry="24" fill="#6d8089" filter="url(#b5)"/>
+    <ellipse cx="824" cy="1416" rx="104" ry="15" fill="#c3cfd0" opacity="0.4" filter="url(#b5)"/>
+    <ellipse cx="300" cy="1400" rx="100" ry="20" fill="#5f727c" filter="url(#b5)"/>
+  </g>
+  <!-- 人物與樹的投影（光源在右上） -->
+  <g fill="#0a120e" opacity="0.32" filter="url(#b8)">
+    <path d="M470,1102 C420,1116 350,1140 280,1176 C340,1160 420,1136 480,1116 Z"/>
+    <path d="M730,1018 C690,1030 640,1048 590,1072 C640,1058 700,1038 740,1028 Z"/>
+    <path d="M1120,1300 C1020,1330 900,1372 780,1420 C900,1392 1040,1348 1150,1318 Z"/>
+  </g>
+  <!-- 地面冷暖光池 -->
+  <g style="mix-blend-mode:screen" filter="url(#b26)">
+    <ellipse cx="920" cy="1010" rx="230" ry="64" fill="#d8a850" opacity="0.14"/>
+    <ellipse cx="1050" cy="1180" rx="200" ry="60" fill="#c89840" opacity="0.1"/>
+    <ellipse cx="220" cy="1020" rx="220" ry="60" fill="#4a6a86" opacity="0.12"/>
+  </g>
+
+  <!-- ================= 13. 大樹 ================= -->
+  <!-- 樹幹 -->
+  <path d="M1200,1310 C1150,1186 1108,1062 1086,952 C1066,852 1058,752 1064,660 L1004,652 C996,748 1006,852 1024,956 C1046,1070 1082,1190 1116,1310 Z" fill="url(#bark)"/>
+  <path d="M1064,660 C1058,752 1066,852 1086,952 C1108,1062 1150,1186 1200,1310" fill="none" stroke="url(#barkRim)" stroke-width="6" opacity="0.9" filter="url(#b1)"/>
+  <g stroke="#0a0d0a" stroke-width="1.6" opacity="0.5" fill="none">
+    <path d="M1030,700 C1036,800 1048,900 1068,1000"/>
+    <path d="M1046,690 C1052,790 1064,890 1084,990"/>
+    <path d="M1016,760 C1024,860 1038,960 1058,1060"/>
+  </g>
+
+  <!-- 主枝 -->
+  <g stroke="url(#bark)" fill="none" stroke-linecap="round">
+    <path d="M1040,672 C960,616 872,566 776,520" stroke-width="34"/>
+    <path d="M776,520 C690,478 600,458 500,452" stroke-width="21"/>
+    <path d="M500,452 C432,448 382,458 336,472" stroke-width="12"/>
+    <path d="M620,464 C580,432 540,404 494,384" stroke-width="9"/>
+    <path d="M1030,700 C950,690 870,684 790,690" stroke-width="23"/>
+    <path d="M790,690 C722,696 662,712 610,738" stroke-width="13"/>
+    <path d="M700,700 C668,676 634,656 596,644" stroke-width="8"/>
+    <path d="M1058,660 C1064,580 1082,506 1112,440" stroke-width="25"/>
+    <path d="M1112,440 C1136,388 1166,346 1200,314" stroke-width="14"/>
+    <path d="M1090,520 C1050,486 1010,458 966,438" stroke-width="10"/>
+    <path d="M1046,656 C1010,590 962,530 906,478" stroke-width="19"/>
+    <path d="M906,478 C862,438 812,404 758,378" stroke-width="11"/>
+    <path d="M830,418 C800,388 770,362 736,342" stroke-width="7"/>
+    <path d="M1076,762 C1120,744 1160,732 1200,726" stroke-width="15"/>
+    <path d="M1082,830 C1130,824 1170,824 1200,828" stroke-width="10"/>
+  </g>
+  <!-- 細枝 -->
+  <g stroke="#1a2419" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M336,472 C300,478 268,490 240,506" stroke-width="5"/>
+    <path d="M400,458 C378,436 356,420 330,410" stroke-width="4"/>
+    <path d="M494,384 C462,368 430,358 396,354" stroke-width="4"/>
+    <path d="M610,738 C578,752 550,770 528,790" stroke-width="5"/>
+    <path d="M596,644 C566,634 536,630 506,632" stroke-width="4"/>
+    <path d="M758,378 C726,362 694,352 660,348" stroke-width="4.5"/>
+    <path d="M736,342 C712,322 686,308 656,300" stroke-width="3.5"/>
+    <path d="M966,438 C936,424 906,414 874,410" stroke-width="4"/>
+    <path d="M1112,440 C1082,414 1052,394 1018,382" stroke-width="4.5"/>
+    <path d="M1200,314 C1170,296 1140,284 1108,278" stroke-width="4"/>
+  </g>
+
+  <!-- 樹冠：暗層 -->
+  <g filter="url(#wispLeaf)">
+    <g fill="#0e1a13">
+      <ellipse cx="360" cy="452" rx="120" ry="66"/>
+      <ellipse cx="500" cy="424" rx="132" ry="72"/>
+      <ellipse cx="640" cy="452" rx="118" ry="62"/>
+      <ellipse cx="770" cy="486" rx="126" ry="66"/>
+      <ellipse cx="620" cy="700" rx="112" ry="58"/>
+      <ellipse cx="760" cy="668" rx="104" ry="54"/>
+      <ellipse cx="900" cy="452" rx="120" ry="64"/>
+      <ellipse cx="1010" cy="404" rx="118" ry="62"/>
+      <ellipse cx="1130" cy="380" rx="126" ry="70"/>
+      <ellipse cx="820" cy="368" rx="112" ry="58"/>
+      <ellipse cx="700" cy="336" rx="104" ry="54"/>
+      <ellipse cx="960" cy="300" rx="112" ry="56"/>
+      <ellipse cx="1120" cy="266" rx="118" ry="60"/>
+      <ellipse cx="470" cy="352" rx="98" ry="52"/>
+      <ellipse cx="560" cy="600" rx="92" ry="48"/>
+      <ellipse cx="1160" cy="700" rx="104" ry="56"/>
+      <ellipse cx="1080" cy="580" rx="98" ry="52"/>
+      <ellipse cx="280" cy="500" rx="86" ry="46"/>
+    </g>
+  </g>
+  <!-- 樹冠：中層 -->
+  <g filter="url(#wispLeaf)" opacity="0.95">
+    <g fill="#1d3323">
+      <ellipse cx="420" cy="404" rx="96" ry="50"/>
+      <ellipse cx="560" cy="392" rx="102" ry="52"/>
+      <ellipse cx="700" cy="428" rx="96" ry="48"/>
+      <ellipse cx="840" cy="424" rx="98" ry="50"/>
+      <ellipse cx="960" cy="368" rx="94" ry="48"/>
+      <ellipse cx="1080" cy="336" rx="100" ry="52"/>
+      <ellipse cx="680" cy="640" rx="86" ry="44"/>
+      <ellipse cx="880" cy="512" rx="90" ry="46"/>
+      <ellipse cx="1140" cy="470" rx="96" ry="50"/>
+      <ellipse cx="760" cy="298" rx="88" ry="44"/>
+      <ellipse cx="1020" cy="248" rx="92" ry="46"/>
+      <ellipse cx="340" cy="470" rx="72" ry="38"/>
+      <ellipse cx="500" cy="556" rx="76" ry="40"/>
+    </g>
+  </g>
+  <!-- 樹冠：受光層 -->
+  <g filter="url(#wispLeaf)" opacity="0.9">
+    <g fill="#4a6b32">
+      <ellipse cx="900" cy="330" rx="82" ry="42"/>
+      <ellipse cx="1020" cy="292" rx="86" ry="44"/>
+      <ellipse cx="1140" cy="316" rx="90" ry="46"/>
+      <ellipse cx="980" cy="404" rx="78" ry="40"/>
+      <ellipse cx="1100" cy="424" rx="82" ry="42"/>
+      <ellipse cx="820" cy="392" rx="70" ry="36"/>
+      <ellipse cx="1180" cy="530" rx="76" ry="40"/>
+      <ellipse cx="700" cy="380" rx="64" ry="32"/>
+      <ellipse cx="1060" cy="216" rx="72" ry="36"/>
+    </g>
+  </g>
+  <!-- 樹冠：邊緣高光 -->
+  <g filter="url(#wispLeaf)" style="mix-blend-mode:screen" opacity="0.55">
+    <g fill="#c3d97a">
+      <ellipse cx="940" cy="308" rx="58" ry="26"/>
+      <ellipse cx="1060" cy="272" rx="62" ry="28"/>
+      <ellipse cx="1170" cy="300" rx="60" ry="26"/>
+      <ellipse cx="1010" cy="382" rx="52" ry="24"/>
+      <ellipse cx="1130" cy="404" rx="56" ry="26"/>
+      <ellipse cx="1190" cy="500" rx="50" ry="24"/>
+      <ellipse cx="860" cy="368" rx="44" ry="20"/>
+      <ellipse cx="1090" cy="200" rx="46" ry="20"/>
+    </g>
+  </g>
+  <!-- 樹冠：質感碎塊 -->
+  <g filter="url(#wispLeaf)" opacity="0.85">
+    <g fill="#14241a">
+      <ellipse cx="430" cy="440" rx="34" ry="18"/><ellipse cx="520" cy="410" rx="30" ry="16"/>
+      <ellipse cx="610" cy="440" rx="32" ry="17"/><ellipse cx="700" cy="470" rx="30" ry="16"/>
+      <ellipse cx="800" cy="450" rx="32" ry="17"/><ellipse cx="880" cy="480" rx="28" ry="15"/>
+      <ellipse cx="950" cy="420" rx="30" ry="16"/><ellipse cx="1040" cy="380" rx="32" ry="17"/>
+      <ellipse cx="1120" cy="420" rx="30" ry="16"/><ellipse cx="760" cy="640" rx="28" ry="15"/>
+      <ellipse cx="640" cy="680" rx="26" ry="14"/><ellipse cx="380" cy="470" rx="26" ry="14"/>
+    </g>
+    <g fill="#7d9a4a" opacity="0.7">
+      <ellipse cx="960" cy="350" rx="26" ry="13"/><ellipse cx="1060" cy="320" rx="28" ry="14"/>
+      <ellipse cx="1150" cy="360" rx="26" ry="13"/><ellipse cx="1100" cy="450" rx="24" ry="12"/>
+      <ellipse cx="1180" cy="560" rx="24" ry="12"/><ellipse cx="880" cy="350" rx="22" ry="11"/>
+    </g>
+  </g>
+  <!-- 葉簇（細節） -->
+  <g fill="#16241b" opacity="0.95">
+    <use href="#spray" transform="translate(240,506) rotate(168) scale(1.05)"/>
+    <use href="#spray" transform="translate(330,410) rotate(200) scale(0.95)"/>
+    <use href="#spray" transform="translate(396,354) rotate(190) scale(1)"/>
+    <use href="#spray" transform="translate(528,790) rotate(120) scale(1.1)"/>
+    <use href="#spray" transform="translate(506,632) rotate(186) scale(0.9)"/>
+    <use href="#spray" transform="translate(656,300) rotate(204) scale(1)"/>
+    <use href="#spray" transform="translate(736,342) rotate(216) scale(0.9)"/>
+    <use href="#spray" transform="translate(874,410) rotate(196) scale(0.95)"/>
+    <use href="#spray" transform="translate(1018,382) rotate(210) scale(1)"/>
+    <use href="#spray" transform="translate(1108,278) rotate(200) scale(0.95)"/>
+    <use href="#spray" transform="translate(300,540) rotate(140) scale(0.85)"/>
+    <use href="#spray" transform="translate(580,760) rotate(100) scale(0.9)"/>
+  </g>
+  <g fill="#5d7f3c" opacity="0.9">
+    <use href="#spray" transform="translate(1000,240) rotate(210) scale(1)"/>
+    <use href="#spray" transform="translate(1120,300) rotate(196) scale(1.05)"/>
+    <use href="#spray" transform="translate(1180,470) rotate(180) scale(1)"/>
+    <use href="#spray" transform="translate(940,330) rotate(220) scale(0.9)"/>
+    <use href="#spray" transform="translate(1080,400) rotate(200) scale(0.95)"/>
+    <use href="#spray" transform="translate(860,300) rotate(230) scale(0.85)"/>
+  </g>
+  <g fill="#a8c263" opacity="0.75" style="mix-blend-mode:screen">
+    <use href="#spray" transform="translate(1040,220) rotate(214) scale(0.9)"/>
+    <use href="#spray" transform="translate(1160,330) rotate(190) scale(0.95)"/>
+    <use href="#spray" transform="translate(980,290) rotate(226) scale(0.8)"/>
+  </g>
+
+  <!-- ================= 14. 鞦韆 ================= -->
+  <g>
+    <path d="M676,498 C672,616 668,728 664,822" fill="none" stroke="#151d18" stroke-width="3.2" opacity="0.92"/>
+    <path d="M728,494 C726,614 724,728 722,822" fill="none" stroke="#151d18" stroke-width="3.2" opacity="0.92"/>
+    <path d="M728,494 C726,614 724,728 722,822" fill="none" stroke="#e8c07e" stroke-width="1.2" opacity="0.5"/>
+    <path d="M652,820 L734,817 L734,831 L652,834 Z" fill="#2a1d14"/>
+    <path d="M652,820 L734,817 L734,821 L652,824 Z" fill="#5a4028" opacity="0.8"/>
+    <path d="M734,817 L734,831" stroke="#e8c07e" stroke-width="1.6" opacity="0.55"/>
+  </g>
+
+  <!-- ================= 15. 男孩（揹吉他） ================= -->
+  <g transform="translate(470,1105)">
+    <!-- 倒影 -->
+    <g opacity="0.3" filter="url(#b5)">
+      <path d="M-46,0 L46,0 L64,132 L-64,132 Z" fill="url(#reflDark)"/>
+    </g>
+    <ellipse cx="0" cy="2" rx="52" ry="11" fill="#070d11" opacity="0.55" filter="url(#b3)"/>
+
+    <g fill="#0c1317">
+      <!-- 鞋 -->
+      <path d="M-42,-3 C-46,-12 -40,-19 -30,-19 L-8,-19 C-4,-11 -8,-3 -16,-3 Z"/>
+      <path d="M6,-3 C2,-12 8,-19 18,-19 L38,-19 C44,-12 42,-3 32,-3 Z"/>
+      <!-- 腿 -->
+      <path d="M-30,-134 C-32,-108 -34,-68 -32,-19 L-8,-19 C-10,-68 -8,-108 -4,-134 Z"/>
+      <path d="M4,-134 C6,-108 6,-68 8,-19 L32,-19 C32,-68 32,-108 28,-134 Z"/>
+      <path d="M-30,-152 L30,-152 L32,-128 C10,-121 -10,-121 -32,-128 Z"/>
+      <!-- 躯幹 -->
+      <path d="M-26,-150 C-34,-176 -38,-198 -37,-214 C-36,-225 -24,-232 -12,-234 L14,-234 C27,-232 37,-224 38,-212 C39,-196 34,-174 26,-150 Z"/>
+      <!-- 頸 -->
+      <path d="M-11,-231 L13,-231 L13,-246 L-11,-246 Z"/>
+      <!-- 頭 -->
+      <g transform="rotate(-7 2 -252)">
+        <ellipse cx="2" cy="-252" rx="18.5" ry="21.5"/>
+        <ellipse cx="20" cy="-249" rx="4.5" ry="6.5"/>
+        <path d="M-17,-256 C-21,-277 -7,-288 6,-284 C19,-280 23,-266 21,-253 C16,-264 8,-270 -1,-268 C-8,-266 -13,-261 -17,-256 Z"/>
+        <path d="M-16,-262 C-12,-272 -4,-277 3,-276 C-3,-272 -9,-267 -13,-260 Z"/>
+      </g>
+      <!-- 左臂 -->
+      <path d="M-37,-216 C-48,-196 -53,-168 -51,-142 C-50,-133 -42,-131 -39,-138 C-41,-164 -38,-190 -31,-208 Z"/>
+      <ellipse cx="-46" cy="-133" rx="7.5" ry="9.5"/>
+      <!-- 右臂 -->
+      <path d="M38,-216 C49,-198 53,-176 51,-155 C50,-147 43,-145 40,-151 C42,-172 39,-192 32,-208 Z"/>
+      <ellipse cx="47" cy="-147" rx="7.5" ry="9.5"/>
+    </g>
+
+    <!-- 吉他 -->
+    <g transform="translate(-6,-176) rotate(27) scale(0.96)">
+      <path d="M-5,-40 L5,-40 L7.5,-116 L-3.5,-116 Z" fill="#100c08"/>
+      <path d="M-7,-116 L9,-116 L11.5,-138 L-4.5,-140 Z" fill="#100c08"/>
+      <g fill="#2a2118">
+        <circle cx="-6" cy="-122" r="2.2"/><circle cx="-5" cy="-131" r="2.2"/>
+        <circle cx="9" cy="-122" r="2.2"/><circle cx="10" cy="-131" r="2.2"/>
+      </g>
+      <path d="M0,-40 C17,-40 28,-28 28,-13 C28,-2 22,4 22,11 C22,18 30,25 30,38 C30,56 16,67 0,67 C-16,67 -30,56 -30,38 C-30,25 -22,18 -22,11 C-22,4 -28,-2 -28,-13 C-28,-28 -17,-40 0,-40 Z" fill="#151009"/>
+      <path d="M0,-40 C17,-40 28,-28 28,-13 C28,-2 22,4 22,11 C22,18 30,25 30,38 C30,56 16,67 0,67" fill="none" stroke="#e8b878" stroke-width="2.2" opacity="0.55"/>
+      <circle cx="0" cy="4" r="11.5" fill="#080604"/>
+      <circle cx="0" cy="4" r="11.5" fill="none" stroke="#c99a5e" stroke-width="1.4" opacity="0.5"/>
+      <rect x="-12" y="34" width="24" height="5.5" rx="2" fill="#2a1d12"/>
+      <g stroke="#e8d6ae" stroke-width="0.7" opacity="0.35">
+        <path d="M-3,-114 L-3,36"/><path d="M-1,-114 L-1,36"/><path d="M1,-114 L1,36"/><path d="M3,-114 L3,36"/>
+      </g>
+    </g>
+    <!-- 背帶 -->
+    <path d="M-31,-215 C-18,-196 2,-181 24,-174" fill="none" stroke="#0c1317" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- 輪廓光 -->
+    <g fill="none" stroke="url(#rimG)" stroke-linecap="round" style="mix-blend-mode:screen" filter="url(#b1)">
+      <path d="M38,-213 C39,-196 34,-174 26,-151" stroke-width="3.6" opacity="0.9"/>
+      <path d="M13,-232 C24,-231 34,-224 37,-214" stroke-width="3" opacity="0.8"/>
+      <path d="M51,-155 C53,-176 49,-198 39,-215" stroke-width="3" opacity="0.75"/>
+      <path d="M19,-270 C24,-262 23,-244 19,-235" stroke-width="3.2" opacity="0.85"/>
+      <path d="M32,-19 C32,-68 32,-108 28,-133" stroke-width="2.6" opacity="0.6"/>
+      <path d="M47,-155 C50,-150 50,-143 47,-139" stroke-width="2.4" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- ================= 16. 女孩（琥珀色雨傘） ================= -->
+  <g transform="translate(730,1020)">
+    <!-- 倒影 -->
+    <g opacity="0.28" filter="url(#b5)">
+      <path d="M-34,0 L34,0 L48,104 L-48,104 Z" fill="url(#reflDark)"/>
+    </g>
+    <ellipse cx="0" cy="2" rx="38" ry="9" fill="#070d11" opacity="0.5" filter="url(#b3)"/>
+    <!-- 傘投下的暖光 -->
+    <ellipse cx="10" cy="-150" rx="70" ry="60" fill="url(#umbGlow)" style="mix-blend-mode:screen" opacity="0.5" filter="url(#b14)"/>
+
+    <g fill="#0c1317">
+      <!-- 鞋 -->
+      <path d="M-24,-2 C-27,-9 -22,-14 -14,-14 L-2,-14 C0,-8 -3,-2 -10,-2 Z"/>
+      <path d="M5,-2 C3,-9 8,-14 15,-14 L26,-14 C30,-8 28,-2 20,-2 Z"/>
+      <!-- 腿 -->
+      <path d="M-18,-14 C-20,-34 -19,-56 -17,-78 L-5,-78 C-6,-56 -7,-34 -6,-14 Z"/>
+      <path d="M5,-14 C4,-34 5,-56 7,-78 L17,-78 C17,-56 17,-34 18,-14 Z"/>
+      <!-- 襪 -->
+      <path d="M-19,-33 L-5,-33 L-5,-15 L-19,-15 Z" fill="#b9b2a0" opacity="0.42"/>
+      <path d="M5,-33 L18,-33 L18,-15 L5,-15 Z" fill="#b9b2a0" opacity="0.42"/>
+      <!-- 裙 -->
+      <path d="M-16,-112 L16,-112 C22,-97 27,-84 30,-73 C12,-67 -14,-66 -31,-72 C-28,-84 -22,-97 -16,-112 Z"/>
+      <!-- 上身 -->
+      <path d="M-19,-153 C-21,-138 -18,-123 -16,-111 L16,-111 C18,-123 21,-138 19,-153 C10,-159 -10,-159 -19,-153 Z"/>
+      <!-- 水手領 -->
+      <path d="M-18,-153 L18,-153 L22,-127 L-22,-127 Z" fill="#111a1f"/>
+      <!-- 頸 -->
+      <path d="M-6.5,-158 L6.5,-158 L6.5,-168 L-6.5,-168 Z"/>
+      <!-- 頭 -->
+      <ellipse cx="0" cy="-179" rx="13.5" ry="16"/>
+      <!-- 長髮（被風吹向左） -->
+      <path d="M-14,-186 C-18,-168 -21,-146 -19,-127 C-13,-134 -6,-137 0,-137 C7,-137 13,-133 17,-126 C20,-146 18,-170 13,-186 C8,-196 -9,-196 -14,-186 Z"/>
+      <path d="M-17,-166 C-30,-158 -40,-146 -46,-132 C-40,-136 -32,-140 -24,-142 Z"/>
+      <path d="M-19,-150 C-32,-142 -42,-130 -48,-116 C-42,-121 -34,-126 -25,-129 Z"/>
+      <!-- 左臂 + 書包 -->
+      <path d="M-19,-151 C-26,-139 -29,-124 -28,-109 C-28,-103 -22,-102 -20,-107 C-21,-121 -19,-134 -14,-145 Z"/>
+      <path d="M-42,-118 L-24,-118 L-21,-90 L-45,-90 Z"/>
+      <path d="M-42,-118 L-24,-118 L-23,-108 L-43,-108 Z" fill="#1a2228"/>
+      <!-- 右臂（舉傘） -->
+      <path d="M19,-151 C27,-143 31,-130 31,-117 C31,-111 25,-109 22,-114 C22,-126 19,-137 14,-145 Z"/>
+      <ellipse cx="27" cy="-112" rx="6" ry="7.5"/>
+    </g>
+    <!-- 裙褶 -->
+    <g stroke="#2b3a42" stroke-width="1.1" opacity="0.55" fill="none">
+      <path d="M-10,-111 L-16,-70"/><path d="M-3,-111 L-5,-68"/><path d="M4,-111 L6,-68"/>
+      <path d="M11,-111 L17,-70"/><path d="M-24,-104 L-28,-73"/><path d="M18,-104 L24,-72"/>
+    </g>
+    <!-- 領條紋 -->
+    <g stroke="#d8d0bc" stroke-width="1.3" opacity="0.5" fill="none">
+      <path d="M-20,-131 L21,-131"/><path d="M-19,-136 L20,-136"/>
+    </g>
+
+    <!-- 雨傘 -->
+    <g>
+      <ellipse cx="14" cy="-244" rx="92" ry="56" fill="url(#umbGlow)" style="mix-blend-mode:screen" opacity="0.65" filter="url(#b14)"/>
+      <path d="M14,-272 L27,-114" stroke="#2a1d14" stroke-width="3.4" fill="none"/>
+      <path d="M27,-114 C30,-105 25,-98 18,-101" stroke="#2a1d14" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M-48,-216 C-46,-250 -22,-274 14,-274 C50,-274 74,-250 76,-216 C69,-207 62,-207 55,-216 C48,-207 41,-207 35,-216 C28,-207 21,-207 14,-216 C7,-207 0,-207 -7,-216 C-14,-207 -21,-207 -27,-216 C-34,-207 -41,-207 -48,-216 Z" fill="url(#umbG)"/>
+      <g stroke="#8a5a20" stroke-width="1.3" opacity="0.55" fill="none">
+        <path d="M14,-271 L55,-215"/><path d="M14,-271 L35,-215"/><path d="M14,-271 L14,-215"/>
+        <path d="M14,-271 L-7,-215"/><path d="M14,-271 L-27,-215"/><path d="M14,-271 L-47,-215"/>
+        <path d="M14,-271 L75,-215"/>
+      </g>
+      <path d="M-48,-216 C-46,-250 -22,-274 14,-274 C50,-274 74,-250 76,-216" fill="none" stroke="#fff6d8" stroke-width="2.4" opacity="0.75"/>
+      <path d="M14,-274 L14,-290" stroke="#2a1d14" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="14" cy="-292" r="3" fill="#2a1d14"/>
+      <path d="M-40,-232 C-30,-252 -12,-264 8,-268" fill="none" stroke="#fffbe8" stroke-width="3" opacity="0.4" filter="url(#b2)"/>
+    </g>
+
+    <!-- 輪廓光 -->
+    <g fill="none" stroke="url(#rimG)" stroke-linecap="round" style="mix-blend-mode:screen" filter="url(#b1)">
+      <path d="M19,-152 C21,-138 18,-123 16,-112" stroke-width="2.6" opacity="0.85"/>
+      <path d="M13,-192 C18,-186 19,-176 17,-168" stroke-width="2.4" opacity="0.8"/>
+      <path d="M31,-117 C31,-130 27,-143 20,-150" stroke-width="2.2" opacity="0.7"/>
+      <path d="M17,-78 C17,-56 17,-34 18,-15" stroke-width="2" opacity="0.55"/>
+      <path d="M30,-73 C27,-84 22,-97 16,-111" stroke-width="2.2" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- ================= 17. 雨 ================= -->
+  <g mask="url(#rainMask)">
+    <rect width="1200" height="1600" fill="url(#rainPat)" opacity="0.85"/>
+  </g>
+  <g mask="url(#rainMask)" opacity="0.5" filter="url(#b2)">
+    <rect width="1200" height="1600" fill="url(#rainPat)" opacity="0.5" transform="scale(1.7) translate(-140,-120)"/>
+  </g>
+  <!-- 近景雨絲（虛化） -->
+  <g stroke="#e2eef6" stroke-linecap="round" fill="none" opacity="0.3" filter="url(#b3)">
+    <path d="M60,180 L34,470" stroke-width="5"/>
+    <path d="M180,420 L152,760" stroke-width="6"/>
+    <path d="M300,120 L272,430" stroke-width="4.5"/>
+    <path d="M120,900 L96,1200" stroke-width="6"/>
+    <path d="M390,620 L364,930" stroke-width="5"/>
+    <path d="M240,1180 L214,1470" stroke-width="6.5"/>
+  </g>
+  <!-- 地面濺水 -->
+  <g fill="#dceaf4" opacity="0.22">
+    <ellipse cx="180" cy="1010" rx="9" ry="2.6"/><ellipse cx="260" cy="1060" rx="7" ry="2"/>
+    <ellipse cx="120" cy="1130" rx="11" ry="3"/><ellipse cx="330" cy="990" rx="6" ry="1.8"/>
+    <ellipse cx="80" cy="960" rx="8" ry="2.2"/><ellipse cx="400" cy="1120" rx="9" ry="2.4"/>
+    <ellipse cx="220" cy="1240" rx="12" ry="3.2"/><ellipse cx="340" cy="1300" rx="10" ry="2.8"/>
+  </g>
+
+  <!-- ================= 18. 中景花草（虛化） ================= -->
+  <g filter="url(#b5)" opacity="0.9">
+    <g fill="#101a13">
+      <ellipse cx="120" cy="1290" rx="200" ry="60"/><ellipse cx="420" cy="1268" rx="180" ry="52"/>
+      <ellipse cx="760" cy="1258" rx="190" ry="50"/><ellipse cx="1080" cy="1284" rx="200" ry="58"/>
+    </g>
+    <g fill="url(#petalG2)">
+      <use href="#flwB" transform="translate(90,1258) scale(0.85)"/>
+      <use href="#flwA" transform="translate(170,1240) rotate(14) scale(0.7)"/>
+      <use href="#flwB" transform="translate(258,1272) rotate(-18) scale(0.9)"/>
+      <use href="#flwA" transform="translate(352,1246) rotate(24) scale(0.75)"/>
+      <use href="#flwB" transform="translate(452,1266) rotate(-8) scale(0.85)"/>
+      <use href="#flwA" transform="translate(556,1240) rotate(30) scale(0.7)"/>
+      <use href="#flwB" transform="translate(668,1262) rotate(-22) scale(0.9)"/>
+      <use href="#flwA" transform="translate(782,1238) rotate(12) scale(0.72)"/>
+      <use href="#flwB" transform="translate(884,1264) rotate(-14) scale(0.88)"/>
+      <use href="#flwA" transform="translate(986,1244) rotate(20) scale(0.76)"/>
+      <use href="#flwB" transform="translate(1092,1268) rotate(-26) scale(0.9)"/>
+      <use href="#flwA" transform="translate(1168,1246) rotate(8) scale(0.7)"/>
+    </g>
+    <g fill="#1b2a1c">
+      <use href="#blade" transform="translate(140,1290) rotate(-8) scale(1.1)"/>
+      <use href="#blade2" transform="translate(320,1284) rotate(10) scale(1)"/>
+      <use href="#blade" transform="translate(520,1288) rotate(-14) scale(1.2)"/>
+      <use href="#blade2" transform="translate(720,1280) rotate(6) scale(1.05)"/>
+      <use href="#blade" transform="translate(940,1290) rotate(-6) scale(1.15)"/>
+      <use href="#blade2" transform="translate(1120,1286) rotate(12) scale(1)"/>
+    </g>
+  </g>
+
+  <!-- ================= 19. 中景花（清晰） ================= -->
+  <g filter="url(#b1)">
+    <g stroke="url(#stemG)" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M120,1420 C116,1382 122,1352 132,1330"/>
+      <path d="M232,1436 C236,1396 228,1364 218,1342"/>
+      <path d="M344,1412 C340,1376 348,1348 358,1326"/>
+      <path d="M470,1440 C474,1400 466,1368 456,1346"/>
+      <path d="M596,1418 C592,1382 600,1352 610,1332"/>
+      <path d="M712,1444 C716,1404 708,1372 698,1350"/>
+      <path d="M836,1416 C832,1380 840,1350 850,1330"/>
+      <path d="M958,1442 C962,1402 954,1370 944,1348"/>
+      <path d="M1074,1420 C1070,1384 1078,1354 1088,1334"/>
+    </g>
+    <g fill="url(#petalG)">
+      <use href="#flwA" transform="translate(132,1330) rotate(-12) scale(1.15)"/>
+      <use href="#flwB" transform="translate(218,1342) rotate(18) scale(1.25)"/>
+      <use href="#flwA" transform="translate(358,1326) rotate(-24) scale(1.1)"/>
+      <use href="#flwB" transform="translate(456,1346) rotate(10) scale(1.3)"/>
+      <use href="#flwA" transform="translate(610,1332) rotate(-6) scale(1.18)"/>
+      <use href="#flwB" transform="translate(698,1350) rotate(26) scale(1.22)"/>
+      <use href="#flwA" transform="translate(850,1330) rotate(-18) scale(1.12)"/>
+      <use href="#flwB" transform="translate(944,1348) rotate(14) scale(1.28)"/>
+      <use href="#flwA" transform="translate(1088,1334) rotate(-28) scale(1.16)"/>
+    </g>
+    <g fill="url(#petalG2)">
+      <use href="#bud" transform="translate(176,1372) rotate(-16) scale(1.1)"/>
+      <use href="#bud" transform="translate(292,1386) rotate(20) scale(1)"/>
+      <use href="#bud" transform="translate(530,1378) rotate(-10) scale(1.15)"/>
+      <use href="#bud" transform="translate(776,1382) rotate(16) scale(1.05)"/>
+      <use href="#bud" transform="translate(1010,1376) rotate(-22) scale(1.1)"/>
+    </g>
+    <g fill="#1e2e1e">
+      <use href="#blade" transform="translate(80,1440) rotate(-10) scale(1.5)"/>
+      <use href="#blade2" transform="translate(196,1450) rotate(8) scale(1.4)"/>
+      <use href="#blade" transform="translate(300,1436) rotate(-18) scale(1.6)"/>
+      <use href="#blade2" transform="translate(412,1452) rotate(14) scale(1.45)"/>
+      <use href="#blade" transform="translate(540,1440) rotate(-6) scale(1.55)"/>
+      <use href="#blade2" transform="translate(660,1454) rotate(10) scale(1.4)"/>
+      <use href="#blade" transform="translate(790,1438) rotate(-14) scale(1.6)"/>
+      <use href="#blade2" transform="translate(900,1452) rotate(6) scale(1.5)"/>
+      <use href="#blade" transform="translate(1020,1442) rotate(-20) scale(1.55)"/>
+      <use href="#blade2" transform="translate(1140,1450) rotate(12) scale(1.45)"/>
+    </g>
+  </g>
+
+  <!-- ================= 20. 飄落花瓣 ================= -->
+  <g fill="url(#petalG)" opacity="0.9">
+    <use href="#ptlS" transform="translate(300,880) rotate(38) scale(0.9)"/>
+    <use href="#ptlS" transform="translate(420,760) rotate(-52) scale(0.75)"/>
+    <use href="#ptlS" transform="translate(560,940) rotate(112) scale(1)"/>
+    <use href="#ptlS" transform="translate(680,820) rotate(-24) scale(0.8)"/>
+    <use href="#ptlS" transform="translate(820,900) rotate(66) scale(0.95)"/>
+    <use href="#ptlS" transform="translate(940,780) rotate(-78) scale(0.7)"/>
+    <use href="#ptlS" transform="translate(240,1060) rotate(24) scale(1.05)"/>
+    <use href="#ptlS" transform="translate(520,1120) rotate(-40) scale(0.9)"/>
+    <use href="#ptlS" transform="translate(880,1080) rotate(58) scale(1)"/>
+    <use href="#ptlS" transform="translate(1040,960) rotate(-16) scale(0.85)"/>
+    <use href="#ptlS" transform="translate(160,760) rotate(84) scale(0.7)"/>
+    <use href="#ptlS" transform="translate(620,660) rotate(-64) scale(0.65)"/>
+  </g>
+  <g fill="url(#petalG2)" opacity="0.55" filter="url(#b3)">
+    <use href="#ptlS" transform="translate(380,1000) rotate(30) scale(1.6)"/>
+    <use href="#ptlS" transform="translate(760,700) rotate(-46) scale(1.8)"/>
+    <use href="#ptlS" transform="translate(1000,1180) rotate(72) scale(1.7)"/>
+    <use href="#ptlS" transform="translate(120,900) rotate(-30) scale(1.5)"/>
+  </g>
+
+  <!-- ================= 21. 散景 ================= -->
+  <g style="mix-blend-mode:screen">
+    <circle cx="180" cy="1180" r="52" fill="url(#bokeh)"/>
+    <circle cx="330" cy="1300" r="38" fill="url(#bokeh)"/>
+    <circle cx="90" cy="1380" r="64" fill="url(#bokeh)"/>
+    <circle cx="520" cy="1220" r="30" fill="url(#bokeh)"/>
+    <circle cx="700" cy="1330" r="46" fill="url(#bokeh)"/>
+    <circle cx="900" cy="1200" r="34" fill="url(#bokeh)"/>
+    <circle cx="1080" cy="1360" r="58" fill="url(#bokeh)"/>
+    <circle cx="1160" cy="1180" r="40" fill="url(#bokeh)"/>
+    <circle cx="420" cy="1420" r="44" fill="url(#bokeh)"/>
+    <circle cx="820" cy="1450" r="50" fill="url(#bokeh)"/>
+    <circle cx="620" cy="1080" r="24" fill="url(#bokeh)"/>
+    <circle cx="1000" cy="880" r="28" fill="url(#bokeh)"/>
+    <circle cx="760" cy="620" r="20" fill="url(#bokeh)"/>
+  </g>
+
+  <!-- ================= 22. 前景虛化葉（構圖框） ================= -->
+  <g filter="url(#b8)" opacity="0.85">
+    <g fill="#070d09">
+      <use href="#spray" transform="translate(1200,120) rotate(150) scale(2.6)"/>
+      <use href="#spray" transform="translate(1180,40) rotate(118) scale(2.2)"/>
+      <use href="#spray" transform="translate(-20,1500) rotate(-30) scale(3)"/>
+      <use href="#spray" transform="translate(60,1580) rotate(-58) scale(2.6)"/>
+      <use href="#spray" transform="translate(1180,1560) rotate(210) scale(2.8)"/>
+    </g>
+  </g>
+
+  <!-- ================= 23. 調色 / 暗角 / 顆粒 ================= -->
+  <rect width="1200" height="1600" fill="url(#warmGrade)" style="mix-blend-mode:soft-light" opacity="0.45"/>
+  <rect width="1200" height="1600" fill="url(#vig)"/>
+  <rect width="1200" height="1600" fill="url(#bottomFade)"/>
+  <rect width="1200" height="1600" filter="url(#grain)" opacity="0.16" style="mix-blend-mode:overlay"/>
+
+  <!-- ================= 24. 標題（手繪毛筆） ================= -->
+  <ellipse cx="200" cy="400" rx="300" ry="340" fill="url(#titleShade)" filter="url(#b26)"/>
+
+  <g fill="url(#titleInk)" filter="url(#inkEdge)">
+    <!-- 晴 -->
+    <g transform="translate(76,152) scale(1.2)">
+      <!-- 日 -->
+      <path d="M21,52 Q22,45 28,46 Q34,47 33,54 L35,150 Q35,158 29,158 Q23,157 23,150 Z"/>
+      <path d="M24,47 C40,42 54,40 65,41 Q73,42 72,50 L70,150 Q70,158 63,158 Q56,157 57,150 L59,55 C48,56 36,58 26,61 Q19,62 19,54 Q19,48 24,47 Z"/>
+      <path d="M27,97 C38,93 50,91 59,91 Q65,91 65,97 Q65,103 59,103 C50,103 38,105 28,107 Q22,108 22,102 Q22,97 27,97 Z"/>
+      <path d="M25,146 C38,142 50,140 61,140 Q67,140 67,146 Q67,152 61,152 C50,152 38,154 26,157 Q20,158 20,152 Q20,146 25,146 Z"/>
+      <!-- 青：龶 -->
+      <path d="M104,33 C122,28 146,26 164,26 Q171,26 171,32 Q171,38 164,38 C146,38 122,40 105,43 Q98,44 98,38 Q98,33 104,33 Z"/>
+      <path d="M100,63 C120,58 148,56 168,56 Q175,56 175,62 Q175,68 168,68 C148,68 120,70 101,73 Q94,74 94,68 Q94,63 100,63 Z"/>
+      <path d="M131,24 Q131,17 137,17 Q144,17 144,24 L145,92 Q145,99 138,99 Q132,99 132,92 Z"/>
+      <path d="M86,90 C116,83 154,79 186,79 Q194,79 193,86 Q192,93 184,93 C154,92 118,96 88,101 Q80,102 80,95 Q80,90 86,90 Z"/>
+      <!-- 青：月 -->
+      <path d="M109,104 Q110,97 116,98 Q123,99 122,106 L120,146 C119,162 113,174 103,181 Q97,185 93,179 Q90,173 98,168 C106,162 108,156 109,146 Z"/>
+      <path d="M114,104 C132,99 152,97 166,97 Q174,97 174,105 L172,166 Q172,175 165,178 Q157,181 151,175 Q147,170 152,166 Q157,163 161,166 L162,110 C148,111 132,113 116,117 Q109,118 109,111 Q109,105 114,104 Z"/>
+      <path d="M118,131 C132,127 150,125 163,125 Q168,125 168,130 Q168,136 163,136 C150,136 132,138 119,141 Q114,142 114,136 Q114,131 118,131 Z"/>
+      <path d="M117,153 C131,149 149,147 162,147 Q167,147 167,152 Q167,158 162,158 C149,158 131,160 118,163 Q113,164 113,158 Q113,153 117,153 Z"/>
+    </g>
+    <!-- 天 -->
+    <g transform="translate(76,406) scale(1.2)">
+      <path d="M50,45 C85,38 120,35 149,36 Q157,37 155,44 Q153,50 146,49 C116,47 82,51 52,57 Q44,58 44,51 Q44,45 50,45 Z"/>
+      <path d="M26,88 C70,79 124,74 174,75 Q183,76 181,84 Q179,91 171,90 C124,87 72,93 28,101 Q19,102 19,95 Q19,88 26,88 Z"/>
+      <path d="M92,84 C90,118 74,150 42,178 Q32,187 26,181 Q22,175 32,167 C62,142 78,114 80,84 Q81,75 88,76 Q93,78 92,84 Z"/>
+      <path d="M96,96 C106,126 124,152 150,168 C160,174 172,179 182,178 Q191,177 189,170 Q187,164 178,162 C152,149 124,126 110,96 Q106,87 100,89 Q94,91 96,96 Z"/>
+    </g>
+  </g>
+
+  <!-- 印章 -->
+  <g transform="translate(268,672)">
+    <rect x="0" y="0" width="58" height="58" rx="5" fill="#b8402f" opacity="0.9"/>
+    <rect x="3.5" y="3.5" width="51" height="51" rx="3" fill="none" stroke="#f6ecd8" stroke-width="1.6" opacity="0.55"/>
+    <use href="#charJie" transform="translate(7,7) scale(0.44)" fill="#f8efdc" opacity="0.92"/>
+  </g>
+
+  <!-- 標題旁直排小字 -->
+  <g transform="translate(368,164) rotate(90)">
+    <text x="0" y="0" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="17" letter-spacing="7.5" fill="#e8dcc2" opacity="0.82">SUNNY DAY</text>
+  </g>
+  <g transform="translate(398,164) rotate(90)">
+    <text x="0" y="0" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" letter-spacing="4.5" fill="#cfc4ab" opacity="0.6">CAMPUS, AFTER THE RAIN</text>
+  </g>
+  <path d="M352,158 L352,646" stroke="#e8dcc2" stroke-width="1" opacity="0.28"/>
+
+  <!-- ================= 25. 底部資訊 ================= -->
+  <g>
+    <path d="M96,1466 L1104,1466" stroke="#e8dcc2" stroke-width="1" opacity="0.22"/>
+    <g transform="translate(96,1480) scale(0.46)" fill="url(#titleInk)" filter="url(#inkEdge)" opacity="0.95">
+      <use href="#charZhou"/>
+      <use href="#charJie" transform="translate(108,0)"/>
+      <use href="#charLun" transform="translate(216,0)"/>
+    </g>
+    <text x="268" y="1522" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" letter-spacing="9" fill="#d9cdb2" opacity="0.8">JAY CHOU</text>
+    <text x="96" y="1556" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" letter-spacing="2.2" fill="#bdb29a" opacity="0.7">ALBUM 'YE HUI MEI' · 2003 · LYRICS: VINCENT FANG · MUSIC: JAY CHOU · ARR: CHUNG HSING-MIN</text>
+
+    <text x="1104" y="1524" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="62" font-weight="200" letter-spacing="2" fill="#f6ecd8" opacity="0.3" text-anchor="end">03</text>
+    <text x="1104" y="1552" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" letter-spacing="5.5" fill="#bdb29a" opacity="0.6" text-anchor="end">MUSIC VIDEO</text>
+
+    <!-- 條碼 -->
+    <g transform="translate(880,1478)" fill="#e8dcc2" opacity="0.4">
+      <rect x="0" y="0" width="2" height="26"/><rect x="4" y="0" width="1" height="26"/>
+      <rect x="7" y="0" width="3" height="26"/><rect x="12" y="0" width="1" height="26"/>
+      <rect x="15" y="0" width="2" height="26"/><rect x="20" y="0" width="1" height="26"/>
+      <rect x="23" y="0" width="3" height="26"/><rect x="29" y="0" width="1" height="26"/>
+      <rect x="32" y="0" width="2" height="26"/><rect x="37" y="0" width="2" height="26"/>
+      <rect x="42" y="0" width="1" height="26"/><rect x="45" y="0" width="3" height="26"/>
+      <rect x="51" y="0" width="1" height="26"/><rect x="54" y="0" width="2" height="26"/>
+      <rect x="59" y="0" width="1" height="26"/><rect x="62" y="0" width="3" height="26"/>
+      <rect x="68" y="0" width="1" height="26"/><rect x="71" y="0" width="2" height="26"/>
+    </g>
+  </g>
+
+  <!-- 最前景虛化花（壓在資訊上，製造景深） -->
+  <g filter="url(#b8)" opacity="0.7">
+    <g fill="#0a120c">
+      <use href="#flwA" transform="translate(150,1600) scale(3.4)"/>
+      <use href="#flwB" transform="translate(1060,1608) rotate(24) scale(3)"/>
+      <use href="#blade2" transform="translate(620,1620) rotate(8) scale(2.6)"/>
+    </g>
+    <g fill="#3a3418" opacity="0.6">
+      <use href="#flwA" transform="translate(400,1616) rotate(-18) scale(2.6)"/>
+    </g>
+  </g>
+
+  <!-- 邊框 -->
+  <rect x="18" y="18" width="1164" height="1564" fill="none" stroke="#f0e6d2" stroke-width="1" opacity="0.12"/>
+</svg>

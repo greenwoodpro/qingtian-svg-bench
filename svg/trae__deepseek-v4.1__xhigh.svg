@@ -1,0 +1,529 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 900 1420" width="900" height="1420"
+     preserveAspectRatio="xMidYMid meet">
+  <title>晴天 — 周杰伦 MV 海报（纯 SVG 手绘）</title>
+  <desc>雨后初晴的校园：逆光下的三角钢琴、撑伞的女孩、湿地面上的倒影与金色光柱。全部由 SVG 矢量绘制。</desc>
+
+  <style>
+    .title  { font-family:'STXingkai','KaiTi','STKaiti','Songti SC','SimSun',serif; font-weight:700; }
+    .artist { font-family:'SimHei','Microsoft YaHei','PingFang SC',sans-serif; font-weight:600; }
+    .lyric  { font-family:'KaiTi','STKaiti','Songti SC',serif; }
+    .sub    { font-family:'SimHei','Microsoft YaHei',sans-serif; }
+  </style>
+
+  <defs>
+    <!-- ============ 天空 ============ -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#24608f"/>
+      <stop offset="26%"  stop-color="#63aad4"/>
+      <stop offset="55%"  stop-color="#b6dcf0"/>
+      <stop offset="80%"  stop-color="#f3e3c6"/>
+      <stop offset="100%" stop-color="#ffd9a4"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#fffdf0" stop-opacity="1"/>
+      <stop offset="16%"  stop-color="#fff4c8" stop-opacity="0.95"/>
+      <stop offset="42%"  stop-color="#ffe0a2" stop-opacity="0.55"/>
+      <stop offset="72%"  stop-color="#ffcd80" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffc46e" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="sunCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="55%"  stop-color="#fffbe2"/>
+      <stop offset="100%" stop-color="#fff3bc" stop-opacity="0.15"/>
+    </radialGradient>
+
+    <!-- ============ 地面 ============ -->
+    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#8b9aa6"/>
+      <stop offset="22%"  stop-color="#63727e"/>
+      <stop offset="55%"  stop-color="#3b4650"/>
+      <stop offset="100%" stop-color="#1b2128"/>
+    </linearGradient>
+
+    <radialGradient id="wetGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#ffe9c4" stop-opacity="0.85"/>
+      <stop offset="38%"  stop-color="#ffd99e" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#ffd99e" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="columnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#fff2cf" stop-opacity="0.60"/>
+      <stop offset="22%"  stop-color="#ffe4a8" stop-opacity="0.44"/>
+      <stop offset="60%"  stop-color="#ffdc9a" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffd68f" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- ============ 剪影 ============ -->
+    <linearGradient id="silGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#17232f"/>
+      <stop offset="100%" stop-color="#080d13"/>
+    </linearGradient>
+
+    <!-- ============ 树木 ============ -->
+    <radialGradient id="canopyGrad" cx="0.35" cy="0.25" r="0.85">
+      <stop offset="0%"   stop-color="#5b8558"/>
+      <stop offset="38%"  stop-color="#3d6448"/>
+      <stop offset="100%" stop-color="#1d3327"/>
+    </radialGradient>
+    <radialGradient id="canopyRim" cx="0.7" cy="0.2" r="0.6">
+      <stop offset="0%"   stop-color="#e6d99a" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#e6d99a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ============ 字幕遮罩 ============ -->
+    <linearGradient id="scrimGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#050a10" stop-opacity="0"/>
+      <stop offset="32%"  stop-color="#050a10" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#03060a" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- ============ 暗角 ============ -->
+    <radialGradient id="vignette" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0"/>
+      <stop offset="62%"  stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#030609" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- ============ 倒影遮罩（自上而下淡出） ============ -->
+    <linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ============ 滤镜 ============ -->
+    <filter id="blurXs" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.1"/></filter>
+    <filter id="blurSm" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.6"/></filter>
+    <filter id="blurMd" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="blurLg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <filter id="blurXl" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26"/></filter>
+
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+
+    <!-- ============ 可复用元件 ============ -->
+    <!-- 一只飞鸟 -->
+    <path id="bird" d="M-13,0 q6.5,-7 13,0 q6.5,-7 13,0"
+          fill="none" stroke="#33454f" stroke-width="2.3" stroke-linecap="round"/>
+
+    <!-- 一片小黄花瓣（呼应歌词「故事的小黄花」） -->
+    <path id="petal" d="M0,-6 C3.2,-6 5.4,-3.4 5.4,0 C5.4,3.4 3.2,6 0,6 C-3.2,6 -5.4,3.4 -5.4,0 C-5.4,-3.4 -3.2,-6 0,-6 Z"
+          fill="#ffd54a"/>
+
+    <!-- 逆光轮廓组：钢琴 + 演奏者 -->
+    <g id="pianoscene">
+      <!-- 琴凳 -->
+      <g fill="url(#silGrad)" stroke="#ffdfa8" stroke-opacity="0.35" stroke-width="1.6">
+        <rect x="150" y="778" width="66" height="13" rx="4"/>
+        <rect x="156" y="791" width="7" height="42" rx="2"/>
+        <rect x="204" y="791" width="7" height="42" rx="2"/>
+      </g>
+      <!-- 演奏者（侧坐，面向琴键） -->
+      <g fill="url(#silGrad)" stroke="#ffdfa8" stroke-opacity="0.4" stroke-width="1.8">
+        <circle cx="182" cy="689" r="17.5"/>
+        <path d="M167,707 C160,731 160,757 168,777 L201,777 C207,753 205,725 199,707 Z"/>
+        <path d="M196,713 C215,706 233,700 247,699 L247,710 C231,712 213,718 199,727 Z"/>
+        <path d="M168,774 L233,777 L235,793 L167,792 Z"/>
+        <path d="M226,790 L237,790 L234,833 L224,833 Z"/>
+      </g>
+      <!-- 钢琴主体 -->
+      <g stroke-linejoin="round">
+        <!-- 打开的琴盖（向上翻起的翼板） -->
+        <path d="M292,640 L214,548 C198,532 236,520 270,531 L470,624 Z"
+              fill="#1b2733" stroke="#ffdfa8" stroke-opacity="0.38" stroke-width="1.8"/>
+        <!-- 琴体 -->
+        <path d="M236,690 C238,662 258,646 292,640
+                 L470,624 C548,618 596,646 610,694
+                 C622,736 600,770 552,780
+                 L322,796 C282,800 244,786 234,752 Z"
+              fill="url(#silGrad)" stroke="#ffdfa8" stroke-opacity="0.32" stroke-width="1.8"/>
+        <!-- 顶面高光 -->
+        <path d="M292,641 L470,625 C546,619 594,647 608,693"
+              fill="none" stroke="#fff2cf" stroke-opacity="0.5" stroke-width="2.4"/>
+        <!-- 支杆 -->
+        <line x1="268" y1="598" x2="300" y2="641" stroke="#0c141c" stroke-width="3"/>
+        <!-- 琴键 -->
+        <g>
+          <rect x="222" y="702" width="66" height="34" rx="2" fill="#f4efe3" stroke="#0c141c" stroke-width="1.4"/>
+          <g fill="#0c141c">
+            <rect x="231" y="702" width="3.4" height="20"/>
+            <rect x="241" y="702" width="3.4" height="20"/>
+            <rect x="255" y="702" width="3.4" height="20"/>
+            <rect x="265" y="702" width="3.4" height="20"/>
+            <rect x="278" y="702" width="3.4" height="20"/>
+          </g>
+          <!-- 键盖 -->
+          <rect x="219" y="735" width="72" height="9" rx="2" fill="#0e1a24" stroke="#ffdfa8" stroke-opacity="0.3" stroke-width="1.2"/>
+        </g>
+        <!-- 琴腿 -->
+        <g fill="#0c141c">
+          <path d="M262,790 L272,790 L268,834 L256,834 Z"/>
+          <path d="M540,782 L550,782 L546,834 L534,834 Z"/>
+          <path d="M392,792 L402,792 L399,834 L389,834 Z"/>
+        </g>
+        <!-- 地面接触阴影 -->
+        <ellipse cx="400" cy="836" rx="205" ry="14" fill="#05090d" opacity="0.55" filter="url(#blurMd)"/>
+      </g>
+    </g>
+
+    <!-- 撑伞的女孩（前景逆光剪影） -->
+    <g id="girlscene">
+      <g fill="url(#silGrad)" stroke="#ffdfa8" stroke-opacity="0.42" stroke-width="2">
+        <!-- 伞面 -->
+        <path d="M592,786 C592,700 640,674 701,674 C762,674 810,700 810,786
+                 C792,772 772,789 750,772 C730,789 710,772 690,789
+                 C670,772 650,789 630,772 C612,789 604,772 592,786 Z"/>
+        <!-- 伞顶高光 -->
+        <path d="M600,776 C606,712 648,684 701,682 C752,684 794,708 802,768"
+              fill="none" stroke="#fff0cc" stroke-opacity="0.55" stroke-width="2.6"/>
+        <!-- 伞骨 -->
+        <g fill="none" stroke="#ffdfa8" stroke-opacity="0.22" stroke-width="1.6">
+          <path d="M701,676 L646,772"/>
+          <path d="M701,676 L701,772"/>
+          <path d="M701,676 L756,772"/>
+        </g>
+        <circle cx="701" cy="676" r="5" fill="#16222e" stroke="#ffdfa8" stroke-opacity="0.5" stroke-width="1.6"/>
+        <!-- 伞柄 -->
+        <path d="M701,672 L722,880" fill="none" stroke="#0c141c" stroke-width="4.4" stroke-linecap="round"/>
+        <path d="M722,880 C724,894 716,900 708,898" fill="none" stroke="#0c141c" stroke-width="4.4" stroke-linecap="round"/>
+        <!-- 头 / 颈 -->
+        <circle cx="701" cy="824" r="20.5"/>
+        <path d="M690,841 L714,841 L716,864 L688,864 Z"/>
+        <!-- 身体 / 连衣裙 -->
+        <path d="M676,856 C660,906 650,1014 646,1122 L758,1122 C752,1014 742,906 726,856 Z"/>
+        <!-- 手臂持伞 -->
+        <path d="M716,860 C728,872 732,880 731,894 L716,896 C714,882 711,871 705,863 Z"/>
+        <!-- 双腿 -->
+        <path d="M672,1118 L696,1118 L694,1174 L678,1174 Z"/>
+        <path d="M706,1118 L730,1118 L730,1174 L714,1174 Z"/>
+        <!-- 鞋 -->
+        <path d="M668,1170 L696,1170 L700,1186 L664,1186 Z"/>
+        <path d="M704,1170 L732,1170 L736,1186 L700,1186 Z"/>
+        <!-- 裙摆被风扬起的弧线 -->
+        <path d="M646,1122 C676,1108 730,1108 758,1122" fill="none"
+              stroke="#fff0cc" stroke-opacity="0.35" stroke-width="2"/>
+      </g>
+      <!-- 地面接触阴影 -->
+      <ellipse cx="701" cy="1190" rx="72" ry="9" fill="#05090d" opacity="0.5" filter="url(#blurMd)"/>
+    </g>
+  </defs>
+
+  <!-- ================= 1. 天空 ================= -->
+  <rect x="0" y="0" width="900" height="1420" fill="url(#skyGrad)"/>
+
+  <!-- ================= 2. 太阳与光晕 ================= -->
+  <circle cx="690" cy="212" r="330" fill="url(#sunGlow)"/>
+  <circle cx="690" cy="212" r="96" fill="url(#sunGlow)" opacity="0.85"/>
+  <circle cx="690" cy="212" r="46" fill="url(#sunCore)"/>
+
+  <!-- ================= 3. 云（远处层） ================= -->
+  <g filter="url(#blurLg)" opacity="0.55" fill="#ffffff">
+    <ellipse cx="180" cy="200" rx="150" ry="34"/>
+    <ellipse cx="255" cy="176" rx="90" ry="26"/>
+    <ellipse cx="105" cy="222" rx="80" ry="22"/>
+    <ellipse cx="760" cy="120" rx="140" ry="30"/>
+    <ellipse cx="836" cy="102" rx="70" ry="20"/>
+  </g>
+
+  <!-- ================= 4. 云（近处层，更亮） ================= -->
+  <g filter="url(#blurMd)" opacity="0.78">
+    <ellipse cx="300" cy="316" rx="120" ry="28" fill="#fdfbf6"/>
+    <ellipse cx="360" cy="296" rx="78" ry="22" fill="#ffffff"/>
+    <ellipse cx="236" cy="330" rx="66" ry="18" fill="#f6f2ea"/>
+    <ellipse cx="640" cy="368" rx="150" ry="26" fill="#fffaf0"/>
+    <ellipse cx="712" cy="350" rx="86" ry="20" fill="#ffffff"/>
+    <ellipse cx="560" cy="382" rx="70" ry="16" fill="#f8f3ea"/>
+  </g>
+
+  <!-- ================= 5. 光束（丁达尔光） ================= -->
+  <g opacity="0.30" filter="url(#blurXl)" fill="#fff0cb">
+    <polygon points="690,212 60,-80 250,-80"/>
+    <polygon points="690,212 300,900 470,900"/>
+    <polygon points="690,212 520,905 640,905"/>
+    <polygon points="690,212 780,905 900,860"/>
+    <polygon points="690,212 40,760 40,900"/>
+  </g>
+
+  <!-- ================= 6. 飞鸟 ================= -->
+  <g opacity="0.55">
+    <use xlink:href="#bird" transform="translate(196,300) scale(1)"/>
+    <use xlink:href="#bird" transform="translate(242,278) scale(0.8)"/>
+    <use xlink:href="#bird" transform="translate(158,328) scale(0.65)"/>
+    <use xlink:href="#bird" transform="translate(300,258) scale(0.9)"/>
+    <use xlink:href="#bird" transform="translate(348,300) scale(0.7)"/>
+  </g>
+
+  <!-- ================= 7. 远山雾气 ================= -->
+  <g filter="url(#blurLg)" opacity="0.5">
+    <ellipse cx="200" cy="770" rx="360" ry="70" fill="#9fb6c4"/>
+    <ellipse cx="760" cy="790" rx="300" ry="60" fill="#b8c7cd"/>
+  </g>
+
+  <!-- ================= 8. 教学楼（左侧） ================= -->
+  <g>
+    <path d="M-20,566 L340,566 L340,822 L-20,822 Z" fill="#4e6c81" opacity="0.92"/>
+    <!-- 屋顶 -->
+    <path d="M-20,566 L340,566 L332,548 L-12,548 Z" fill="#3d586b"/>
+    <!-- 钟塔 -->
+    <path d="M96,548 L172,548 L172,470 L134,440 L96,470 Z" fill="#456074"/>
+    <circle cx="134" cy="498" r="19" fill="#f0e6ce" opacity="0.92"/>
+    <line x1="134" y1="498" x2="134" y2="486" stroke="#4a6478" stroke-width="2.6"/>
+    <line x1="134" y1="498" x2="144" y2="502" stroke="#4a6478" stroke-width="2.6"/>
+    <!-- 窗户阵列 -->
+    <g fill="#a9c9dc" opacity="0.85">
+      <rect x="14"  y="596" width="34" height="42" rx="3"/>
+      <rect x="66"  y="596" width="34" height="42" rx="3"/>
+      <rect x="118" y="596" width="34" height="42" rx="3"/>
+      <rect x="170" y="596" width="34" height="42" rx="3"/>
+      <rect x="222" y="596" width="34" height="42" rx="3"/>
+      <rect x="274" y="596" width="34" height="42" rx="3"/>
+      <rect x="14"  y="668" width="34" height="42" rx="3"/>
+      <rect x="66"  y="668" width="34" height="42" rx="3"/>
+      <rect x="118" y="668" width="34" height="42" rx="3"/>
+      <rect x="170" y="668" width="34" height="42" rx="3"/>
+      <rect x="222" y="668" width="34" height="42" rx="3"/>
+      <rect x="274" y="668" width="34" height="42" rx="3"/>
+      <rect x="14"  y="740" width="34" height="42" rx="3"/>
+      <rect x="66"  y="740" width="34" height="42" rx="3"/>
+      <rect x="118" y="740" width="34" height="42" rx="3"/>
+      <rect x="170" y="740" width="34" height="42" rx="3"/>
+      <rect x="222" y="740" width="34" height="42" rx="3"/>
+      <rect x="274" y="740" width="34" height="42" rx="3"/>
+    </g>
+    <!-- 几扇亮灯的窗 -->
+    <g fill="#ffd79a" opacity="0.9">
+      <rect x="170" y="596" width="34" height="42" rx="3"/>
+      <rect x="66"  y="740" width="34" height="42" rx="3"/>
+      <rect x="274" y="668" width="34" height="42" rx="3"/>
+    </g>
+  </g>
+
+  <!-- ================= 9. 树（右侧与远景） ================= -->
+  <g>
+    <!-- 远树 -->
+    <g filter="url(#blurMd)" opacity="0.75">
+      <ellipse cx="470" cy="700" rx="70" ry="52" fill="#37563f"/>
+      <ellipse cx="548" cy="686" rx="58" ry="44" fill="#2f4a37"/>
+      <ellipse cx="420" cy="716" rx="46" ry="34" fill="#314d3a"/>
+    </g>
+    <!-- 主树（大樟树） -->
+    <g>
+      <path d="M712,822 C724,720 704,640 726,548 C742,478 700,430 662,404
+               L688,388 C736,412 786,470 776,552 C766,644 782,724 792,822 Z"
+            fill="#25381f" opacity="0.95"/>
+      <g fill="url(#canopyGrad)">
+        <ellipse cx="700" cy="430" rx="180" ry="86"/>
+        <ellipse cx="600" cy="470" rx="120" ry="66"/>
+        <ellipse cx="812" cy="462" rx="118" ry="64"/>
+        <ellipse cx="660" cy="378" rx="110" ry="56"/>
+        <ellipse cx="790" cy="392" rx="86" ry="46"/>
+        <ellipse cx="556" cy="512" rx="80" ry="44"/>
+        <ellipse cx="852" cy="522" rx="76" ry="42"/>
+        <ellipse cx="716" cy="516" rx="140" ry="56"/>
+      </g>
+      <!-- 逆光边缘 -->
+      <g fill="url(#canopyRim)" opacity="0.85">
+        <ellipse cx="820" cy="404" rx="96" ry="50"/>
+        <ellipse cx="712" cy="372" rx="92" ry="42"/>
+        <ellipse cx="860" cy="490" rx="66" ry="38"/>
+      </g>
+      <!-- 叶簇剪影点 -->
+      <g fill="#16281c" opacity="0.55">
+        <ellipse cx="600" cy="440" rx="34" ry="20"/>
+        <ellipse cx="672" cy="500" rx="40" ry="22"/>
+        <ellipse cx="784" cy="440" rx="34" ry="20"/>
+        <ellipse cx="640" cy="392" rx="28" ry="16"/>
+        <ellipse cx="836" cy="536" rx="30" ry="18"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= 10. 地面 ================= -->
+  <g>
+    <rect x="0" y="822" width="900" height="598" fill="url(#groundGrad)"/>
+
+    <!-- 湿地面反射的暖色光 -->
+    <ellipse cx="690" cy="880" rx="520" ry="150" fill="url(#wetGlow)" filter="url(#blurLg)"/>
+    <ellipse cx="450" cy="1050" rx="620" ry="220" fill="#ffd79c" opacity="0.12" filter="url(#blurXl)"/>
+
+    <!-- 太阳在湿地上的金色光柱 -->
+    <path d="M612,824 L790,824 L900,1420 L498,1420 Z"
+          fill="url(#columnGrad)" filter="url(#blurMd)"/>
+    <path d="M636,824 L768,824 L842,1420 L556,1420 Z"
+          fill="#fff3d2" opacity="0.22" filter="url(#blurLg)"/>
+
+    <!-- 波光粼粼的碎光 -->
+    <g fill="#fffdf2" filter="url(#blurSm)">
+      <ellipse cx="676" cy="856"  rx="66" ry="3.2" opacity="0.55"/>
+      <ellipse cx="712" cy="884"  rx="90" ry="3.6" opacity="0.5"/>
+      <ellipse cx="640" cy="916"  rx="74" ry="3.2" opacity="0.45"/>
+      <ellipse cx="738" cy="948"  rx="112" ry="4"  opacity="0.42"/>
+      <ellipse cx="612" cy="984"  rx="86" ry="3.4" opacity="0.38"/>
+      <ellipse cx="762" cy="1016" rx="128" ry="4.4" opacity="0.34"/>
+      <ellipse cx="668" cy="1054" rx="104" ry="3.8" opacity="0.3"/>
+      <ellipse cx="800" cy="1092" rx="150" ry="4.6" opacity="0.26"/>
+      <ellipse cx="620" cy="1130" rx="118" ry="4"  opacity="0.22"/>
+      <ellipse cx="760" cy="1172" rx="168" ry="5"  opacity="0.19"/>
+      <ellipse cx="690" cy="1218" rx="180" ry="5"  opacity="0.16"/>
+      <ellipse cx="740" cy="1266" rx="210" ry="5.4" opacity="0.13"/>
+      <ellipse cx="700" cy="1316" rx="240" ry="6"  opacity="0.11"/>
+    </g>
+
+    <!-- 透视铺装线 -->
+    <g stroke="#1c242b" stroke-width="1.4" opacity="0.28">
+      <line x1="0" y1="882" x2="900" y2="872"/>
+      <line x1="0" y1="948" x2="900" y2="962"/>
+      <line x1="0" y1="1030" x2="900" y2="1058"/>
+      <line x1="0" y1="1136" x2="900" y2="1176"/>
+      <line x1="0" y1="1272" x2="900" y2="1324"/>
+    </g>
+    <g stroke="#1c242b" stroke-width="1.2" opacity="0.18">
+      <line x1="180" y1="822" x2="40"  y2="1420"/>
+      <line x1="380" y1="822" x2="330" y2="1420"/>
+      <line x1="520" y1="822" x2="600" y2="1420"/>
+      <line x1="700" y1="822" x2="880" y2="1420"/>
+    </g>
+
+    <!-- 积水的水洼 -->
+    <g filter="url(#blurSm)">
+      <ellipse cx="176" cy="1032" rx="118" ry="19" fill="#0d151c" opacity="0.45"/>
+      <ellipse cx="176" cy="1032" rx="118" ry="19" fill="none" stroke="#ffe8bd" stroke-opacity="0.25" stroke-width="2"/>
+      <ellipse cx="820" cy="990"  rx="96"  ry="15" fill="#0d151c" opacity="0.4"/>
+      <ellipse cx="300" cy="1240" rx="150" ry="22" fill="#0d151c" opacity="0.4"/>
+      <ellipse cx="300" cy="1240" rx="150" ry="22" fill="none" stroke="#ffe8bd" stroke-opacity="0.18" stroke-width="2"/>
+    </g>
+
+    <!-- 近处草地边缘 -->
+    <g fill="#16281c" filter="url(#blurSm)" opacity="0.85">
+      <path d="M0,1420 L0,1330 C40,1332 80,1312 120,1330 C150,1344 190,1322 230,1338
+               C260,1350 300,1330 340,1348 L340,1420 Z"/>
+      <path d="M900,1420 L900,1344 C860,1346 820,1326 780,1344 C750,1358 710,1336 670,1352
+               L670,1420 Z"/>
+    </g>
+    <g stroke="#2c4a2f" stroke-width="2" opacity="0.5">
+      <path d="M60,1420 C64,1370 56,1345 70,1320" fill="none"/>
+      <path d="M120,1420 C128,1372 118,1348 134,1326" fill="none"/>
+      <path d="M800,1420 C796,1372 806,1348 792,1324" fill="none"/>
+      <path d="M860,1420 C868,1370 858,1346 874,1322" fill="none"/>
+    </g>
+  </g>
+
+  <!-- ================= 11. 倒影 ================= -->
+  <g>
+    <!-- 钢琴倒影 -->
+    <g opacity="0.30" filter="url(#blurMd)">
+      <use xlink:href="#pianoscene" transform="translate(0,1286.5) scale(1,-0.55)"/>
+    </g>
+    <!-- 女孩倒影 -->
+    <g opacity="0.34" filter="url(#blurMd)">
+      <use xlink:href="#girlscene" transform="translate(0,1829.9) scale(1,-0.55)"/>
+    </g>
+    <!-- 树与楼的倒影 -->
+    <g opacity="0.16" filter="url(#blurLg)">
+      <ellipse cx="700" cy="852" rx="190" ry="34" fill="#24402c"/>
+      <ellipse cx="540" cy="848" rx="110" ry="24" fill="#24402c"/>
+      <ellipse cx="180" cy="846" rx="190" ry="26" fill="#2e4457"/>
+    </g>
+  </g>
+
+  <!-- ================= 12. 主体：钢琴与女孩 ================= -->
+  <use xlink:href="#pianoscene"/>
+  <use xlink:href="#girlscene"/>
+
+  <!-- ================= 13. 飘落的小黄花 ================= -->
+  <g>
+    <g filter="url(#blurXs)" opacity="0.95">
+      <use xlink:href="#petal" transform="translate(268,470) rotate(24) scale(0.9)"/>
+      <use xlink:href="#petal" transform="translate(352,560) rotate(-38) scale(0.75)"/>
+      <use xlink:href="#petal" transform="translate(470,432) rotate(62) scale(0.8)"/>
+      <use xlink:href="#petal" transform="translate(596,520) rotate(-14) scale(0.95)"/>
+      <use xlink:href="#petal" transform="translate(816,556) rotate(40) scale(0.7)"/>
+      <use xlink:href="#petal" transform="translate(180,640) rotate(-60) scale(0.85)"/>
+      <use xlink:href="#petal" transform="translate(640,700) rotate(18) scale(1)"/>
+      <use xlink:href="#petal" transform="translate(430,760) rotate(-26) scale(0.9)"/>
+    </g>
+    <g filter="url(#blurSm)" opacity="0.6">
+      <use xlink:href="#petal" transform="translate(120,900) rotate(50) scale(1.5)"/>
+      <use xlink:href="#petal" transform="translate(860,1000) rotate(-30) scale(1.7)"/>
+      <use xlink:href="#petal" transform="translate(300,1160) rotate(12) scale(1.9)"/>
+    </g>
+    <g filter="url(#blurMd)" opacity="0.4">
+      <use xlink:href="#petal" transform="translate(80,1120) rotate(70) scale(2.6)"/>
+      <use xlink:href="#petal" transform="translate(830,1290) rotate(-45) scale(2.8)"/>
+    </g>
+  </g>
+
+  <!-- ================= 14. 前景虚化枝叶（景深） ================= -->
+  <g filter="url(#blurLg)" opacity="0.9" fill="#12211a">
+    <path d="M-30,120 C60,80 150,74 230,110 C160,150 60,170 -30,160 Z"/>
+    <path d="M-40,300 C40,270 120,272 180,306 C120,340 40,352 -40,336 Z"/>
+    <ellipse cx="60" cy="220" rx="26" ry="18"/>
+  </g>
+  <g filter="url(#blurLg)" opacity="0.75" fill="#16281c">
+    <path d="M930,880 C860,850 800,852 750,884 C800,922 870,932 930,912 Z"/>
+  </g>
+
+  <!-- ================= 15. 镜头光晕 ================= -->
+  <g opacity="0.35">
+    <circle cx="524" cy="416" r="30" fill="#ffe8ae" filter="url(#blurMd)"/>
+    <circle cx="392" cy="580" r="22" fill="#ffd9a0" filter="url(#blurMd)" opacity="0.7"/>
+    <circle cx="300" cy="700" r="16" fill="#ffc98e" filter="url(#blurMd)" opacity="0.55"/>
+    <circle cx="216" cy="806" r="40" fill="#e6f2ff" opacity="0.18" filter="url(#blurLg)"/>
+  </g>
+
+  <!-- ================= 16. 氛围压暗与暗角 ================= -->
+  <rect x="0" y="0" width="900" height="1420" fill="url(#vignette)"/>
+  <ellipse cx="450" cy="240" rx="560" ry="300" fill="#ffe4ac" opacity="0.10" filter="url(#blurXl)"/>
+
+  <!-- ================= 17. 标题区 ================= -->
+  <g id="titleblock">
+    <rect x="0" y="1030" width="900" height="390" fill="url(#scrimGrad)"/>
+
+    <!-- 歌词 -->
+    <text class="lyric" x="450" y="1120" text-anchor="middle" font-size="30"
+          letter-spacing="7" fill="#f3e5cb" opacity="0.92">从前从前 有个人爱你很久</text>
+    <g stroke="#e9d3a4" stroke-opacity="0.45" stroke-width="1.4">
+      <line x1="286" y1="1146" x2="398" y2="1146"/>
+      <line x1="502" y1="1146" x2="614" y2="1146"/>
+    </g>
+    <circle cx="450" cy="1146" r="3.4" fill="#e9d3a4" opacity="0.7"/>
+
+    <!-- 主标题「晴天」 -->
+    <g filter="url(#blurMd)" opacity="0.55">
+      <text class="title" x="450" y="1296" text-anchor="middle" font-size="152"
+            letter-spacing="22" fill="#ffd9a0">晴天</text>
+    </g>
+    <text class="title" x="450" y="1296" text-anchor="middle" font-size="152"
+          letter-spacing="22" fill="#fdf4de">晴天</text>
+
+    <!-- 印章 -->
+    <g transform="translate(646,1210)">
+      <rect x="0" y="0" width="52" height="52" rx="5" fill="#c0392b" opacity="0.92"/>
+      <rect x="4.5" y="4.5" width="43" height="43" rx="3" fill="none"
+            stroke="#f7ead2" stroke-opacity="0.85" stroke-width="2"/>
+      <text x="26" y="39" text-anchor="middle" font-size="34"
+            font-family="'STKaiti','KaiTi',serif" fill="#fbf1dc">晴</text>
+    </g>
+
+    <!-- 歌手与专辑信息 -->
+    <text class="artist" x="450" y="1352" text-anchor="middle" font-size="34"
+          letter-spacing="18" fill="#eadcb6">周 杰 伦</text>
+    <text class="sub" x="450" y="1388" text-anchor="middle" font-size="19"
+          letter-spacing="3" fill="#bfa87f">叶惠美 · 2003　|　词曲：周杰伦　|　「Reaching for the sunshine」</text>
+  </g>
+
+  <!-- ================= 18. 胶片颗粒 ================= -->
+  <rect x="0" y="0" width="900" height="1420" filter="url(#grain)"
+        style="mix-blend-mode:overlay" opacity="0.55"/>
+
+  <!-- 细边框（海报质感） -->
+  <rect x="14" y="14" width="872" height="1392" fill="none"
+        stroke="#f2e2c0" stroke-opacity="0.28" stroke-width="1.6"/>
+  <rect x="24" y="24" width="852" height="1372" fill="none"
+        stroke="#f2e2c0" stroke-opacity="0.14" stroke-width="1"/>
+</svg>
