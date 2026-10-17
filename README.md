@@ -13,14 +13,14 @@
 
 > 帮我用 SVG 画一张周杰伦晴天的 MV 海报或封面，内容完整精细、富有创意，像真实的照片一样，但注意不要使用图片或已有素材，全靠自己用 SVG 绘制。
 
-没有任何参考图、没有风格示例、没有第二轮修正。模型输出的 `.svg` 原样收下，用 Edge 无头浏览器按原始 viewBox 渲染成 PNG（长边 ≤ 1600px），不做任何后期调整。
+没有任何参考图、没有风格示例、没有第二轮修正。模型输出的 `.svg` 原样收下，用 Edge 无头浏览器按原始 viewBox 渲染成 PNG（2× 缩放，全尺寸保留），不做任何后期调整。
 
 | 项目 | 数量 |
 | --- | --- |
 | 作品 | 50 件（51 份文件，其中 1 份为重复导出） |
 | 平台 | 8 个 |
 | 模型 | 19 个 |
-| 厂商 | 10 家（含 1 家未标注） |
+| 厂商 | 10 家 |
 | SVG 源码 | 24 份，共 19.2 MB |
 
 ---
@@ -123,7 +123,7 @@
 | 21 | Gemini 4 · argon | Google | 标准 | [PNG](images/v0__gemini4__medium.png) · [SVG](svg/v0__gemini4__medium.svg) | 榕树、秋千、红砖楼、六线谱，信息密度最高 |
 | 22 | Gemini 4 · argon | Google | 高 | [PNG](images/v0__gemini4__high.png) | 红砖楼前抱琴而坐，元素最满 |
 | 23 | Kimi K3 | 月之暗面 | 最高 | [PNG](images/v0__kimi-k3__max.png) | 树荫秋千上的两个人，绿得通透 |
-| 24 | MuseSparkOpen | 未标注 | 极高 | [PNG](images/v0__musespark__xhigh.png) · [SVG](svg/v0__musespark__xhigh.svg) | 米白底上的两个人与校舍，最像平面设计 |
+| 24 | MuseSparkOpen | Meta | 极高 | [PNG](images/v0__musespark__xhigh.png) · [SVG](svg/v0__musespark__xhigh.svg) | 米白底上的两个人与校舍，最像平面设计 |
 | 25 | Qwen3.8-A95B | 阿里 Qwen | 标准 | [PNG](images/v0__qwen3.8-a95b__medium.png) · [SVG](svg/v0__qwen3.8-a95b__medium.svg) | 树下女孩与积水的倒影 |
 | 26 | Qwen3.8-A95B | 阿里 Qwen | 最高 | [PNG](images/v0__qwen3.8-a95b__max.png) · [SVG](svg/v0__qwen3.8-a95b__max.svg) | 长椅、红伞与湿漉漉的午后 |
 | 27 | Qwen3.8-Max | 阿里 Qwen | 标准 | [PNG](images/v0__qwen3.8-max__medium.png) · [SVG](svg/v0__qwen3.8-max__medium.svg) | 小黄花田与秋千上的两个人 |
@@ -191,10 +191,10 @@
 
 ## 数据说明
 
-- `images/` 是统一长边 1600px 的展示版 PNG；`thumbs/` 是画廊用的缩略图；`svg/` 是模型输出的原始 `.svg`，未做任何改动。
+- `images/` 是**全尺寸原图 PNG**（SVG 按 2× 渲染，位图保留原始截图分辨率，共约 201 MB）；`thumbs/` 是 560px 画廊缩略图；`svg/` 是模型输出的原始 `.svg`，未做任何改动。
 - **`sonnet5.5-high.svg` 与 `sonnet5.5-max.svg` 字节完全一致**（同一份输出被保存了两次），已合并为一条记录，不重复计数。因此 51 份文件对应 50 条记录。
 - 有 SVG 源码的作品，展示图由该 SVG 重新渲染；只有位图的作品（部分平台不提供源码），展示图由原始截图缩放而来。
-- 渲染环境：Microsoft Edge 无头模式，按 viewBox 原始尺寸渲染，2× 缩放后缩放至长边 1600px。中文依赖系统字体，个别作品的字体回退与原平台显示可能略有差异。
+- 渲染环境：Microsoft Edge 无头模式，按 viewBox 原始尺寸渲染并 2× 缩放后直接导出，不再二次压缩。中文依赖系统字体，个别作品的字体回退与原平台显示可能略有差异。
 
 ## 版权
 
