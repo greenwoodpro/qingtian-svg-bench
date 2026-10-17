@@ -5,7 +5,7 @@
 
 **在线浏览 → [greenwoodpro.github.io/qingtian-svg-bench](https://greenwoodpro.github.io/qingtian-svg-bench/)**
 
-> 站点托管在 **GitHub Pages**（ 域名）。国内网络下 github.io 常有 DNS 污染或间歇性阻断，打不开时挂代理，或直接浏览仓库里的  全尺寸原图。
+> 站点托管在 **GitHub Pages**（`github.io` 域名）。国内网络下 github.io 常有 DNS 污染或间歇性阻断，打不开时挂代理，或直接浏览仓库里的 `images/` 全尺寸原图。
 
 ---
 
