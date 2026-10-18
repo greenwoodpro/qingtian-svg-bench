@@ -163,44 +163,58 @@
   .empty{text-align:center;padding:120px 0;color:var(--mut);font-size:14px;grid-column:1/-1}
 
   /* ---------- lightbox ---------- */
-  .lb{position:fixed;inset:0;z-index:100;display:none;background:var(--lb-bg);
-      backdrop-filter:blur(6px)}
-  .lb.open{display:grid;grid-template-columns:1fr 372px}
-  .lb-stage{position:relative;display:flex;align-items:center;justify-content:center;
-            padding:56px 48px;min-height:0}
-  .lb-stage img{max-width:100%;max-height:calc(100vh - 112px);object-fit:contain;
-                box-shadow:0 30px 70px -30px var(--shadow);background:var(--card)}
-  .lb-loading{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);
-              font-size:11px;letter-spacing:.2em;color:var(--mut);opacity:0;transition:opacity .2s}
-  .lb-loading.show{opacity:1}
-  .lb-info{padding:56px 40px 40px;border-left:1px solid var(--line);background:var(--card);
-           overflow-y:auto;display:flex;flex-direction:column}
-  .lb-no{font-size:10px;letter-spacing:.26em;color:var(--bronze);margin-bottom:16px}
-  .lb-info h2{font-family:var(--serif);font-size:25px;margin:0 0 6px;line-height:1.35;font-weight:600}
-  .lb-sub{font-size:11px;letter-spacing:.16em;color:var(--mut);text-transform:uppercase;
-          padding-bottom:22px;border-bottom:1px solid var(--line)}
-  .lb-note{font-size:13.5px;color:var(--ink2);line-height:1.95;padding:20px 0;
+  .lb{position:fixed;inset:0;z-index:100;display:none;background:var(--paper)}
+  .lb.open{display:block}
+  .lb-bar{position:absolute;top:0;left:0;right:0;height:54px;z-index:3;background:var(--bar-bg);
+          backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .lb-bar-in{max-width:1180px;margin:0 auto;padding:0 40px;height:54px;display:flex;
+             align-items:center;justify-content:space-between;gap:16px}
+  .lb-count{font-size:11px;letter-spacing:.24em;color:var(--mut);font-variant-numeric:tabular-nums}
+  .lb-count b{color:var(--ink);font-weight:600}
+  .lb-bar-title{flex:1;min-width:0;font-size:12px;color:var(--ink2);letter-spacing:.02em;
+                white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:20px}
+  .lb-tools{display:flex;align-items:center;gap:8px}
+  .iconbtn{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--card);
+           color:var(--ink2);display:flex;align-items:center;justify-content:center;cursor:pointer;
+           padding:0;transition:.2s;font-size:15px;line-height:1}
+  .iconbtn:hover{border-color:var(--ink);color:var(--ink)}
+  .iconbtn.mnav{display:none}
+  .lb-scroll{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;padding-top:54px;
+             -webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .lb-inner{max-width:1180px;margin:0 auto;padding:26px 40px 96px}
+  .lb-figure{position:relative;margin:0 0 30px;background:var(--shot);border:1px solid var(--line);
+             overflow:hidden;cursor:zoom-in}
+  .lb-figure img{display:block;width:100%;height:auto}
+  .lb-figure.zoom{height:calc(100vh - 132px);overflow:auto;cursor:zoom-out;border-color:var(--line2)}
+  .lb-figure.zoom img{width:auto;max-width:none;max-height:none}
+  .lb-hint{position:absolute;right:10px;bottom:10px;font-size:10.5px;letter-spacing:.14em;color:#fff;
+           background:rgba(15,15,13,.5);padding:3px 8px;border-radius:2px;pointer-events:none}
+  .lb-figure.zoom .lb-hint{position:fixed;right:18px;bottom:16px;z-index:4}
+  .lb-no{font-size:10px;letter-spacing:.26em;color:var(--bronze);margin-bottom:12px}
+  .lb-body h2{font-family:var(--serif);font-size:clamp(22px,3.2vw,32px);margin:0 0 8px;
+              line-height:1.3;font-weight:600;letter-spacing:.02em}
+  .lb-sub{font-size:11px;letter-spacing:.16em;color:var(--mut);text-transform:uppercase}
+  .lb-note{font-size:14px;color:var(--ink2);line-height:1.95;margin:22px 0 0;max-width:880px}
+  .lb-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:18px;
+           margin:26px 0 0;padding:22px 0;border-top:1px solid var(--line);
            border-bottom:1px solid var(--line)}
-  dl{display:grid;grid-template-columns:70px 1fr;gap:10px 12px;font-size:12px;margin:20px 0 0}
-  dt{color:var(--mut2);letter-spacing:.1em}
-  dd{margin:0;color:var(--ink2);word-break:break-all;font-variant-numeric:tabular-nums}
-  .lb-links{display:grid;gap:8px;margin-top:auto;padding-top:28px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--line2);border-radius:2px;
-       padding:9px 14px;font-size:11.5px;letter-spacing:.04em;color:var(--ink);background:var(--card);
-       transition:.18s;cursor:pointer;font-family:inherit}
+  .lb-meta dt{font-size:10px;letter-spacing:.2em;color:var(--mut2);margin-bottom:5px}
+  .lb-meta dd{margin:0;font-size:13px;color:var(--ink2);word-break:break-all;
+              font-variant-numeric:tabular-nums}
+  .lb-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;
+       border:1px solid var(--line2);border-radius:2px;padding:9px 14px;font-size:11.5px;
+       letter-spacing:.04em;color:var(--ink);background:var(--card);transition:.18s;cursor:pointer;
+       font-family:inherit}
   .btn:hover{border-color:var(--ink);background:var(--card2)}
   .btn.primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}
   .btn.primary:hover{opacity:.86}
-  .lb-close{position:fixed;right:22px;top:18px;z-index:101;width:36px;height:36px;border-radius:50%;
-            border:1px solid var(--line);background:var(--card);color:var(--ink2);cursor:pointer;
-            display:flex;align-items:center;justify-content:center;transition:.2s}
-  .lb-close:hover{border-color:var(--ink);color:var(--ink)}
-  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:56px;
-          border:1px solid var(--line);background:var(--nav-bg);color:var(--ink2);
-          cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s}
+  .lb-nav{position:fixed;top:50%;transform:translateY(-50%);width:40px;height:60px;z-index:3;
+          border:1px solid var(--line);background:var(--nav-bg);color:var(--ink2);cursor:pointer;
+          display:flex;align-items:center;justify-content:center;transition:.2s}
   .lb-nav:hover{border-color:var(--ink);color:var(--ink);background:var(--card2)}
-  .lb-prev{left:16px}
-  .lb-next{right:388px}
+  .lb-prev{left:14px}
+  .lb-next{right:14px}
 
   footer{border-top:1px solid var(--line);padding:34px 0 64px;font-size:11.5px;color:var(--mut);
          line-height:2}
@@ -209,12 +223,9 @@
   footer a:hover{color:var(--ink);border-color:var(--ink)}
   .fnote{max-width:560px}
 
-  @media(max-width:1000px){
-    .lb.open{grid-template-columns:1fr;grid-template-rows:1fr auto}
-    .lb-info{border-left:0;border-top:1px solid var(--line);max-height:48vh;padding:24px 22px}
-    .lb-stage{padding:44px 18px}
+  @media(max-width:1180px){
     .lb-nav{display:none}
-    .lb-next{right:16px}
+    .iconbtn.mnav{display:flex}
   }
   @media(max-width:780px){
     .wrap{padding:0 18px}
@@ -226,7 +237,11 @@
     .cap h3{font-size:13px}
     .groups{gap:4px 0}
     .group{border-right:0;padding-right:0;margin-right:22px}
-    .lb-links{padding-top:18px}
+    .lb-bar-in,.lb-inner{padding-left:18px;padding-right:18px}
+    .lb-bar-title{display:none}
+    .lb-inner{padding-top:18px;padding-bottom:80px}
+    .lb-meta{gap:14px;padding:18px 0}
+    .lb-figure.zoom{height:calc(100vh - 118px)}
   }
 </style>
 </head>
@@ -311,21 +326,38 @@
 </footer>
 
 <div class="lb" id="lb">
-  <button class="lb-close" id="lbClose" aria-label="关闭">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 5l14 14M19 5L5 19" stroke-linecap="round"/></svg>
-  </button>
-  <div class="lb-stage" id="lbStage">
-    <img id="lbImg" alt="">
-    <div class="lb-loading" id="lbLoading">正在载入原图…</div>
+  <div class="lb-bar">
+    <div class="lb-bar-in">
+      <span class="lb-count" id="lbCount"></span>
+      <span class="lb-bar-title" id="lbBarTitle"></span>
+      <div class="lb-tools">
+        <button class="iconbtn mnav" id="lbPrevM" aria-label="上一张">‹</button>
+        <button class="iconbtn mnav" id="lbNextM" aria-label="下一张">›</button>
+        <a class="iconbtn" id="lbDl" href="#" download aria-label="下载原图">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12M7 11l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 19h16" stroke-linecap="round"/></svg>
+        </a>
+        <button class="iconbtn" id="lbClose" aria-label="关闭">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 5l14 14M19 5L5 19" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
-  <aside class="lb-info">
-    <div class="lb-no" id="lbNo"></div>
-    <h2 id="lbTitle"></h2>
-    <div class="lb-sub" id="lbVendor"></div>
-    <p class="lb-note" id="lbNote"></p>
-    <dl id="lbMeta"></dl>
-    <div class="lb-links" id="lbLinks"></div>
-  </aside>
+  <div class="lb-scroll" id="lbScroll">
+    <article class="lb-inner">
+      <figure class="lb-figure" id="lbFig">
+        <img id="lbImg" alt="">
+        <span class="lb-hint" id="lbHint">点击图片放大</span>
+      </figure>
+      <div class="lb-body">
+        <div class="lb-no" id="lbNo"></div>
+        <h2 id="lbTitle"></h2>
+        <div class="lb-sub" id="lbVendor"></div>
+        <p class="lb-note" id="lbNote"></p>
+        <dl class="lb-meta" id="lbMeta"></dl>
+        <div class="lb-links" id="lbLinks"></div>
+      </div>
+    </article>
+  </div>
   <button class="lb-nav lb-prev" id="lbPrev" aria-label="上一张">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4l-8 8 8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
@@ -456,48 +488,63 @@
     return p.get("w") || "";
   }
 
-  const lb = $("#lb");
+  const lb = $("#lb"), lbScroll = $("#lbScroll"), lbFig = $("#lbFig"), lbHint = $("#lbHint");
   function open(id){
     cur = view.findIndex(w=>w.id===id);
     if(cur<0) return;
     fill(view[cur]); lb.classList.add("open");
-    document.body.style.overflow="hidden"; syncHash();
+    document.body.style.overflow="hidden"; lbScroll.scrollTop=0; syncHash();
   }
   function fill(w){
     const seq = ++loadSeq;
     const img = $("#lbImg");
+    lbFig.classList.remove("zoom");
+    lbHint.textContent = "正在载入原图…";
+    $("#lbCount").innerHTML = `<b>${String(cur+1).padStart(2,"0")}</b> / ${String(view.length).padStart(2,"0")}`;
     $("#lbNo").textContent = "NO." + String(w.no).padStart(2,"0");
     $("#lbTitle").textContent = w.model;
+    $("#lbBarTitle").textContent = w.model + " · " + EFF[w.effort];
     $("#lbVendor").textContent = w.vendorLabel + " · " + EFF[w.effort] + " 思考强度";
     $("#lbNote").textContent = w.note;
-    $("#lbMeta").innerHTML = `
-      <dt>平台</dt><dd>${esc(w.providerLabel)}</dd>
-      <dt>强度</dt><dd>${EFF[w.effort]} · ${w.effort}</dd>
-      <dt>尺寸</dt><dd>${w.w} × ${w.h}</dd>
-      <dt>原图</dt><dd>${(w.kb/1024).toFixed(1)} MB</dd>
-      <dt>源文件</dt><dd>${esc(w.source)}</dd>`;
+    $("#lbMeta").innerHTML = [
+      ["平台", esc(w.providerLabel)],
+      ["思考强度", EFF[w.effort] + " · " + w.effort],
+      ["尺寸", w.w + " × " + w.h],
+      ["原始体积", (w.kb/1024).toFixed(1) + " MB"]
+    ].map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join("");
     $("#lbLinks").innerHTML = `
       <a class="btn primary" href="${w.img}" download>${icon.dl}下载原图 · ${(w.kb/1024).toFixed(1)} MB</a>
       ${w.svg?`<a class="btn" href="${w.svg}" target="_blank" rel="noopener">${icon.code}SVG 源码</a>`:""}
       <a class="btn" href="${w.img}" target="_blank" rel="noopener">${icon.out}新窗口打开</a>`;
-
-    // 先用缩略图占位，原图载入后无缝替换
+    $("#lbDl").href = w.img;
     img.src = w.thumb; img.alt = w.model + " · " + EFF[w.effort];
-    const loading = $("#lbLoading");
-    loading.classList.add("show");
     const hi = new Image();
-    hi.onload = () => { if(seq !== loadSeq) return; img.src = w.img; loading.classList.remove("show"); };
-    hi.onerror = () => { if(seq !== loadSeq) return; loading.textContent = "原图载入失败，可点「新窗口打开」"; };
+    hi.onload = () => { if(seq !== loadSeq) return; img.src = w.img; lbHint.textContent = "点击图片放大"; };
+    hi.onerror = () => { if(seq !== loadSeq) return; lbHint.textContent = "原图载入失败，试试新窗口打开"; };
     hi.src = w.img;
   }
   function close(){ lb.classList.remove("open"); document.body.style.overflow=""; cur=-1; syncHash(); }
-  function step(d){ if(!view.length) return; cur=(cur+d+view.length)%view.length; fill(view[cur]); syncHash(); }
-
+  function step(d){
+    if(!view.length) return;
+    cur = (cur + d + view.length) % view.length;
+    fill(view[cur]); lbScroll.scrollTop = 0; syncHash();
+  }
   $("#grid").addEventListener("click", e=>{ const c=e.target.closest(".card"); if(c) open(c.dataset.id); });
   $("#lbClose").addEventListener("click", close);
-  lb.addEventListener("click", e=>{ if(e.target.id==="lbStage") close(); });
   $("#lbPrev").addEventListener("click", e=>{ e.stopPropagation(); step(-1); });
   $("#lbNext").addEventListener("click", e=>{ e.stopPropagation(); step(1); });
+  $("#lbPrevM").addEventListener("click", ()=>step(-1));
+  $("#lbNextM").addEventListener("click", ()=>step(1));
+  lbFig.addEventListener("click", ()=>{
+    const z = lbFig.classList.toggle("zoom");
+    lbHint.textContent = z ? "已放大，可拖动查看 · 点击还原" : "点击图片放大";
+    if(z){
+      requestAnimationFrame(()=>{
+        lbFig.scrollLeft = (lbFig.scrollWidth - lbFig.clientWidth) / 2;
+        lbFig.scrollTop  = (lbFig.scrollHeight - lbFig.clientHeight) / 2;
+      });
+    } else { lbFig.scrollTop = 0; lbFig.scrollLeft = 0; }
+  });
   document.addEventListener("keydown", e=>{
     if(!lb.classList.contains("open")) return;
     if(e.key==="Escape") close();
