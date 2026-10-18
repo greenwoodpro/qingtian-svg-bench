@@ -1,6 +1,6 @@
-# 晴天 · 50 张大模型 SVG 海报横评
+# 晴天 · 52 张大模型 SVG 海报横评
 
-> 同一句提示词，50 次生成，8 个平台、19 个模型、4 档思考强度。
+> 同一句提示词，52 次生成，8 个平台、20 个模型、4 档思考强度。
 > 全部由模型自己手写 SVG —— 不调用图片生成，不使用任何现成素材。
 
 **在线浏览 → [greenwoodpro.github.io/qingtian-svg-bench](https://greenwoodpro.github.io/qingtian-svg-bench/)**
@@ -19,23 +19,23 @@
 
 | 项目 | 数量 |
 | --- | --- |
-| 作品 | 50 件（51 份文件，其中 1 份为重复导出） |
+| 作品 | 52 件（53 份文件，其中 1 份为重复导出） |
 | 平台 | 8 个 |
-| 模型 | 19 个 |
+| 模型 | 20 个 |
 | 厂商 | 10 家 |
-| SVG 源码 | 24 份，共 19.2 MB |
+| SVG 源码 | 23 份，共 19.2 MB |
 
 ---
 
 ## 先说结论
 
-50 张里真正能当海报用的，不超过十张。
+52 张里真正能当海报用的，不超过十张。
 
 ### 最好的三张
 
 1. **`v0 · GPT (astra) · xhigh`** — 空教室的长焦透视、窗格投下的阴影、琴箱上的高光，是全场最接近实拍的一张。有意思的是它不是手绘路径：模型自己写了 Three.js，把程序化几何场景投影成矢量路径。技术上绕了一层，结果却是最"真"的。
 2. **`claude.ai · Sonnet 5.5 · high`** — 唯一一张真正把"概念"做出来的：雾玻璃上用手指划出「晴天」二字，字缝里透出蓝天。这比堆元素难得多。
-3. **`商汤 · SenseNova · high`** — 室内静物：吉他盒、黑胶、窗光。50 张里唯一一张跳出"校园海报模板"的。
+3. **`商汤 · SenseNova · high`** — 室内静物：吉他盒、黑胶、窗光。52 张里唯一一张跳出"校园海报模板"的。
 
 **最会做平面构成**：`wb · GLM-5.3-Flash`（方楼 + 窗影 + 巨大「晴天」）、`chaiku 5.5 max`（逆光剪影 + 极简字）
 **最有电影感**：`trae · GLM-5.3-Flash xhigh`（雨幕里劈下的光柱）、`DeepSeek 官方 API`（落日长路上的单人背影）
@@ -132,7 +132,7 @@
 | 27 | Qwen3.8-Max | 阿里 Qwen | 标准 | [PNG](images/v0__qwen3.8-max__medium.png) · [SVG](svg/v0__qwen3.8-max__medium.svg) | 小黄花田与秋千上的两个人 |
 | 28 | Qwen3.8-Max | 阿里 Qwen | 最高 | [PNG](images/v0__qwen3.8-max__max.png) · [SVG](svg/v0__qwen3.8-max__max.svg) | 雨中秋千与月，冷调 |
 
-### claude.ai · 4 件
+### claude.ai · 5 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
@@ -140,63 +140,64 @@
 | 30 | Claude Sonnet 5.5 | Anthropic | 高 | [PNG](images/claude-ai__claude-sonnet5.5__high.png) · [SVG](svg/claude-ai__claude-sonnet5.5__high.svg) | 钟楼校舍与草地小径，像一张真海报 |
 | 31 | Claude Sonnet 5.5 | Anthropic | 极高 | [PNG](images/claude-ai__claude-sonnet5.5__xhigh.png) | 乡道、电线、云与单车，天空层次最好 |
 | 32 | Claude Sonnet 5.5 | Anthropic | 极高 | [PNG](images/claude-ai__claude-sonnet5.5__xhigh__r2.png) | 同题第二跑，构图几乎复刻，云更松 |
+| 33 | Claude Sonnet 5.5 | Anthropic | 最高 | [PNG](images/claude-ai__claude-sonnet5.5__max.png) | 雨后原野、电线杆与积水里的纸船，靛蓝转暖的云隙光 |
 
 ### Trae Code · 3 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
-| 33 | DeepSeek-V4.1 | DeepSeek | 极高 | [PNG](images/trae__deepseek-v4.1__xhigh.png) · [SVG](svg/trae__deepseek-v4.1__xhigh.svg) | 夜色三角钢琴与撑伞人，倒影漂亮 |
-| 34 | GLM-5.3-Flash | 智谱 Zhipu | 极高 | [PNG](images/trae__glm5.3-flash__xhigh.png) · [SVG](svg/trae__glm5.3-flash__xhigh.svg) | 白衬衫少年立于雨幕，光柱劈下 |
-| 35 | Qwen3.8-Flash | 阿里 Qwen | 极高 | [PNG](images/trae__qwen3.8-flash__xhigh.png) · [SVG](svg/trae__qwen3.8-flash__xhigh.svg) | 教学楼前弹琴的两人，暖黄 |
+| 34 | DeepSeek-V4.1 | DeepSeek | 极高 | [PNG](images/trae__deepseek-v4.1__xhigh.png) · [SVG](svg/trae__deepseek-v4.1__xhigh.svg) | 夜色三角钢琴与撑伞人，倒影漂亮 |
+| 35 | GLM-5.3-Flash | 智谱 Zhipu | 极高 | [PNG](images/trae__glm5.3-flash__xhigh.png) · [SVG](svg/trae__glm5.3-flash__xhigh.svg) | 白衬衫少年立于雨幕，光柱劈下 |
+| 36 | Qwen3.8-Flash | 阿里 Qwen | 极高 | [PNG](images/trae__qwen3.8-flash__xhigh.png) · [SVG](svg/trae__qwen3.8-flash__xhigh.svg) | 教学楼前弹琴的两人，暖黄 |
 
-### WorkBuddy · 3 件
+### WorkBuddy · 4 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
-| 36 | DeepSeek-V4.1 | DeepSeek | 极高 | [PNG](images/workbuddy__deepseek-v4.1__xhigh.png) · [SVG](svg/workbuddy__deepseek-v4.1__xhigh.svg) | 雨夜窗台：晴天娃娃、吉他、小黄花 |
-| 37 | GLM-5.3 | 智谱 Zhipu | 极高 | [PNG](images/workbuddy__glm5.3__xhigh.png) | 晴日校门、单车与向日葵，明快 |
-| 38 | GLM-5.3-Flash | 智谱 Zhipu | 高 | [PNG](images/workbuddy__glm5.3-flash__high.png) | 极简构成：方楼、窗影、巨大的「晴天」 |
+| 37 | DeepSeek-V4.1 | DeepSeek | 极高 | [PNG](images/workbuddy__deepseek-v4.1__xhigh.png) · [SVG](svg/workbuddy__deepseek-v4.1__xhigh.svg) | 雨夜窗台：晴天娃娃、吉他、小黄花 |
+| 38 | DeepSeek-V4.1-Flash-1017 | DeepSeek | 极高 | [PNG](images/workbuddy__deepseek-v4.1-flash-1017__xhigh.png) | 窗内背影与木吉他，深棕复古排版，右下条形码 |
+| 39 | GLM-5.3 | 智谱 Zhipu | 极高 | [PNG](images/workbuddy__glm5.3__xhigh.png) | 晴日校门、单车与向日葵，明快 |
+| 40 | GLM-5.3-Flash | 智谱 Zhipu | 高 | [PNG](images/workbuddy__glm5.3-flash__high.png) | 极简构成：方楼、窗影、巨大的「晴天」 |
 
 ### opencode · 5 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
-| 39 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/opencode__deepseek-v4.1__high.png) | 校门、单车、琴键，规整 |
-| 40 | DeepSeek-V4.1 | DeepSeek | 最高 | [PNG](images/opencode__deepseek-v4.1__max.png) | 校舍、樟树、单车、向日葵，堆得很满 |
-| 41 | GLM-5.3-Flash | 智谱 Zhipu | 高 | [PNG](images/opencode__glm5.3-flash__high.png) | 雨夜街口，少年推车 |
-| 42 | GLM-5.3-Flash | 智谱 Zhipu | 最高 | [PNG](images/opencode__glm5.3-flash__max.png) | 少年与单车，「晴天」像一层纱 |
-| 43 | MiMo 2.6 Flash | 小米 MiMo | 高 | [PNG](images/opencode__mimo2.6-flash__high.png) · [SVG](svg/opencode__mimo2.6-flash__high.svg) | 云、草地、抱琴少年，干净 |
+| 41 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/opencode__deepseek-v4.1__high.png) | 校门、单车、琴键，规整 |
+| 42 | DeepSeek-V4.1 | DeepSeek | 最高 | [PNG](images/opencode__deepseek-v4.1__max.png) | 校舍、樟树、单车、向日葵，堆得很满 |
+| 43 | GLM-5.3-Flash | 智谱 Zhipu | 高 | [PNG](images/opencode__glm5.3-flash__high.png) | 雨夜街口，少年推车 |
+| 44 | GLM-5.3-Flash | 智谱 Zhipu | 最高 | [PNG](images/opencode__glm5.3-flash__max.png) | 少年与单车，「晴天」像一层纱 |
+| 45 | MiMo 2.6 Flash | 小米 MiMo | 高 | [PNG](images/opencode__mimo2.6-flash__high.png) · [SVG](svg/opencode__mimo2.6-flash__high.svg) | 云、草地、抱琴少年，干净 |
 
 ### 魔搭 ModelScope · 3 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
-| 44 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/modelscope__deepseek-v4.1__high.png) | 雾中校园、钢琴与一朵小黄花 |
-| 45 | Qwen3.8-27B | 阿里 Qwen | 高 | [PNG](images/modelscope__qwen3.8-27b__high.png) | 逆光小路上背书包的少年 |
-| 46 | Qwen3.8-Flash | 阿里 Qwen | 高 | [PNG](images/modelscope__qwen3.8-flash__high.png) · [SVG](svg/modelscope__qwen3.8-flash__high.svg) | 灰色隧道里的吉他手，最不「晴天」 |
+| 46 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/modelscope__deepseek-v4.1__high.png) | 雾中校园、钢琴与一朵小黄花 |
+| 47 | Qwen3.8-27B | 阿里 Qwen | 高 | [PNG](images/modelscope__qwen3.8-27b__high.png) | 逆光小路上背书包的少年 |
+| 48 | Qwen3.8-Flash | 阿里 Qwen | 高 | [PNG](images/modelscope__qwen3.8-flash__high.png) · [SVG](svg/modelscope__qwen3.8-flash__high.svg) | 灰色隧道里的吉他手，最不「晴天」 |
 
 ### 商汤 SenseNova · 3 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
-| 47 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/sensetime__deepseek-v4.1__high.png) | 室内静物：吉他盒、黑胶、窗光，跳出海报模板 |
-| 48 | GLM-5.2 | 智谱 Zhipu | 高 | [PNG](images/sensetime__glm5.2__high.png) | 黄昏里并肩的两人与吉他，剪影海报 |
-| 49 | SenseNova · 商汤自研 | 商汤 SenseTime | 高 | [PNG](images/sensetime__sensenova__high.png) | 雨街、黑伞、巨大的「晴天」二字 |
+| 49 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/sensetime__deepseek-v4.1__high.png) | 室内静物：吉他盒、黑胶、窗光，跳出海报模板 |
+| 50 | GLM-5.2 | 智谱 Zhipu | 高 | [PNG](images/sensetime__glm5.2__high.png) | 黄昏里并肩的两人与吉他，剪影海报 |
+| 51 | SenseNova · 商汤自研 | 商汤 SenseTime | 高 | [PNG](images/sensetime__sensenova__high.png) | 雨街、黑伞、巨大的「晴天」二字 |
 
 ### DeepSeek 官方 API · 1 件
 
 | No. | 模型 | 厂商 | 强度 | 文件 | 画面 |
 | --- | --- | --- | --- | --- | --- |
-| 50 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/deepseek-api__deepseek-v4.1__high.png) | 落日长路上的单人背影，电影感 |
-
-
+| 52 | DeepSeek-V4.1 | DeepSeek | 高 | [PNG](images/deepseek-api__deepseek-v4.1__high.png) | 落日长路上的单人背影，电影感 |
 ---
 
 ## 数据说明
 
-- `originals/` 是与测试工作区**完全一致**的原始文件归档（24 份 `.svg` + 25 张 `.png` + 3 张 `.jpg`，共 52 个，约 82 MB），保留原始命名，未做任何转换。
+- `originals/` 是与测试工作区**完全一致**的原始文件归档（24 份 `.svg` + 27 张 `.png` + 3 张 `.jpg`，共 54 个），保留原始命名，未做任何转换。
+- `images/` 是全部 PNG；`images-with-svg/` 是其中**同时提供 SVG 源码**的那一批的副本（同一张图，方便只想要「既有代码又有成品」的人直接拿）。两者内容按 id 一一对应，`images-with-svg/` 里没有的，就是当时没拿到 SVG 源码的作品。
 - `images/` 是**全尺寸原图 PNG**（SVG 按 2× 渲染，位图保留原始截图分辨率，共约 201 MB）；`thumbs/` 是 560px 画廊缩略图；`svg/` 是模型输出的原始 `.svg`，按「平台__模型__强度」重命名。
-- **`sonnet5.5-high.svg` 与 `sonnet5.5-max.svg` 字节完全一致**（同一份输出被保存了两次），已合并为一条记录，不重复计数。因此 51 份文件对应 50 条记录；两份重复文件都完整保留在 `originals/` 里。
+- **`sonnet5.5-high.svg` 与 `sonnet5.5-max.svg` 字节完全一致**（同一份输出被保存了两次），已合并为一条记录，不重复计数。因此 53 份文件对应 52 条记录；两份重复文件都完整保留在 `originals/` 里。
 - 有 SVG 源码的作品，展示图由该 SVG 重新渲染；只有位图的作品（部分平台不提供源码），展示图由原始截图缩放而来。
 - 渲染环境：Microsoft Edge 无头模式，按 viewBox 原始尺寸渲染并 2× 缩放后直接导出，不再二次压缩。中文依赖系统字体，个别作品的字体回退与原平台显示可能略有差异。
 

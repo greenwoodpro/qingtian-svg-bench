@@ -812,6 +812,28 @@ window.GALLERY = {
    "no": 32
   },
   {
+   "id": "claude-ai__claude-sonnet5.5__max",
+   "model": "Claude Sonnet 5.5",
+   "modelSlug": "claude-sonnet5.5",
+   "vendor": "anthropic",
+   "vendorLabel": "Anthropic",
+   "provider": "claude-ai",
+   "providerLabel": "claude.ai",
+   "effort": "max",
+   "note": "雨后原野、电线杆与积水里的纸船，靛蓝转暖的云隙光",
+   "w": 1600,
+   "h": 2400,
+   "kb": 5187,
+   "img": "images/claude-ai__claude-sonnet5.5__max.png",
+   "thumb": "thumbs/claude-ai__claude-sonnet5.5__max.jpg",
+   "svg": "",
+   "source": "csonnet5.5-max.png",
+   "orig": [
+    "csonnet5.5-max.png"
+   ],
+   "no": 33
+  },
+  {
    "id": "trae__deepseek-v4.1__xhigh",
    "model": "DeepSeek-V4.1",
    "modelSlug": "deepseek-v4.1",
@@ -831,7 +853,7 @@ window.GALLERY = {
    "orig": [
     "traeds4.1-xhigh.svg"
    ],
-   "no": 33
+   "no": 34
   },
   {
    "id": "trae__glm5.3-flash__xhigh",
@@ -853,7 +875,7 @@ window.GALLERY = {
    "orig": [
     "traeglm5.3flah-xhigh.svg"
    ],
-   "no": 34
+   "no": 35
   },
   {
    "id": "trae__qwen3.8-flash__xhigh",
@@ -875,7 +897,7 @@ window.GALLERY = {
    "orig": [
     "traeqwen3.8flash-xhigh.svg"
    ],
-   "no": 35
+   "no": 36
   },
   {
    "id": "workbuddy__deepseek-v4.1__xhigh",
@@ -897,7 +919,29 @@ window.GALLERY = {
    "orig": [
     "wbds4.1-xhigh.svg"
    ],
-   "no": 36
+   "no": 37
+  },
+  {
+   "id": "workbuddy__deepseek-v4.1-flash-1017__xhigh",
+   "model": "DeepSeek-V4.1-Flash-1017",
+   "modelSlug": "deepseek-v4.1-flash-1017",
+   "vendor": "deepseek",
+   "vendorLabel": "DeepSeek",
+   "provider": "workbuddy",
+   "providerLabel": "WorkBuddy",
+   "effort": "xhigh",
+   "note": "窗内背影与木吉他，深棕复古排版，右下条形码",
+   "w": 900,
+   "h": 1350,
+   "kb": 1016,
+   "img": "images/workbuddy__deepseek-v4.1-flash-1017__xhigh.png",
+   "thumb": "thumbs/workbuddy__deepseek-v4.1-flash-1017__xhigh.jpg",
+   "svg": "",
+   "source": "wbds1017-xhigh.png",
+   "orig": [
+    "wbds1017-xhigh.png"
+   ],
+   "no": 38
   },
   {
    "id": "workbuddy__glm5.3__xhigh",
@@ -919,7 +963,7 @@ window.GALLERY = {
    "orig": [
     "wbglm5.3-xhigh.png"
    ],
-   "no": 37
+   "no": 39
   },
   {
    "id": "workbuddy__glm5.3-flash__high",
@@ -941,7 +985,7 @@ window.GALLERY = {
    "orig": [
     "wbglm5.3flash.png"
    ],
-   "no": 38
+   "no": 40
   },
   {
    "id": "opencode__deepseek-v4.1__high",
@@ -963,7 +1007,7 @@ window.GALLERY = {
    "orig": [
     "ocds-high.png"
    ],
-   "no": 39
+   "no": 41
   },
   {
    "id": "opencode__deepseek-v4.1__max",
@@ -985,7 +1029,7 @@ window.GALLERY = {
    "orig": [
     "ocds-max.png"
    ],
-   "no": 40
+   "no": 42
   },
   {
    "id": "opencode__glm5.3-flash__high",
@@ -1007,7 +1051,7 @@ window.GALLERY = {
    "orig": [
     "ocglm5.3flash-high.png"
    ],
-   "no": 41
+   "no": 43
   },
   {
    "id": "opencode__glm5.3-flash__max",
@@ -1029,7 +1073,7 @@ window.GALLERY = {
    "orig": [
     "ocglm5.3flash-max.png"
    ],
-   "no": 42
+   "no": 44
   },
   {
    "id": "opencode__mimo2.6-flash__high",
@@ -1051,7 +1095,7 @@ window.GALLERY = {
    "orig": [
     "ocmimo2.6flash.svg"
    ],
-   "no": 43
+   "no": 45
   },
   {
    "id": "modelscope__deepseek-v4.1__high",
@@ -1073,7 +1117,7 @@ window.GALLERY = {
    "orig": [
     "modelds4.1-high.png"
    ],
-   "no": 44
+   "no": 46
   },
   {
    "id": "modelscope__qwen3.8-27b__high",
@@ -1095,7 +1139,7 @@ window.GALLERY = {
    "orig": [
     "modelqwen3.8-27b-high.png"
    ],
-   "no": 45
+   "no": 47
   },
   {
    "id": "modelscope__qwen3.8-flash__high",
@@ -1117,7 +1161,7 @@ window.GALLERY = {
    "orig": [
     "modelqwen3.8flash-high.svg"
    ],
-   "no": 46
+   "no": 48
   },
   {
    "id": "sensetime__deepseek-v4.1__high",
@@ -1139,7 +1183,7 @@ window.GALLERY = {
    "orig": [
     "sends4.png"
    ],
-   "no": 47
+   "no": 49
   },
   {
    "id": "sensetime__glm5.2__high",
@@ -1161,7 +1205,7 @@ window.GALLERY = {
    "orig": [
     "senglm5.2.png"
    ],
-   "no": 48
+   "no": 50
   },
   {
    "id": "sensetime__sensenova__high",
@@ -1183,7 +1227,7 @@ window.GALLERY = {
    "orig": [
     "sens.png"
    ],
-   "no": 49
+   "no": 51
   },
   {
    "id": "deepseek-api__deepseek-v4.1__high",
@@ -1205,7 +1249,7 @@ window.GALLERY = {
    "orig": [
     "dsv4.1_official-high.png"
    ],
-   "no": 50
+   "no": 52
   }
  ]
 };
