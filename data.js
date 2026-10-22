@@ -79,6 +79,18 @@ window.GALLERY = {
    "label": "商汤 SenseTime"
   },
   {
+   "id": "hunyuan",
+   "label": "腾讯混元"
+  },
+  {
+   "id": "stepfun",
+   "label": "阶跃星辰"
+  },
+  {
+   "id": "minimax",
+   "label": "稀宇科技 MiniMax"
+  },
+  {
    "id": "meta",
    "label": "Meta"
   }
@@ -900,21 +912,21 @@ window.GALLERY = {
    "no": 36
   },
   {
-   "id": "workbuddy__deepseek-v4.1__xhigh",
+   "id": "workbuddy__deepseek-v4.1__max",
    "model": "DeepSeek-V4.1",
    "modelSlug": "deepseek-v4.1",
    "vendor": "deepseek",
    "vendorLabel": "DeepSeek",
    "provider": "workbuddy",
    "providerLabel": "WorkBuddy",
-   "effort": "xhigh",
+   "effort": "max",
    "note": "雨夜窗台：晴天娃娃、吉他、小黄花",
    "w": 1360,
    "h": 1920,
    "kb": 1360,
-   "img": "images/workbuddy__deepseek-v4.1__xhigh.png",
-   "thumb": "thumbs/workbuddy__deepseek-v4.1__xhigh.jpg",
-   "svg": "svg/workbuddy__deepseek-v4.1__xhigh.svg",
+   "img": "images/workbuddy__deepseek-v4.1__max.png",
+   "thumb": "thumbs/workbuddy__deepseek-v4.1__max.jpg",
+   "svg": "svg/workbuddy__deepseek-v4.1__max.svg",
    "source": "wbds4.1-xhigh.svg",
    "orig": [
     "wbds4.1-xhigh.svg"
@@ -922,20 +934,20 @@ window.GALLERY = {
    "no": 37
   },
   {
-   "id": "workbuddy__deepseek-v4.1-flash-1017__xhigh",
+   "id": "workbuddy__deepseek-v4.1-flash-1017__max",
    "model": "DeepSeek-V4.1-Flash-1017",
    "modelSlug": "deepseek-v4.1-flash-1017",
    "vendor": "deepseek",
    "vendorLabel": "DeepSeek",
    "provider": "workbuddy",
    "providerLabel": "WorkBuddy",
-   "effort": "xhigh",
+   "effort": "max",
    "note": "窗内背影与木吉他，深棕复古排版，右下条形码",
    "w": 900,
    "h": 1350,
    "kb": 1016,
-   "img": "images/workbuddy__deepseek-v4.1-flash-1017__xhigh.png",
-   "thumb": "thumbs/workbuddy__deepseek-v4.1-flash-1017__xhigh.jpg",
+   "img": "images/workbuddy__deepseek-v4.1-flash-1017__max.png",
+   "thumb": "thumbs/workbuddy__deepseek-v4.1-flash-1017__max.jpg",
    "svg": "",
    "source": "wbds1017-xhigh.png",
    "orig": [
@@ -944,20 +956,20 @@ window.GALLERY = {
    "no": 38
   },
   {
-   "id": "workbuddy__glm5.3__xhigh",
+   "id": "workbuddy__glm5.3__max",
    "model": "GLM-5.3",
    "modelSlug": "glm5.3",
    "vendor": "zhipu",
    "vendorLabel": "智谱 Zhipu",
    "provider": "workbuddy",
    "providerLabel": "WorkBuddy",
-   "effort": "xhigh",
+   "effort": "max",
    "note": "晴日校门、单车与向日葵，明快",
    "w": 680,
    "h": 850,
    "kb": 659,
-   "img": "images/workbuddy__glm5.3__xhigh.png",
-   "thumb": "thumbs/workbuddy__glm5.3__xhigh.jpg",
+   "img": "images/workbuddy__glm5.3__max.png",
+   "thumb": "thumbs/workbuddy__glm5.3__max.jpg",
    "svg": "",
    "source": "wbglm5.3-xhigh.png",
    "orig": [
@@ -988,6 +1000,94 @@ window.GALLERY = {
    "no": 40
   },
   {
+   "id": "workbuddy__hunyuan-4-preview__high",
+   "model": "Hunyuan 4 Preview",
+   "modelSlug": "hunyuan-4-preview",
+   "vendor": "hunyuan",
+   "vendorLabel": "腾讯混元",
+   "provider": "workbuddy",
+   "providerLabel": "WorkBuddy",
+   "effort": "high",
+   "note": "草地上弹吉他的人与白帐篷，粉紫黄昏",
+   "w": 1800,
+   "h": 2700,
+   "kb": 4799,
+   "img": "images/workbuddy__hunyuan-4-preview__high.png",
+   "thumb": "thumbs/workbuddy__hunyuan-4-preview__high.jpg",
+   "svg": "svg/workbuddy__hunyuan-4-preview__high.svg",
+   "source": "wbhy4preview-high",
+   "orig": [
+    "wbhy4preview-high"
+   ],
+   "no": 41
+  },
+  {
+   "id": "workbuddy__mimo-2.6-pro__high",
+   "model": "MiMo 2.6 Pro",
+   "modelSlug": "mimo-2.6-pro",
+   "vendor": "xiaomi",
+   "vendorLabel": "小米 MiMo",
+   "provider": "workbuddy",
+   "providerLabel": "WorkBuddy",
+   "effort": "high",
+   "note": "蓝天白云下的吉他少年，色块最干净",
+   "w": 1360,
+   "h": 2040,
+   "kb": 2861,
+   "img": "images/workbuddy__mimo-2.6-pro__high.png",
+   "thumb": "thumbs/workbuddy__mimo-2.6-pro__high.jpg",
+   "svg": "svg/workbuddy__mimo-2.6-pro__high.svg",
+   "source": "wbmimo2.6p",
+   "orig": [
+    "wbmimo2.6p"
+   ],
+   "no": 42
+  },
+  {
+   "id": "workbuddy__minimax-m3.1-flash__max",
+   "model": "MiniMax M3.1 Flash",
+   "modelSlug": "minimax-m3.1-flash",
+   "vendor": "minimax",
+   "vendorLabel": "稀宇科技 MiniMax",
+   "provider": "workbuddy",
+   "providerLabel": "WorkBuddy",
+   "effort": "max",
+   "note": "逆光侧脸剪影与竖排大字，最极简的一张",
+   "w": 2000,
+   "h": 3000,
+   "kb": 6765,
+   "img": "images/workbuddy__minimax-m3.1-flash__max.png",
+   "thumb": "thumbs/workbuddy__minimax-m3.1-flash__max.jpg",
+   "svg": "svg/workbuddy__minimax-m3.1-flash__max.svg",
+   "source": "wbminimaxm3.1flash-max",
+   "orig": [
+    "wbminimaxm3.1flash-max"
+   ],
+   "no": 43
+  },
+  {
+   "id": "workbuddy__step-5-preview__high",
+   "model": "Step 5 Preview",
+   "modelSlug": "step-5-preview",
+   "vendor": "stepfun",
+   "vendorLabel": "阶跃星辰",
+   "provider": "workbuddy",
+   "providerLabel": "WorkBuddy",
+   "effort": "high",
+   "note": "远山、房子与放风筝的人，金色花田",
+   "w": 1600,
+   "h": 2400,
+   "kb": 3410,
+   "img": "images/workbuddy__step-5-preview__high.png",
+   "thumb": "thumbs/workbuddy__step-5-preview__high.jpg",
+   "svg": "svg/workbuddy__step-5-preview__high.svg",
+   "source": "wbstep5preview-high",
+   "orig": [
+    "wbstep5preview-high"
+   ],
+   "no": 44
+  },
+  {
    "id": "opencode__deepseek-v4.1__high",
    "model": "DeepSeek-V4.1",
    "modelSlug": "deepseek-v4.1",
@@ -1007,7 +1107,7 @@ window.GALLERY = {
    "orig": [
     "ocds-high.png"
    ],
-   "no": 41
+   "no": 45
   },
   {
    "id": "opencode__deepseek-v4.1__max",
@@ -1029,7 +1129,51 @@ window.GALLERY = {
    "orig": [
     "ocds-max.png"
    ],
-   "no": 42
+   "no": 46
+  },
+  {
+   "id": "opencode__deepseek-v4.1-flash-1017__high",
+   "model": "DeepSeek-V4.1-Flash-1017",
+   "modelSlug": "deepseek-v4.1-flash-1017",
+   "vendor": "deepseek",
+   "vendorLabel": "DeepSeek",
+   "provider": "opencode",
+   "providerLabel": "opencode",
+   "effort": "high",
+   "note": "黄昏窗边的旧钢琴与白衣身影，暖棕调",
+   "w": 2286,
+   "h": 3200,
+   "kb": 6737,
+   "img": "images/opencode__deepseek-v4.1-flash-1017__high.png",
+   "thumb": "thumbs/opencode__deepseek-v4.1-flash-1017__high.jpg",
+   "svg": "svg/opencode__deepseek-v4.1-flash-1017__high.svg",
+   "source": "ocds1017-high",
+   "orig": [
+    "ocds1017-high"
+   ],
+   "no": 47
+  },
+  {
+   "id": "opencode__deepseek-v4.1-flash-1017__max",
+   "model": "DeepSeek-V4.1-Flash-1017",
+   "modelSlug": "deepseek-v4.1-flash-1017",
+   "vendor": "deepseek",
+   "vendorLabel": "DeepSeek",
+   "provider": "opencode",
+   "providerLabel": "opencode",
+   "effort": "max",
+   "note": "天台落日：钢琴、撑伞回望的女孩与飞鸟",
+   "w": 2133,
+   "h": 3200,
+   "kb": 6010,
+   "img": "images/opencode__deepseek-v4.1-flash-1017__max.png",
+   "thumb": "thumbs/opencode__deepseek-v4.1-flash-1017__max.jpg",
+   "svg": "svg/opencode__deepseek-v4.1-flash-1017__max.svg",
+   "source": "ocds1017-max",
+   "orig": [
+    "ocds1017-max"
+   ],
+   "no": 48
   },
   {
    "id": "opencode__glm5.3-flash__high",
@@ -1051,7 +1195,7 @@ window.GALLERY = {
    "orig": [
     "ocglm5.3flash-high.png"
    ],
-   "no": 43
+   "no": 49
   },
   {
    "id": "opencode__glm5.3-flash__max",
@@ -1073,7 +1217,7 @@ window.GALLERY = {
    "orig": [
     "ocglm5.3flash-max.png"
    ],
-   "no": 44
+   "no": 50
   },
   {
    "id": "opencode__mimo2.6-flash__high",
@@ -1095,7 +1239,7 @@ window.GALLERY = {
    "orig": [
     "ocmimo2.6flash.svg"
    ],
-   "no": 45
+   "no": 51
   },
   {
    "id": "modelscope__deepseek-v4.1__high",
@@ -1117,7 +1261,29 @@ window.GALLERY = {
    "orig": [
     "modelds4.1-high.png"
    ],
-   "no": 46
+   "no": 52
+  },
+  {
+   "id": "modelscope__deepseek-v4.1-flash-1017__high",
+   "model": "DeepSeek-V4.1-Flash-1017",
+   "modelSlug": "deepseek-v4.1-flash-1017",
+   "vendor": "deepseek",
+   "vendorLabel": "DeepSeek",
+   "provider": "modelscope",
+   "providerLabel": "魔搭 ModelScope",
+   "effort": "high",
+   "note": "山坡大树下的钢琴与两个人，单车停在一旁",
+   "w": 2133,
+   "h": 3200,
+   "kb": 9541,
+   "img": "images/modelscope__deepseek-v4.1-flash-1017__high.png",
+   "thumb": "thumbs/modelscope__deepseek-v4.1-flash-1017__high.jpg",
+   "svg": "svg/modelscope__deepseek-v4.1-flash-1017__high.svg",
+   "source": "modelds1017-high",
+   "orig": [
+    "modelds1017-high"
+   ],
+   "no": 53
   },
   {
    "id": "modelscope__qwen3.8-27b__high",
@@ -1139,7 +1305,7 @@ window.GALLERY = {
    "orig": [
     "modelqwen3.8-27b-high.png"
    ],
-   "no": 47
+   "no": 54
   },
   {
    "id": "modelscope__qwen3.8-flash__high",
@@ -1161,7 +1327,7 @@ window.GALLERY = {
    "orig": [
     "modelqwen3.8flash-high.svg"
    ],
-   "no": 48
+   "no": 55
   },
   {
    "id": "sensetime__deepseek-v4.1__high",
@@ -1183,7 +1349,7 @@ window.GALLERY = {
    "orig": [
     "sends4.png"
    ],
-   "no": 49
+   "no": 56
   },
   {
    "id": "sensetime__glm5.2__high",
@@ -1205,7 +1371,7 @@ window.GALLERY = {
    "orig": [
     "senglm5.2.png"
    ],
-   "no": 50
+   "no": 57
   },
   {
    "id": "sensetime__sensenova__high",
@@ -1227,7 +1393,7 @@ window.GALLERY = {
    "orig": [
     "sens.png"
    ],
-   "no": 51
+   "no": 58
   },
   {
    "id": "deepseek-api__deepseek-v4.1__high",
@@ -1249,7 +1415,7 @@ window.GALLERY = {
    "orig": [
     "dsv4.1_official-high.png"
    ],
-   "no": 52
+   "no": 59
   }
  ]
 };

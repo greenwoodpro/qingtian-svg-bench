@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350" width="900" height="1350">
+  <title>晴天 · Sunny Day — 纯 SVG 手绘海报</title>
+
+  <defs>
+    <!-- ============ 渐变 ============ -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0.18" y2="1">
+      <stop offset="0"    stop-color="#1b3f66"/>
+      <stop offset="0.12" stop-color="#35709f"/>
+      <stop offset="0.30" stop-color="#6fadd0"/>
+      <stop offset="0.50" stop-color="#add3dd"/>
+      <stop offset="0.66" stop-color="#e8dcbd"/>
+      <stop offset="0.80" stop-color="#ffd99b"/>
+      <stop offset="0.93" stop-color="#ffbb70"/>
+      <stop offset="1"    stop-color="#ffab5c"/>
+    </linearGradient>
+
+    <radialGradient id="sunHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"    stop-color="#fffaea" stop-opacity="1"/>
+      <stop offset="0.12" stop-color="#fff2c8" stop-opacity="0.8"/>
+      <stop offset="0.32" stop-color="#ffdc96" stop-opacity="0.4"/>
+      <stop offset="0.62" stop-color="#ffbf6e" stop-opacity="0.16"/>
+      <stop offset="1"    stop-color="#ff9f4a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="sunCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#fffaea"/>
+      <stop offset="1"   stop-color="#fff0c6"/>
+    </radialGradient>
+
+    <radialGradient id="sunBloom" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#ffd08a" stop-opacity="0.30"/>
+      <stop offset="0.5" stop-color="#ffbf78" stop-opacity="0.12"/>
+      <stop offset="1"   stop-color="#ff9f4a" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="hazeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#ffe4ad" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#ffeac2" stop-opacity="0.5"/>
+      <stop offset="1"   stop-color="#fff3d6" stop-opacity="0.92"/>
+    </linearGradient>
+
+    <linearGradient id="grassMain" x1="0" y1="0" x2="0.1" y2="1">
+      <stop offset="0"    stop-color="#e5cf82"/>
+      <stop offset="0.06" stop-color="#c9c069"/>
+      <stop offset="0.18" stop-color="#a3ad52"/>
+      <stop offset="0.36" stop-color="#82973f"/>
+      <stop offset="0.60" stop-color="#5f7c30"/>
+      <stop offset="0.82" stop-color="#44601f"/>
+      <stop offset="1"    stop-color="#2b4018"/>
+    </linearGradient>
+
+    <linearGradient id="grassFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0dc9d"/>
+      <stop offset="0.6" stop-color="#cfc07a"/>
+      <stop offset="1" stop-color="#a9a35a"/>
+    </linearGradient>
+
+    <linearGradient id="soundBoard" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0"    stop-color="#e0c08a"/>
+      <stop offset="0.35" stop-color="#c9a469"/>
+      <stop offset="0.75" stop-color="#a8804a"/>
+      <stop offset="1"    stop-color="#8a6636"/>
+    </linearGradient>
+
+    <linearGradient id="plateMetal" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0"   stop-color="#b08a3e"/>
+      <stop offset="0.5" stop-color="#d9b45e"/>
+      <stop offset="1"   stop-color="#9a7630"/>
+    </linearGradient>
+
+    <linearGradient id="pianoTop" x1="0.1" y1="0" x2="0.75" y2="1">
+      <stop offset="0"   stop-color="#fffef8"/>
+      <stop offset="0.42" stop-color="#f2ece0"/>
+      <stop offset="1"   stop-color="#cdc4ae"/>
+    </linearGradient>
+
+    <linearGradient id="pianoSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#ded6c2"/>
+      <stop offset="0.45" stop-color="#b3aa95"/>
+      <stop offset="1"   stop-color="#7e7663"/>
+    </linearGradient>
+
+    <linearGradient id="pianoLid" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0"   stop-color="#e6dcc4"/>
+      <stop offset="0.35" stop-color="#fffdf4"/>
+      <stop offset="0.7"  stop-color="#f4ead2"/>
+      <stop offset="1"   stop-color="#bfb49b"/>
+    </linearGradient>
+
+    <linearGradient id="guitarGloss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0"   stop-color="#8a5f34"/>
+      <stop offset="0.5" stop-color="#5a3a20"/>
+      <stop offset="1"   stop-color="#2a1a0e"/>
+    </linearGradient>
+
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1206" stop-opacity="0"/>
+      <stop offset="1" stop-color="#150f05" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <radialGradient id="vignetteR" cx="0.52" cy="0.44" r="0.8">
+      <stop offset="0.42" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.76" stop-color="#120c04" stop-opacity="0.22"/>
+      <stop offset="1"    stop-color="#0d0903" stop-opacity="0.58"/>
+    </radialGradient>
+
+    <linearGradient id="warmGrade" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0"    stop-color="#3f7ec0"/>
+      <stop offset="0.45" stop-color="#ff9a44"/>
+      <stop offset="1"    stop-color="#3c1f52"/>
+    </linearGradient>
+
+    <linearGradient id="bottomBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#170f05" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#170f05" stop-opacity="0.5"/>
+      <stop offset="1"   stop-color="#0f0a04" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- ============ 滤镜 ============ -->
+    <filter id="puffBig" x="-35%" y="-70%" width="170%" height="260%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.009 0.021" numOctaves="5" seed="12" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="52" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="2.2"/>
+    </filter>
+    <filter id="puffMid" x="-35%" y="-80%" width="170%" height="280%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.032" numOctaves="5" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.6"/>
+    </filter>
+    <filter id="puffSoft" x="-40%" y="-100%" width="180%" height="320%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.016" numOctaves="4" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="70" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="7"/>
+    </filter>
+
+    <filter id="grassTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.055 0.62" numOctaves="4" seed="19" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.16
+                0 0 0 0 0.26
+                0 0 0 0 0.07
+                0 0 1.3 0 -0.42"/>
+    </filter>
+    <filter id="grassBlotch" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0045 0.017" numOctaves="4" seed="5" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 1
+                0 0 0 0 0.88
+                0 0 0 0 0.45
+                0.9 0.5 0 0 -0.34"/>
+    </filter>
+    <filter id="grassDark" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.02" numOctaves="4" seed="41" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.10
+                0 0 0 0 0.17
+                0 0 0 0 0.06
+                0.8 0.6 0 0 -0.46"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="88" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.5
+                0 0 0 0 0.5
+                0 0 0 0 0.5
+                0.55 0.3 0 0 -0.26"/>
+    </filter>
+
+    <linearGradient id="rayGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#fff6d8" stop-opacity="0.55"/>
+      <stop offset="0.35" stop-color="#ffeec2" stop-opacity="0.28"/>
+      <stop offset="1"    stop-color="#ffe0a6" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="sunPatch" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#ffe9b4" stop-opacity="0.4"/>
+      <stop offset="0.55" stop-color="#ffdda0" stop-opacity="0.16"/>
+      <stop offset="1"   stop-color="#ffd08a" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blurFar"><feGaussianBlur stdDeviation="3.4"/></filter>
+    <filter id="blurMid"><feGaussianBlur stdDeviation="1.5"/></filter>
+    <filter id="blurNear"><feGaussianBlur stdDeviation="4.8"/></filter>
+    <filter id="blurTiny"><feGaussianBlur stdDeviation="1.0"/></filter>
+    <filter id="blurGlow"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="blurSoft"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="blurShadow"><feGaussianBlur stdDeviation="14"/></filter>
+
+    <filter id="textShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#2a1a08" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="rimLight" x="-25%" y="-25%" width="150%" height="150%">
+      <feFlood flood-color="#ffdca8" flood-opacity="0.7" result="f"/>
+      <feComposite in="f" in2="SourceGraphic" operator="in"/>
+      <feGaussianBlur stdDeviation="0.9"/>
+    </filter>
+
+    <clipPath id="grassClip"><rect x="-10" y="614" width="920" height="746"/></clipPath>
+    <clipPath id="skyClip"><rect x="0" y="0" width="900" height="642"/></clipPath>
+
+    <!-- ============ 可复用元件 ============ -->
+    <g id="tree">
+      <path d="M0,0 L0,-15" stroke="#3f5741" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-23" rx="12" ry="13.5" fill="#3f5741"/>
+      <ellipse cx="-6.5" cy="-16" rx="8" ry="9" fill="#3f5741"/>
+      <ellipse cx="7" cy="-17" rx="7.5" ry="8.5" fill="#3f5741"/>
+    </g>
+
+    <g id="bird">
+      <path d="M0,0 C-4,-5 -9,-6 -13,-3 C-10,-2 -7,-1 -4,1 C-2,3 1,3 3,1 C6,-1 9,-2 12,-3 C8,-6 4,-5 0,0 Z" fill="#2b2418"/>
+    </g>
+
+    <g id="tuftA" fill="none" stroke-linecap="round">
+      <path d="M0,0 C-5,-22 -8,-44 -4,-66"/>
+      <path d="M6,-2 C11,-24 9,-46 16,-60"/>
+      <path d="M-6,-1 C-14,-20 -21,-34 -28,-47"/>
+      <path d="M12,-3 C20,-20 28,-33 39,-43"/>
+      <path d="M-11,-2 C-21,-15 -31,-23 -42,-29"/>
+      <path d="M3,-4 C2,-28 0,-51 5,-75"/>
+      <path d="M-3,-1 C-8,-17 -14,-29 -16,-42"/>
+      <path d="M17,-2 C28,-15 38,-24 48,-30"/>
+    </g>
+
+    <g id="tuftB" fill="none" stroke-linecap="round">
+      <path d="M1,0 C4,-19 2,-39 -3,-57"/>
+      <path d="M-3,0 C-11,-19 -14,-36 -11,-54"/>
+      <path d="M5,-1 C13,-21 19,-39 17,-58"/>
+      <path d="M-8,0 C-18,-14 -30,-24 -42,-31"/>
+      <path d="M8,-2 C19,-17 31,-27 43,-34"/>
+      <path d="M3,-3 C6,-28 9,-50 7,-72"/>
+      <path d="M-9,-1 C-21,-11 -33,-17 -45,-20"/>
+      <path d="M13,-1 C22,-14 30,-24 36,-34"/>
+    </g>
+
+    <g id="tuftC" fill="none" stroke-linecap="round">
+      <path d="M0,0 C-2,-16 -8,-30 -14,-42"/>
+      <path d="M4,-1 C7,-20 5,-37 0,-51"/>
+      <path d="M-5,0 C-10,-17 -10,-34 -7,-49"/>
+      <path d="M7,-2 C15,-20 23,-32 31,-40"/>
+      <path d="M9,-1 C21,-13 31,-19 41,-22"/>
+      <path d="M2,-3 C2,-24 0,-42 3,-60"/>
+      <path d="M-11,-1 C-20,-11 -28,-18 -36,-22"/>
+    </g>
+
+    <!-- 人物：坐在草地上横抱吉他，面朝右 -->
+    <g id="figure">
+      <!-- 左腿：向前伸直 -->
+      <path d="M298,978 C272,972 244,968 218,966" stroke="currentColor" stroke-width="40" stroke-linecap="round" fill="none"/>
+      <path d="M218,966 C198,966 178,968 162,972" stroke="currentColor" stroke-width="29" stroke-linecap="round" fill="none"/>
+      <path d="M162,972 C152,974 144,977 138,980" stroke="currentColor" stroke-width="20" stroke-linecap="round" fill="none"/>
+      <!-- 右腿：屈膝踩地 -->
+      <path d="M330,976 C352,960 372,946 386,940" stroke="currentColor" stroke-width="39" stroke-linecap="round" fill="none"/>
+      <path d="M386,940 C389,962 391,982 391,994" stroke="currentColor" stroke-width="30" stroke-linecap="round" fill="none"/>
+      <path d="M391,994 C397,999 403,1002 409,1004" stroke="currentColor" stroke-width="21" stroke-linecap="round" fill="none"/>
+      <!-- 躯干 -->
+      <path d="M302,862 C292,866 284,876 282,890 C280,908 286,930 292,952
+               C296,966 299,974 302,980 L342,980
+               C348,962 352,936 352,910 C352,888 344,872 332,865
+               C324,861 312,860 302,862 Z" fill="currentColor"/>
+      <!-- 肩 -->
+      <ellipse cx="291" cy="882" rx="37" ry="21" fill="currentColor"/>
+      <!-- 颈 -->
+      <path d="M303,858 L302,872" stroke="currentColor" stroke-width="24" stroke-linecap="round" fill="none"/>
+      <!-- 头（侧脸朝右，略缩） -->
+      <g transform="translate(0,12) translate(302,845) scale(0.88) translate(-302,-845)">
+        <path d="M284,848
+                 C277,840 274,828 276,817
+                 C278,805 286,795 297,793
+                 C307,791 315,797 319,806
+                 C321,811 322,814 324,817
+                 C325,819 326,821 328,823
+                 L 331,826 L 327,829
+                 C328,831 328,833 326,835
+                 C325,840 320,843 315,842
+                 C311,841 308,839 306,836
+                 C304,840 303,844 303,847 Z" fill="currentColor"/>
+        <path d="M286,850 C278,840 275,826 277,814 C279,801 288,791 299,789
+                 C308,787 316,793 320,801
+                 C314,796 307,795 301,797 C292,801 287,808 285,818
+                 C283,828 284,840 287,848 Z" fill="currentColor"/>
+      </g>
+      <!-- 吉他（琴颈朝左） -->
+      <g transform="translate(0,-2) rotate(-6 330 905)">
+        <ellipse cx="356" cy="914" rx="41" ry="38" fill="currentColor"/>
+        <ellipse cx="308" cy="897" rx="29" ry="26" fill="currentColor"/>
+        <path d="M294,891 L168,868 L169,877 L296,900 Z" fill="currentColor"/>
+        <ellipse cx="159" cy="867" rx="12" ry="8.5" transform="rotate(-14 159 867)" fill="currentColor"/>
+      </g>
+      <!-- 左臂：沿琴颈按弦 -->
+      <path d="M296,884 C282,906 268,914 254,906" stroke="currentColor" stroke-width="20" stroke-linecap="round" fill="none"/>
+      <path d="M254,906 C240,898 224,884 208,873" stroke="currentColor" stroke-width="18" stroke-linecap="round" fill="none"/>
+      <ellipse cx="199" cy="869" rx="12" ry="9" transform="rotate(-18 199 869)" fill="currentColor"/>
+      <!-- 右臂：拨弦 -->
+      <path d="M334,884 C350,900 352,912 342,920" stroke="currentColor" stroke-width="22" stroke-linecap="round" fill="none"/>
+      <ellipse cx="334" cy="926" rx="12" ry="10" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <!-- ================= 天空 ================= -->
+  <rect x="0" y="0" width="900" height="642" fill="url(#sky)"/>
+
+  <g clip-path="url(#skyClip)">
+    <!-- 太阳：大范围辉光 -->
+    <circle cx="700" cy="418" r="420" fill="url(#sunHalo)"/>
+    <circle cx="700" cy="418" r="200" fill="url(#sunBloom)"/>
+    <circle cx="700" cy="418" r="160" fill="url(#sunHalo)" opacity="0.55"/>
+    <circle cx="700" cy="418" r="44" fill="url(#sunCore)" filter="url(#blurGlow)"/>
+    <circle cx="700" cy="418" r="27" fill="#fffef8"/>
+    <!-- 横向眩光 -->
+    <ellipse cx="660" cy="418" rx="330" ry="8" fill="#ffedb8" opacity="0.45" filter="url(#blurGlow)"/>
+    <ellipse cx="700" cy="418" rx="170" ry="3" fill="#fffdf0" opacity="0.7" filter="url(#blurTiny)"/>
+
+    <!-- 高空薄云 -->
+    <g opacity="0.45" filter="url(#puffSoft)">
+      <ellipse cx="170" cy="126" rx="160" ry="19" fill="#cfdde7"/>
+      <ellipse cx="296" cy="142" rx="112" ry="14" fill="#c3d4e1"/>
+      <ellipse cx="650" cy="106" rx="180" ry="17" fill="#d6e3ec"/>
+      <ellipse cx="774" cy="124" rx="120" ry="13" fill="#c9d9e5"/>
+    </g>
+
+    <!-- 云堆 1（左，迎光侧亮） -->
+    <g opacity="0.9">
+      <g filter="url(#puffBig)" transform="translate(7,-9)" fill="#ffe7bc">
+        <ellipse cx="172" cy="284" rx="120" ry="30"/>
+        <ellipse cx="248" cy="270" rx="86" ry="26"/>
+        <ellipse cx="114" cy="296" rx="72" ry="22"/>
+      </g>
+      <g filter="url(#puffBig)">
+        <ellipse cx="172" cy="284" rx="120" ry="30" fill="#b19a9a"/>
+        <ellipse cx="248" cy="270" rx="86" ry="26" fill="#c3a9a2"/>
+        <ellipse cx="114" cy="296" rx="72" ry="22" fill="#a18e94"/>
+        <ellipse cx="200" cy="298" rx="98" ry="17" fill="#8b7a84"/>
+      </g>
+    </g>
+
+    <!-- 云堆 2（右，太阳正下方，暗云透金边） -->
+    <g opacity="0.93">
+      <g filter="url(#puffBig)" transform="translate(9,-10)" fill="#fff2d2">
+        <ellipse cx="628" cy="346" rx="142" ry="28"/>
+        <ellipse cx="736" cy="330" rx="106" ry="24"/>
+        <ellipse cx="548" cy="360" rx="82" ry="20"/>
+      </g>
+      <g filter="url(#puffBig)">
+        <ellipse cx="628" cy="346" rx="142" ry="28" fill="#bda096"/>
+        <ellipse cx="736" cy="330" rx="106" ry="24" fill="#d0b3a2"/>
+        <ellipse cx="548" cy="360" rx="82" ry="20" fill="#ae9492"/>
+        <ellipse cx="662" cy="362" rx="122" ry="15" fill="#8a7780"/>
+      </g>
+    </g>
+
+    <!-- 贴着太阳的小亮云 -->
+    <g opacity="0.8">
+      <g filter="url(#puffMid)" transform="translate(5,-6)" fill="#fff8e2">
+        <ellipse cx="806" cy="412" rx="86" ry="15"/>
+        <ellipse cx="608" cy="396" rx="56" ry="11"/>
+      </g>
+      <g filter="url(#puffMid)">
+        <ellipse cx="806" cy="412" rx="86" ry="15" fill="#e4c8ab"/>
+        <ellipse cx="608" cy="396" rx="56" ry="11" fill="#f0dcc0"/>
+      </g>
+    </g>
+
+    <!-- 低空长条云 -->
+    <g opacity="0.88">
+      <g filter="url(#puffBig)" transform="translate(7,-8)" fill="#ffdfa6">
+        <ellipse cx="400" cy="474" rx="240" ry="17"/>
+        <ellipse cx="226" cy="496" rx="152" ry="13"/>
+        <ellipse cx="672" cy="504" rx="184" ry="14"/>
+      </g>
+      <g filter="url(#puffBig)">
+        <ellipse cx="400" cy="474" rx="240" ry="17" fill="#9a8791"/>
+        <ellipse cx="226" cy="496" rx="152" ry="13" fill="#8b7a88"/>
+        <ellipse cx="672" cy="504" rx="184" ry="14" fill="#a68f98"/>
+      </g>
+    </g>
+
+    <!-- 高空飞鸟 -->
+    <g opacity="0.5">
+      <use href="#bird" transform="translate(432,198) scale(0.5)"/>
+      <use href="#bird" transform="translate(470,184) scale(0.38)"/>
+      <use href="#bird" transform="translate(507,206) scale(0.44)"/>
+      <use href="#bird" transform="translate(394,216) scale(0.32)"/>
+    </g>
+  </g>
+
+  <!-- ================= 远景 ================= -->
+  <g opacity="0.45" filter="url(#blurFar)">
+    <path d="M-10,626 C60,590 120,602 176,580 C232,558 286,588 344,572 C402,556 450,586 512,574 C574,562 640,590 706,578 C772,566 830,592 910,574 L910,642 L-10,642 Z" fill="#7d9aad"/>
+  </g>
+  <g opacity="0.4" filter="url(#blurFar)">
+    <path d="M-10,630 C80,610 150,618 230,602 C310,586 380,608 470,598 C560,588 650,612 740,602 C820,594 870,608 910,600 L910,648 L-10,648 Z" fill="#96aeb8"/>
+  </g>
+  <rect x="0" y="540" width="900" height="104" fill="url(#hazeGrad)"/>
+
+  <!-- 远处树线 -->
+  <g opacity="0.7" filter="url(#blurMid)">
+    <use href="#tree" transform="translate(18,630) scale(1.0)"/>
+    <use href="#tree" transform="translate(54,632) scale(0.8)"/>
+    <use href="#tree" transform="translate(98,629) scale(1.06)"/>
+    <use href="#tree" transform="translate(143,633) scale(0.72)"/>
+    <use href="#tree" transform="translate(188,630) scale(0.94)"/>
+    <use href="#tree" transform="translate(234,632) scale(0.66)"/>
+    <use href="#tree" transform="translate(278,629) scale(1.1)"/>
+    <use href="#tree" transform="translate(326,633) scale(0.78)"/>
+    <use href="#tree" transform="translate(374,630) scale(0.9)"/>
+    <use href="#tree" transform="translate(422,632) scale(0.7)"/>
+    <use href="#tree" transform="translate(470,629) scale(1.02)"/>
+    <use href="#tree" transform="translate(518,633) scale(0.8)"/>
+    <use href="#tree" transform="translate(568,630) scale(0.88)"/>
+    <use href="#tree" transform="translate(616,632) scale(0.68)"/>
+    <use href="#tree" transform="translate(662,629) scale(1.06)"/>
+    <use href="#tree" transform="translate(712,633) scale(0.76)"/>
+    <use href="#tree" transform="translate(760,630) scale(0.94)"/>
+    <use href="#tree" transform="translate(808,632) scale(0.7)"/>
+    <use href="#tree" transform="translate(854,629) scale(1.0)"/>
+    <use href="#tree" transform="translate(894,633) scale(0.82)"/>
+  </g>
+
+  <!-- ================= 草地 ================= -->
+  <g clip-path="url(#grassClip)">
+    <path d="M-10,620 C120,610 260,618 400,612 C540,606 680,618 910,610 L910,702 L-10,702 Z" fill="url(#grassFar)"/>
+    <rect x="0" y="610" width="900" height="50" fill="#f4e2a6" opacity="0.32" filter="url(#blurMid)"/>
+
+    <rect x="-10" y="614" width="920" height="746" fill="url(#grassMain)"/>
+    <rect x="-10" y="614" width="920" height="746" filter="url(#grassBlotch)" opacity="0.52"/>
+    <rect x="-10" y="614" width="920" height="746" filter="url(#grassDark)" opacity="0.44"/>
+    <rect x="-10" y="614" width="920" height="746" filter="url(#grassTex)" opacity="0.42"/>
+
+    <!-- 风过草浪 -->
+    <g fill="none" stroke="#f6e8ae" stroke-linecap="round" opacity="0.26">
+      <path d="M-20,688 C140,674 300,698 460,682 C620,666 780,690 920,676" stroke-width="3"/>
+      <path d="M-20,744 C160,728 320,754 500,736 C660,720 800,744 920,730" stroke-width="4"/>
+      <path d="M-20,812 C150,794 330,820 520,800 C680,783 810,808 920,794" stroke-width="5" opacity="0.2"/>
+      <path d="M-20,892 C170,870 340,900 540,876 C700,857 820,884 920,868" stroke-width="6" opacity="0.14"/>
+    </g>
+    <g fill="none" stroke="#2e451f" stroke-linecap="round" opacity="0.28">
+      <path d="M-20,712 C150,698 310,724 480,706 C640,690 790,714 920,700" stroke-width="4"/>
+      <path d="M-20,792 C160,774 340,800 540,780 C700,763 820,790 920,774" stroke-width="5"/>
+      <path d="M-20,882 C180,858 360,890 560,864 C720,844 830,874 920,856" stroke-width="7"/>
+    </g>
+
+    <!-- 草上薄雾 -->
+    <rect x="-10" y="640" width="920" height="130" fill="#fff2cf" opacity="0.13" filter="url(#blurSoft)"/>
+
+    <!-- 野花 -->
+    <g>
+      <g fill="#fff6d8" opacity="0.7">
+        <circle cx="86" cy="712" r="2.2"/><circle cx="142" cy="760" r="2"/><circle cx="204" cy="708" r="2.4"/>
+        <circle cx="268" cy="772" r="2"/><circle cx="330" cy="716" r="2.2"/><circle cx="392" cy="758" r="2.2"/>
+        <circle cx="456" cy="706" r="2"/><circle cx="518" cy="768" r="2.4"/><circle cx="580" cy="714" r="2.2"/>
+        <circle cx="644" cy="762" r="2"/><circle cx="706" cy="710" r="2.2"/><circle cx="768" cy="766" r="2.2"/>
+        <circle cx="830" cy="712" r="2"/><circle cx="880" cy="758" r="2.4"/>
+        <circle cx="118" cy="836" r="2.6"/><circle cx="196" cy="880" r="2.4"/><circle cx="286" cy="842" r="2.6"/>
+        <circle cx="376" cy="890" r="2.4"/><circle cx="470" cy="846" r="2.6"/><circle cx="566" cy="888" r="2.4"/>
+        <circle cx="660" cy="842" r="2.6"/><circle cx="754" cy="886" r="2.4"/><circle cx="846" cy="844" r="2.6"/>
+      </g>
+      <g fill="#ffe9a8" opacity="0.5">
+        <circle cx="164" cy="730" r="1.8"/><circle cx="350" cy="742" r="1.8"/><circle cx="540" cy="734" r="1.8"/>
+        <circle cx="720" cy="740" r="1.8"/><circle cx="246" cy="860" r="2"/><circle cx="620" cy="866" r="2"/>
+      </g>
+      <g fill="#3d4a22" opacity="0.45">
+        <ellipse cx="238" cy="932" rx="14" ry="5"/>
+        <ellipse cx="520" cy="954" rx="11" ry="4"/>
+        <ellipse cx="706" cy="970" rx="16" ry="5.5"/>
+        <ellipse cx="828" cy="914" rx="9" ry="3.5"/>
+      </g>
+    </g>
+
+    <!-- 中景零散草丛 -->
+    <g opacity="0.8">
+      <use href="#tuftA" transform="translate(44,676) scale(0.48)"  stroke="#93a154" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(126,670) scale(0.42)" stroke="#86974c" stroke-width="4"/>
+      <use href="#tuftB" transform="translate(214,678) scale(0.5)"  stroke="#9aa757" stroke-width="4"/>
+      <use href="#tuftA" transform="translate(296,668) scale(0.4)"  stroke="#7f9044" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(388,676) scale(0.46)" stroke="#909f51" stroke-width="4"/>
+      <use href="#tuftB" transform="translate(478,670) scale(0.44)" stroke="#879649" stroke-width="4"/>
+      <use href="#tuftA" transform="translate(578,678) scale(0.48)" stroke="#98a555" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(666,668) scale(0.4)"  stroke="#828f45" stroke-width="4"/>
+      <use href="#tuftB" transform="translate(758,676) scale(0.46)" stroke="#8d9c4e" stroke-width="4"/>
+      <use href="#tuftA" transform="translate(850,670) scale(0.43)" stroke="#80903f" stroke-width="4"/>
+    </g>
+    <g opacity="0.88">
+      <use href="#tuftB" transform="translate(88,730) scale(0.68)"  stroke="#718640" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(178,722) scale(0.6)"  stroke="#7c9044" stroke-width="4"/>
+      <use href="#tuftA" transform="translate(268,734) scale(0.72)" stroke="#6d8340" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(352,724) scale(0.62)" stroke="#788d45" stroke-width="4"/>
+      <use href="#tuftB" transform="translate(444,732) scale(0.7)"  stroke="#6b8140" stroke-width="4"/>
+      <use href="#tuftA" transform="translate(540,722) scale(0.64)" stroke="#778c42" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(628,732) scale(0.68)" stroke="#6f8542" stroke-width="4"/>
+      <use href="#tuftB" transform="translate(722,724) scale(0.6)"  stroke="#748a3f" stroke-width="4"/>
+      <use href="#tuftA" transform="translate(812,734) scale(0.7)"  stroke="#6a803d" stroke-width="4"/>
+      <use href="#tuftC" transform="translate(884,724) scale(0.62)" stroke="#768b44" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- ================= 电线杆 ================= -->
+  <g>
+    <!-- 左杆 -->
+    <g fill="#37322a" opacity="0.92">
+      <path d="M145,634 L145,372 C145,366 150,362 154,362 C158,362 163,366 163,372 L163,634 Z"/>
+      <path d="M131,406 L177,406 L177,400 L131,400 Z"/>
+      <path d="M133,442 L175,442 L175,436 L133,436 Z"/>
+      <path d="M135,468 L173,468 L173,463 L135,463 Z"/>
+      <circle cx="131" cy="403" r="2.6"/><circle cx="177" cy="403" r="2.6"/>
+    </g>
+    <path d="M154,362 C154,348 146,338 134,334" stroke="#37322a" stroke-width="2.6" fill="none" opacity="0.9"/>
+    <!-- 右杆 -->
+    <g fill="#37322a" opacity="0.9">
+      <path d="M790,636 L790,382 C790,376 795,372 799,372 C803,372 808,376 808,382 L808,636 Z"/>
+      <path d="M777,420 L821,420 L821,414 L777,414 Z"/>
+      <path d="M779,456 L819,456 L819,450 L779,450 Z"/>
+      <path d="M781,482 L817,482 L817,477 L781,477 Z"/>
+      <circle cx="777" cy="417" r="2.6"/><circle cx="821" cy="417" r="2.6"/>
+    </g>
+    <!-- 电线 -->
+    <g fill="none" stroke="#37322a" stroke-width="2.2" stroke-linecap="round" opacity="0.92">
+      <path d="M-10,396 C60,406 108,414 148,416 C400,442 620,436 795,426 C830,424 862,422 910,420"/>
+      <path d="M-10,432 C60,444 108,452 148,454 C400,482 620,474 795,464 C830,462 862,460 910,458"/>
+      <path d="M-10,472 C70,488 116,496 154,496 C420,520 640,508 795,494 C834,491 866,488 910,486"/>
+    </g>
+    <!-- 电线上停着的鸟 -->
+    <g>
+      <use href="#bird" transform="translate(300,441) scale(0.7)"/>
+      <use href="#bird" transform="translate(354,447) scale(0.6)"/>
+      <use href="#bird" transform="translate(428,451) scale(0.78)"/>
+      <use href="#bird" transform="translate(490,450) scale(0.54)"/>
+      <use href="#bird" transform="translate(556,446) scale(0.68)"/>
+      <use href="#bird" transform="translate(626,440) scale(0.58)"/>
+      <use href="#bird" transform="translate(668,436) scale(0.48)"/>
+    </g>
+  </g>
+
+  <!-- 远处稻草人 -->
+  <g opacity="0.7">
+    <ellipse cx="660" cy="644" rx="24" ry="6" fill="#1f1a0e" opacity="0.3"/>
+    <path d="M660,642 L660,592" stroke="#4a3a22" stroke-width="3.6"/>
+    <path d="M638,604 L684,602" stroke="#4a3a22" stroke-width="3"/>
+    <path d="M638,604 C631,600 627,594 625,589" stroke="#4a3a22" stroke-width="2.2" fill="none"/>
+    <path d="M684,602 C691,598 695,592 697,587" stroke="#4a3a22" stroke-width="2.2" fill="none"/>
+    <circle cx="660" cy="584" r="8" fill="#6b5427"/>
+    <path d="M652,578 C649,568 656,562 662,564 C669,566 671,573 668,580" fill="#8a6c31"/>
+    <path d="M653,592 C647,596 644,601 644,606" stroke="#8a6c31" stroke-width="2.4" fill="none"/>
+  </g>
+
+  <!-- 远处吃草的牛 -->
+  <g fill="#4b4230" opacity="0.5">
+    <g transform="translate(742,652)">
+      <ellipse cx="0" cy="0" rx="11" ry="6"/>
+      <path d="M-8,4 L-9,10 M-2,5 L-2,10 M5,5 L5,10 M9,3 L10,9"
+            stroke="#4b4230" stroke-width="1.5" stroke-linecap="round"/>
+      <ellipse cx="-11" cy="-3" rx="4.5" ry="3.4"/>
+      <path d="M-14,-4 C-16,-8 -15,-10 -13,-10" stroke="#4b4230" stroke-width="1.4" fill="none"/>
+    </g>
+    <g transform="translate(786,660) scale(0.78)">
+      <ellipse cx="0" cy="0" rx="11" ry="6"/>
+      <path d="M-8,4 L-9,10 M-2,5 L-2,10 M5,5 L5,10 M9,3 L10,9"
+            stroke="#4b4230" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="-11" cy="-3" rx="4.5" ry="3.4"/>
+    </g>
+  </g>
+
+  <!-- ================= 白色三角钢琴 ================= -->
+  <g>
+    <ellipse cx="700" cy="946" rx="204" ry="30" fill="#1c1408" opacity="0.42" filter="url(#blurShadow)"/>
+
+    <!-- 琴身：长直边 + 尾部圆角 -->
+    <path d="M556,884 L556,772
+             C620,764 700,746 772,738
+             C814,742 842,768 850,800
+             L852,884 Z" fill="#c9c0aa"/>
+    <!-- 前侧板（面向观众，带明暗） -->
+    <path d="M556,884 L556,850 C570,850 592,848 620,842 C700,826 790,822 850,832
+             L852,884 Z" fill="#ddd5c2"/>
+    <path d="M556,884 C620,890 720,890 852,884 L852,858
+             C790,864 700,868 620,872 C596,874 570,876 556,876 Z" fill="#b3aa94" opacity="0.55"/>
+
+    <!-- 顶面：掀盖后露出的音板 -->
+    <path d="M556,772 C620,764 700,746 772,738 C814,742 842,768 850,800
+             L850,832 C790,822 700,826 620,842 C592,848 570,850 556,850 Z" fill="url(#soundBoard)"/>
+    <!-- 铸铁板（深金） -->
+    <path d="M566,786 C630,776 700,760 762,752 C792,756 814,772 824,794
+             C770,790 690,800 620,816 C600,820 580,824 566,828 Z" fill="url(#plateMetal)" opacity="0.85"/>
+    <!-- 琴弦 -->
+    <g stroke="#f6e6bd" stroke-width="1.1" opacity="0.5">
+      <path d="M568,790 L828,780"/><path d="M568,800 L826,790"/><path d="M568,810 L824,800"/>
+      <path d="M568,820 L822,810"/><path d="M568,830 L820,820"/><path d="M568,840 L818,830"/>
+    </g>
+    <!-- 弦轴/弦码 -->
+    <path d="M566,790 C620,782 680,772 736,764" fill="none" stroke="#6f5228" stroke-width="4" opacity="0.7"/>
+    <path d="M622,842 C690,828 760,820 824,806" fill="none" stroke="#7a5c2e" stroke-width="5" opacity="0.55"/>
+    <!-- 顶面前缘阴影 -->
+    <path d="M556,850 C570,850 592,848 620,842 C700,826 790,822 850,832"
+          fill="none" stroke="#7d6238" stroke-width="2.2" opacity="0.5"/>
+
+    <!-- 底部裙边 -->
+    <path d="M556,884 L852,884 L852,900 C780,908 660,908 596,900 C578,898 564,892 556,888 Z" fill="#8e8571"/>
+    <path d="M556,888 C564,892 578,898 596,900 C660,908 780,908 852,900 L852,904
+             C780,912 660,912 596,904 C576,902 562,896 556,892 Z" fill="#6a6152" opacity="0.7"/>
+    <path d="M560,884 C640,890 760,890 850,884 L850,872 C760,878 640,876 560,868 Z" fill="#93a349" opacity="0.13"/>
+
+    <!-- 掀起的琴盖 -->
+    <path d="M604,778 L742,664 L846,742 L850,778 Z" fill="url(#pianoLid)"/>
+    <path d="M604,778 L742,664 L750,673 L613,787 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M742,664 L750,673 L854,750 L846,742 Z" fill="#7d7460"/>
+    <path d="M620,772 C660,730 700,700 736,670" fill="none" stroke="#fff8e6" stroke-width="1.5" opacity="0.45"/>
+    <!-- 支撑杆 -->
+    <path d="M744,668 L744,748" stroke="#4e4638" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M744,668 L744,748" stroke="#efe2c6" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+
+    <!-- 键盘 -->
+    <g>
+      <path d="M492,776 C500,771 512,768 524,766 L566,762 L566,806 L524,812 C512,814 502,817 492,821 Z" fill="#fbf8ef"/>
+      <path d="M492,821 C502,817 512,814 524,812 L566,806 L566,818 L524,824 C512,826 502,829 492,833 Z" fill="#8f8774"/>
+      <path d="M492,833 C502,829 512,826 524,824 L566,818 L566,822 C524,829 502,834 492,837 Z" fill="#6f6654" opacity="0.5"/>
+      <g stroke="#b9b0a0" stroke-width="0.9" opacity="0.85">
+        <path d="M505,810 L505,818"/><path d="M512,809 L512,817"/><path d="M519,808 L519,816"/>
+        <path d="M526,806 L526,814"/><path d="M533,805 L533,813"/><path d="M540,804 L540,812"/>
+        <path d="M547,803 L547,811"/>
+      </g>
+      <g fill="#221b12">
+        <rect x="508" y="779" width="2.4" height="8" transform="rotate(-9 508 779)"/>
+        <rect x="521" y="777" width="2.4" height="8" transform="rotate(-9 521 777)"/>
+        <rect x="534" y="775" width="2.4" height="8" transform="rotate(-9 534 775)"/>
+        <rect x="546" y="773" width="2.4" height="8" transform="rotate(-9 546 773)"/>
+      </g>
+      <!-- 键盘侧板 -->
+      <path d="M498,812 C510,816 532,818 556,810 L556,816 C532,824 510,822 498,820 Z" fill="#6f6654" opacity="0.6"/>
+    </g>
+
+    <!-- 腿 -->
+    <path d="M564,896 L568,942 L598,942 L592,896 Z" fill="#dccfb6"/>
+    <path d="M582,896 L590,896 L596,942 L598,942 Z" fill="#9b9280" opacity="0.4"/>
+    <ellipse cx="583" cy="948" rx="18" ry="7" fill="#453e30"/>
+    <path d="M688,904 L694,940 L722,940 L716,904 Z" fill="#c6bca4"/>
+    <ellipse cx="708" cy="946" rx="17" ry="6" fill="#3b3427"/>
+    <path d="M818,896 L824,936 L852,936 L846,896 Z" fill="#b3a890"/>
+    <ellipse cx="838" cy="942" rx="17" ry="6" fill="#332d1d"/>
+
+    <!-- 踏板 -->
+    <g fill="#948a75">
+      <rect x="692" y="904" width="4" height="26" rx="1"/>
+      <rect x="700" y="904" width="4" height="24" rx="1"/>
+      <rect x="708" y="904" width="4" height="21" rx="1"/>
+    </g>
+
+    <!-- 琴凳 -->
+    <g>
+      <ellipse cx="462" cy="946" rx="38" ry="9" fill="#1c1408" opacity="0.4" filter="url(#blurShadow)"/>
+      <path d="M432,888 L492,880 L492,900 L432,908 Z" fill="#3a2f22"/>
+      <path d="M432,888 L492,880 L494,872 L434,880 Z" fill="#5a4a33"/>
+      <path d="M438,908 L440,942" stroke="#2c2318" stroke-width="6" stroke-linecap="round"/>
+      <path d="M486,900 L488,938" stroke="#241c13" stroke-width="6" stroke-linecap="round"/>
+      <path d="M432,898 L492,890" stroke="#6d5b3f" stroke-width="1" opacity="0.55"/>
+    </g>
+
+    <!-- 逆光边缘光 -->
+    <path d="M772,738 C814,742 842,768 850,800" fill="none" stroke="#ffdfae" stroke-width="2.2" opacity="0.75"/>
+    <path d="M788,618 L796,626" stroke="#ffeecb" stroke-width="3" opacity="0.9"/>
+    <path d="M788,618 L566,772" stroke="#fff4da" stroke-width="1.4" opacity="0.55"/>
+  </g>
+
+  <!-- ================= 人物 ================= -->
+  <g>
+    <ellipse cx="278" cy="992" rx="142" ry="24" fill="#18120a" opacity="0.46" filter="url(#blurShadow)"/>
+    <ellipse cx="368" cy="996" rx="62" ry="12" fill="#120c05" opacity="0.36" filter="url(#blurShadow)"/>
+
+    <!-- 边缘光 -->
+    <g filter="url(#rimLight)" transform="translate(2.5,-2.5)" opacity="0.55">
+      <use href="#figure" color="#241c12"/>
+    </g>
+    <use href="#figure" color="#241c12"/>
+
+    <!-- 吉他细节：音孔、反光、琴弦 -->
+    <g transform="translate(0,-2)">
+      <circle cx="330" cy="900" r="9.5" fill="#0b0703"/>
+      <circle cx="330" cy="900" r="9.5" fill="none" stroke="#c9a06a" stroke-width="1.6" opacity="0.7"/>
+      <path d="M310,874 C326,868 346,872 356,883" fill="none" stroke="#c79a5c" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+      <path d="M330,948 C344,953 364,948 376,938" fill="none" stroke="#9c7440" stroke-width="1.8" stroke-linecap="round" opacity="0.42"/>
+      <path d="M338,928 L160,866" fill="none" stroke="#e2bb84" stroke-width="1.3" opacity="0.55"/>
+      <g stroke="#c9a878" stroke-width="0.9" opacity="0.32">
+        <path d="M258,884 L258,895"/><path d="M234,880 L234,891"/>
+        <path d="M210,876 L210,887"/><path d="M186,872 L186,883"/>
+      </g>
+      <ellipse cx="159" cy="867" rx="4.5" ry="3.2" fill="#e8c894" opacity="0.45"/>
+    </g>
+
+    <!-- 人物前方的遮挡草（融合感） -->
+    <g>
+      <use href="#tuftC" transform="translate(252,1016) rotate(-6) scale(0.92)" stroke="#3a5620" stroke-width="4.5"/>
+      <use href="#tuftA" transform="translate(330,1022) rotate(8) scale(0.86)"  stroke="#354f1e" stroke-width="4.5"/>
+      <use href="#tuftB" transform="translate(392,1012) rotate(-10) scale(0.78)" stroke="#3f5c24" stroke-width="4.5"/>
+    </g>
+
+    <!-- 草地上的草帽 -->
+    <g>
+      <ellipse cx="452" cy="1042" rx="46" ry="11" fill="#1a1408" opacity="0.35" filter="url(#blurShadow)"/>
+      <ellipse cx="452" cy="1030" rx="44" ry="14" fill="#cdb277"/>
+      <ellipse cx="452" cy="1027" rx="43" ry="13" fill="#e6d09a"/>
+      <path d="M424,1021 C428,1002 476,1002 480,1021 Z" fill="#dcc38b"/>
+      <path d="M425,1020 C430,1006 440,1000 452,1000 C464,1000 474,1006 479,1020 Z" fill="#edd9a6"/>
+      <path d="M426,1018 C436,1010 468,1010 478,1018" fill="none" stroke="#a8874e" stroke-width="3" opacity="0.75"/>
+      <path d="M432,1016 C440,1010 464,1010 472,1016" fill="none" stroke="#8d6f3e" stroke-width="1.2" opacity="0.5"/>
+    </g>
+
+    <!-- 人与草的接触 -->
+    <g stroke="#4a6b2a" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M144,994 C152,982 154,970 152,960"/>
+      <path d="M172,998 C180,986 182,974 180,962"/>
+      <path d="M214,1000 C222,988 226,976 224,964"/>
+      <path d="M268,1000 C276,988 280,976 278,964"/>
+      <path d="M326,1002 C334,990 338,978 336,966"/>
+      <path d="M392,998 C400,986 404,974 402,962"/>
+    </g>
+  </g>
+
+  <!-- ================= 中近景草丛 ================= -->
+  <g opacity="0.95">
+    <use href="#tuftC" transform="translate(16,1018) rotate(-4.9) scale(0.95) scale(-1,1)"  stroke="#3f5c24" stroke-width="5"/>
+    <use href="#tuftA" transform="translate(96,1046) rotate(4.2) scale(1.12) scale(-1,1)"  stroke="#38521f" stroke-width="5"/>
+    <use href="#tuftB" transform="translate(182,1014) rotate(1.0) scale(0.88)" stroke="#425f2a" stroke-width="5"/>
+    <use href="#tuftC" transform="translate(250,1052) rotate(-12.4) scale(1.05)" stroke="#34501d" stroke-width="5"/>
+    <use href="#tuftA" transform="translate(332,1020) rotate(-13.0) scale(0.92)" stroke="#3d5a23" stroke-width="5"/>
+    <use href="#tuftB" transform="translate(406,1048) rotate(-12.0) scale(1.08) scale(-1,1)" stroke="#36511f" stroke-width="5"/>
+    <use href="#tuftC" transform="translate(488,1016) rotate(-2.1) scale(0.9)"  stroke="#405d26" stroke-width="5"/>
+    <use href="#tuftA" transform="translate(562,1054) rotate(-10.5) scale(1.15) scale(-1,1)" stroke="#34501d" stroke-width="5"/>
+    <use href="#tuftB" transform="translate(650,1018) rotate(3.6) scale(0.86)" stroke="#3d5a23" stroke-width="5"/>
+    <use href="#tuftC" transform="translate(724,1050) rotate(2.2) scale(1.02)" stroke="#33501d" stroke-width="5"/>
+    <use href="#tuftA" transform="translate(802,1014) rotate(13.3) scale(0.94) scale(-1,1)" stroke="#3c5922" stroke-width="5"/>
+    <use href="#tuftB" transform="translate(868,1052) rotate(10.0) scale(1.1)"  stroke="#324e1c" stroke-width="5"/>
+  </g>
+
+  <!-- 近景草丛（轻虚化） -->
+  <g opacity="0.96" filter="url(#blurTiny)">
+    <use href="#tuftB" transform="translate(-8,1108) rotate(-10.0) scale(1.3) scale(-1,1)"  stroke="#2c451a" stroke-width="3.6"/>
+    <use href="#tuftA" transform="translate(74,1142) rotate(-5.4) scale(1.42)" stroke="#274015" stroke-width="3.6"/>
+    <use href="#tuftC" transform="translate(168,1104) rotate(-8.9) scale(1.24)" stroke="#2f491c" stroke-width="3.6"/>
+    <use href="#tuftB" transform="translate(248,1146) rotate(3.9) scale(1.46)" stroke="#253c14" stroke-width="3.6"/>
+    <use href="#tuftA" transform="translate(340,1106) rotate(1.3) scale(1.28) scale(-1,1)" stroke="#2d471a" stroke-width="3.6"/>
+    <use href="#tuftC" transform="translate(422,1144) rotate(-12.3) scale(1.4) scale(-1,1)"  stroke="#263d15" stroke-width="3.6"/>
+    <use href="#tuftB" transform="translate(512,1102) rotate(5.1) scale(1.26)" stroke="#2e481b" stroke-width="3.6"/>
+    <use href="#tuftA" transform="translate(596,1148) rotate(-5.2) scale(1.44)" stroke="#243a12" stroke-width="3.6"/>
+    <use href="#tuftC" transform="translate(688,1108) rotate(-1.3) scale(1.3)"  stroke="#2b4418" stroke-width="3.6"/>
+    <use href="#tuftB" transform="translate(772,1146) rotate(8.2) scale(1.4)"  stroke="#253c14" stroke-width="3.6"/>
+    <use href="#tuftA" transform="translate(856,1104) rotate(-7.2) scale(1.24)" stroke="#2d471a" stroke-width="3.6"/>
+    <use href="#tuftC" transform="translate(896,1140) rotate(0.7) scale(1.36)" stroke="#263d15" stroke-width="3.6"/>
+  </g>
+
+  <!-- 云隙光（丁达尔光束） -->
+  <g style="mix-blend-mode:screen" opacity="0.5">
+    <path d="M676,424 L360,1350 L520,1350 L712,428 Z" fill="url(#rayGrad)" filter="url(#blurSoft)" opacity="0.55"/>
+    <path d="M694,426 L560,1350 L640,1350 L716,430 Z" fill="url(#rayGrad)" filter="url(#blurSoft)" opacity="0.5"/>
+    <path d="M706,432 L790,1350 L880,1350 L722,436 Z" fill="url(#rayGrad)" filter="url(#blurSoft)" opacity="0.4"/>
+    <path d="M686,428 L180,1350 L286,1350 L702,432 Z" fill="url(#rayGrad)" filter="url(#blurSoft)" opacity="0.3"/>
+  </g>
+
+  <!-- 草地上的阳光斑 -->
+  <g style="mix-blend-mode:screen">
+    <ellipse cx="612" cy="812" rx="230" ry="96" fill="url(#sunPatch)" filter="url(#blurSoft)"/>
+    <ellipse cx="742" cy="946" rx="160" ry="62" fill="url(#sunPatch)" filter="url(#blurSoft)" opacity="0.7"/>
+    <ellipse cx="330" cy="900" rx="120" ry="44" fill="url(#sunPatch)" filter="url(#blurSoft)" opacity="0.45"/>
+    <ellipse cx="150" cy="1080" rx="180" ry="70" fill="url(#sunPatch)" filter="url(#blurSoft)" opacity="0.3"/>
+  </g>
+
+  <!-- ================= 镜头眩光 ================= -->
+  <g style="mix-blend-mode:screen" opacity="0.5">
+    <circle cx="612" cy="520" r="50" fill="#ffcf8a" opacity="0.16"/>
+    <circle cx="612" cy="520" r="50" fill="none" stroke="#ffe3ae" stroke-width="1.8" opacity="0.22"/>
+    <circle cx="516" cy="616" r="28" fill="#ffd79a" opacity="0.13"/>
+    <circle cx="424" cy="714" r="18" fill="#ffc980" opacity="0.11"/>
+    <circle cx="338" cy="816" r="44" fill="#ffd89e" opacity="0.09"/>
+    <circle cx="248" cy="926" r="26" fill="#ffcf8a" opacity="0.09"/>
+    <circle cx="156" cy="1036" r="62" fill="#ffdcaa" opacity="0.07"/>
+    <path d="M700,418 L152,1078" stroke="#ffdca4" stroke-width="16" opacity="0.06" filter="url(#blurGlow)"/>
+  </g>
+
+  <!-- 飘飞绒絮 / 尘埃 -->
+  <g fill="#fff8e2">
+    <circle cx="188" cy="758" r="3.0" opacity="0.5"/>
+    <circle cx="248" cy="696" r="2.0" opacity="0.42"/>
+    <circle cx="412" cy="646" r="2.4" opacity="0.46"/>
+    <circle cx="522" cy="740" r="3.2" opacity="0.46"/>
+    <circle cx="614" cy="688" r="1.8" opacity="0.36"/>
+    <circle cx="744" cy="638" r="2.6" opacity="0.4"/>
+    <circle cx="332" cy="822" r="3.4" opacity="0.46"/>
+    <circle cx="470" cy="884" r="3.8" opacity="0.4"/>
+    <circle cx="640" cy="816" r="2.8" opacity="0.36"/>
+    <circle cx="806" cy="756" r="2.4" opacity="0.32"/>
+    <circle cx="120" cy="904" r="3.6" opacity="0.36"/>
+    <circle cx="560" cy="962" r="4.2" opacity="0.32"/>
+    <circle cx="700" cy="1022" r="3.2" opacity="0.28"/>
+    <circle cx="240" cy="1082" r="4.8" opacity="0.3" filter="url(#blurTiny)"/>
+    <circle cx="820" cy="1102" r="4.4" opacity="0.28" filter="url(#blurTiny)"/>
+  </g>
+
+  <!-- ================= 前景草（景深虚化） ================= -->
+  <g filter="url(#blurNear)" opacity="0.9">
+    <use href="#tuftB" transform="translate(-16,1246) rotate(6.4) scale(1.78)" stroke="#2a3b16" stroke-width="3.2"/>
+    <use href="#tuftA" transform="translate(88,1288) rotate(13.4) scale(1.95) scale(-1,1)"  stroke="#253512" stroke-width="3.2"/>
+    <use href="#tuftC" transform="translate(196,1250) rotate(-2.3) scale(1.7)"  stroke="#2c3d18" stroke-width="3.2"/>
+    <use href="#tuftB" transform="translate(304,1290) rotate(-9.7) scale(2.05)" stroke="#22310f" stroke-width="3.2"/>
+    <use href="#tuftA" transform="translate(452,1298) rotate(-12.9) scale(1.75)" stroke="#283917" stroke-width="3.2"/>
+    <use href="#tuftC" transform="translate(556,1300) rotate(7.4) scale(1.98)" stroke="#233310" stroke-width="3.2"/>
+    <use href="#tuftB" transform="translate(632,1254) rotate(10.5) scale(1.72)" stroke="#2a3b16" stroke-width="3.2"/>
+    <use href="#tuftA" transform="translate(736,1292) rotate(5.5) scale(2.0)"  stroke="#202e0d" stroke-width="3.2"/>
+    <use href="#tuftC" transform="translate(842,1250) rotate(2.2) scale(1.68)" stroke="#273812" stroke-width="3.2"/>
+    <use href="#tuftB" transform="translate(894,1284) rotate(9.5) scale(1.85)" stroke="#212f0d" stroke-width="3.2"/>
+  </g>
+  <g opacity="0.9" filter="url(#blurMid)">
+    <use href="#tuftA" transform="translate(40,1188) rotate(-0.7) scale(1.5)"  stroke="#2b4118" stroke-width="3.2"/>
+    <use href="#tuftC" transform="translate(176,1206) rotate(-12.3) scale(1.56)" stroke="#263a15" stroke-width="3.2"/>
+    <use href="#tuftB" transform="translate(318,1184) rotate(4.1) scale(1.48)" stroke="#2c421a" stroke-width="3.2"/>
+    <use href="#tuftA" transform="translate(462,1208) rotate(9.0) scale(1.54)" stroke="#243814" stroke-width="3.2"/>
+    <use href="#tuftC" transform="translate(604,1186) rotate(-3.2) scale(1.5)"  stroke="#2a4018" stroke-width="3.2"/>
+    <use href="#tuftB" transform="translate(744,1206) rotate(-13.4) scale(1.56)" stroke="#223414" stroke-width="3.2"/>
+    <use href="#tuftA" transform="translate(866,1184) rotate(-9.3) scale(1.46) scale(-1,1)" stroke="#26391a" stroke-width="3.2"/>
+  </g>
+
+  <!-- ================= 调色 / 暗角 / 颗粒 ================= -->
+  <rect x="0" y="0" width="900" height="1350" fill="url(#warmGrade)" opacity="0.14" style="mix-blend-mode:soft-light"/>
+  <rect x="0" y="0" width="900" height="1350" fill="url(#vignetteR)"/>
+  <rect x="0" y="900" width="900" height="450" fill="url(#vignette)" opacity="0.26"/>
+  <rect x="0" y="0" width="900" height="1350" filter="url(#grain)" opacity="0.15" style="mix-blend-mode:overlay"/>
+
+  <!-- ================= 文字 ================= -->
+  <g>
+    <!-- 顶部标识 -->
+    <g fill="#fff8ea">
+      <text x="72" y="104" font-family="'Songti SC','SimSun','STSong','Source Han Serif SC',serif" font-size="27" letter-spacing="6" opacity="0.95">周杰倫</text>
+      <text x="74" y="132" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" letter-spacing="7.5" opacity="0.78">JAY CHOU</text>
+      <path d="M74,146 L206,146" stroke="#fff4de" stroke-width="1.2" opacity="0.5"/>
+    </g>
+
+    <!-- 主标题（竖排） -->
+    <g filter="url(#textShadow)">
+      <text x="96" y="243" font-family="'Songti SC','SimSun','STSong','Source Han Serif SC',serif" font-size="126" fill="#fffdf6">晴</text>
+      <text x="96" y="390" font-family="'Songti SC','SimSun','STSong','Source Han Serif SC',serif" font-size="126" fill="#fffdf6">天</text>
+    </g>
+    <g opacity="0.5" filter="url(#blurTiny)">
+      <text x="96" y="243" font-family="'Songti SC','SimSun','STSong','Source Han Serif SC',serif" font-size="126" fill="#ffe0a8">晴</text>
+      <text x="96" y="390" font-family="'Songti SC','SimSun','STSong','Source Han Serif SC',serif" font-size="126" fill="#ffe0a8">天</text>
+    </g>
+
+    <!-- 竖排英文与细线 -->
+    <text transform="translate(254,232) rotate(90)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="16" letter-spacing="10" fill="#fff6e2" opacity="0.82">SUNNY  DAY</text>
+    <path d="M276,146 L276,398" stroke="#fff6e2" stroke-width="1" opacity="0.34"/>
+    <text transform="translate(292,180) rotate(90)" font-family="'Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="4.5" fill="#fff6e2" opacity="0.5">2003 · 葉惠美</text>
+
+    <!-- 右侧竖排短语 -->
+    <text transform="translate(836,470) rotate(90)" font-family="'Songti SC','SimSun',serif" font-size="14.5" letter-spacing="5" fill="#fff2d8" opacity="0.72">故事的開始　是那年的夏天</text>
+
+    <!-- 底部信息条 -->
+    <rect x="0" y="1096" width="900" height="254" fill="url(#bottomBar)"/>
+    <g fill="#fff6e6">
+      <text x="72" y="1244" font-family="'Songti SC','SimSun','STSong',serif" font-size="24" letter-spacing="3" opacity="0.96">晴天</text>
+      <text x="146" y="1244" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" letter-spacing="5" opacity="0.7">SUNNY DAY</text>
+      <text x="72" y="1278" font-family="'Songti SC','SimSun',serif" font-size="13.5" letter-spacing="2.5" opacity="0.65">專輯《葉惠美》 · 2003 · 詞曲 周杰倫</text>
+      <text x="828" y="1244" text-anchor="end" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.5" letter-spacing="4" opacity="0.68">04 : 29</text>
+      <text x="828" y="1278" text-anchor="end" font-family="'Songti SC','SimSun',serif" font-size="12" letter-spacing="2" opacity="0.48">純手繪 SVG · 無任何圖片素材</text>
+      <path d="M72,1212 L312,1212" stroke="#fff2d8" stroke-width="1" opacity="0.32"/>
+    </g>
+
+    <rect x="14" y="14" width="872" height="1322" fill="none" stroke="#fff6e2" stroke-width="1" opacity="0.15"/>
+  </g>
+</svg>

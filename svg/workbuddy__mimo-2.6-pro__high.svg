@@ -1,0 +1,701 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 1020" width="680" height="1020" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif">
+<defs>
+  <!-- ============ SKY ============ -->
+  <linearGradient id="sky" x1="0" y1="0" x2="0.15" y2="1">
+    <stop offset="0%" stop-color="#0b4f96"/>
+    <stop offset="18%" stop-color="#1a6cbe"/>
+    <stop offset="38%" stop-color="#3f96dc"/>
+    <stop offset="58%" stop-color="#72b9e8"/>
+    <stop offset="78%" stop-color="#a8d4ef"/>
+    <stop offset="92%" stop-color="#d4e9f4"/>
+    <stop offset="100%" stop-color="#f2e9c8"/>
+  </linearGradient>
+
+  <!-- sun glow -->
+  <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#fffef2" stop-opacity="0.95"/>
+    <stop offset="12%" stop-color="#fff6c8" stop-opacity="0.75"/>
+    <stop offset="32%" stop-color="#ffe9a0" stop-opacity="0.38"/>
+    <stop offset="58%" stop-color="#ffd98a" stop-opacity="0.14"/>
+    <stop offset="100%" stop-color="#ffd27a" stop-opacity="0"/>
+  </radialGradient>
+
+  <radialGradient id="sunCore" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="45%" stop-color="#fff8d8"/>
+    <stop offset="100%" stop-color="#ffe9a8" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- cloud shading -->
+  <linearGradient id="cloudShade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="55%" stop-color="#f2f7fc"/>
+    <stop offset="100%" stop-color="#c3d4e4"/>
+  </linearGradient>
+  <linearGradient id="cloudWarm" x1="0" y1="0" x2="0.3" y2="1">
+    <stop offset="0%" stop-color="#fffdf6"/>
+    <stop offset="60%" stop-color="#f7f0e2"/>
+    <stop offset="100%" stop-color="#d8c9b4"/>
+  </linearGradient>
+
+  <!-- god rays -->
+  <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fff6d0" stop-opacity="0.55"/>
+    <stop offset="55%" stop-color="#ffeeb8" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#ffe9a8" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- building -->
+  <linearGradient id="bldgLit" x1="0" y1="0" x2="1" y2="0.3">
+    <stop offset="0%" stop-color="#f6ecd6"/>
+    <stop offset="45%" stop-color="#e8d5b0"/>
+    <stop offset="100%" stop-color="#c9a878"/>
+  </linearGradient>
+  <linearGradient id="bldgShadow" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8a7a62"/>
+    <stop offset="100%" stop-color="#5c5344"/>
+  </linearGradient>
+  <linearGradient id="winGlass" x1="0" y1="0" x2="0.6" y2="1">
+    <stop offset="0%" stop-color="#9ec4d8"/>
+    <stop offset="40%" stop-color="#4a6f88"/>
+    <stop offset="100%" stop-color="#2c4256"/>
+  </linearGradient>
+  <linearGradient id="winLit" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffe9b0"/>
+    <stop offset="100%" stop-color="#d9a95c"/>
+  </linearGradient>
+
+  <!-- tree -->
+  <radialGradient id="leafA" cx="0.35" cy="0.3" r="0.75">
+    <stop offset="0%" stop-color="#a8d96a"/>
+    <stop offset="45%" stop-color="#4e9c3c"/>
+    <stop offset="100%" stop-color="#1e5c28"/>
+  </radialGradient>
+  <radialGradient id="leafB" cx="0.4" cy="0.25" r="0.8">
+    <stop offset="0%" stop-color="#c6e884"/>
+    <stop offset="50%" stop-color="#5fae44"/>
+    <stop offset="100%" stop-color="#276430"/>
+  </radialGradient>
+  <radialGradient id="leafWarm" cx="0.5" cy="0.35" r="0.7">
+    <stop offset="0%" stop-color="#f0e07a"/>
+    <stop offset="55%" stop-color="#9cb845"/>
+    <stop offset="100%" stop-color="#3d7228"/>
+  </radialGradient>
+  <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2c1d12"/>
+    <stop offset="35%" stop-color="#6b4a2e"/>
+    <stop offset="70%" stop-color="#8a6238"/>
+    <stop offset="100%" stop-color="#3a2816"/>
+  </linearGradient>
+
+  <!-- guitar wood -->
+  <linearGradient id="guitarBody" x1="0.1" y1="0" x2="0.9" y2="1">
+    <stop offset="0%" stop-color="#f0b25a"/>
+    <stop offset="28%" stop-color="#d98a34"/>
+    <stop offset="62%" stop-color="#a85c22"/>
+    <stop offset="100%" stop-color="#5c2e12"/>
+  </linearGradient>
+  <linearGradient id="guitarTop" x1="0.2" y1="0" x2="0.8" y2="1">
+    <stop offset="0%" stop-color="#ffe0a0"/>
+    <stop offset="40%" stop-color="#e0a04c"/>
+    <stop offset="100%" stop-color="#8c4a1c"/>
+  </linearGradient>
+  <linearGradient id="guitarNeck" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#6b3d1c"/>
+    <stop offset="50%" stop-color="#4a2810"/>
+    <stop offset="100%" stop-color="#2c1808"/>
+  </linearGradient>
+
+  <!-- silhouette / rim light -->
+  <linearGradient id="silhouette" x1="0" y1="0" x2="0.4" y2="1">
+    <stop offset="0%" stop-color="#1b2836"/>
+    <stop offset="55%" stop-color="#12202c"/>
+    <stop offset="100%" stop-color="#070d14"/>
+  </linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffe7a8" stop-opacity="0.95"/>
+    <stop offset="55%" stop-color="#ffcf70" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#ff9e48" stop-opacity="0.15"/>
+  </linearGradient>
+
+  <!-- title text -->
+  <linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fff8e4"/>
+    <stop offset="42%" stop-color="#ffe6a6"/>
+    <stop offset="72%" stop-color="#f0b860"/>
+    <stop offset="100%" stop-color="#c97f2c"/>
+  </linearGradient>
+  <linearGradient id="fadeBottom" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0a1622" stop-opacity="0"/>
+    <stop offset="35%" stop-color="#0a1622" stop-opacity="0.55"/>
+    <stop offset="70%" stop-color="#081018" stop-opacity="0.88"/>
+    <stop offset="100%" stop-color="#04080c" stop-opacity="0.97"/>
+  </linearGradient>
+  <linearGradient id="fadeTop" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#062038" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#062038" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- vignette -->
+  <radialGradient id="vig" cx="0.5" cy="0.42" r="0.78">
+    <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="82%" stop-color="#0a1018" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#04080c" stop-opacity="0.52"/>
+  </radialGradient>
+
+  <!-- lens flare pieces -->
+  <radialGradient id="flareOrange" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#ffb45a" stop-opacity="0.55"/>
+    <stop offset="60%" stop-color="#ff8a3c" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#ff6a22" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="flareBlue" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#8ad0ff" stop-opacity="0.5"/>
+    <stop offset="65%" stop-color="#4aa8e8" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2a7ecc" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="bokeh" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#fff3c4" stop-opacity="0.5"/>
+    <stop offset="70%" stop-color="#ffd98c" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#ffc46a" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- filters -->
+  <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+  <filter id="midBlur" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
+  <filter id="tinyBlur" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="1.4"/>
+  </filter>
+  <filter id="farBlur" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="2.2"/>
+  </filter>
+  <filter id="glowWarm" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="titleGlow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feColorMatrix in="blur" type="matrix"
+      values="1 0 0 0 0.35  0 0.85 0 0 0.22  0 0 0.55 0 0.05  0 0 0 0.85 0" result="warmBlur"/>
+    <feMerge><feMergeNode in="warmBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="filmGrain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix"
+      values="0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0.14 0"/>
+  </filter>
+  <filter id="shadowSoft" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#04101c" flood-opacity="0.55"/>
+  </filter>
+
+  <!-- clip for main scene -->
+  <clipPath id="frame"><rect x="0" y="0" width="680" height="1020" rx="0"/></clipPath>
+</defs>
+
+<g clip-path="url(#frame)">
+
+  <!-- ================= SKY BASE ================= -->
+  <rect x="0" y="0" width="680" height="1020" fill="url(#sky)"/>
+
+  <!-- warm haze near horizon -->
+  <ellipse cx="340" cy="700" rx="520" ry="180" fill="#ffe6b0" opacity="0.22" filter="url(#softBlur)"/>
+  <ellipse cx="520" cy="240" rx="260" ry="200" fill="#fff0c0" opacity="0.16" filter="url(#softBlur)"/>
+
+  <!-- ================= SUN ================= -->
+  <g>
+    <circle cx="532" cy="152" r="210" fill="url(#sunGlow)"/>
+    <circle cx="532" cy="152" r="78" fill="url(#sunGlow)"/>
+    <circle cx="532" cy="152" r="30" fill="url(#sunCore)"/>
+    <circle cx="532" cy="152" r="14" fill="#ffffff" filter="url(#tinyBlur)"/>
+  </g>
+
+  <!-- ================= GOD RAYS ================= -->
+  <g opacity="0.5" filter="url(#softBlur)">
+    <path d="M532,152 L120,1020 L215,1020 Z" fill="url(#ray)"/>
+    <path d="M532,152 L255,1020 L330,1020 Z" fill="url(#ray)"/>
+    <path d="M532,152 L400,1020 L470,1020 Z" fill="url(#ray)"/>
+    <path d="M532,152 L540,1020 L640,1020 Z" fill="url(#ray)"/>
+    <path d="M532,152 L-40,760 L40,690 Z" fill="url(#ray)"/>
+    <path d="M532,152 L680,520 L680,640 Z" fill="url(#ray)"/>
+    <path d="M532,152 L180,560 L250,520 Z" fill="url(#ray)"/>
+  </g>
+
+  <!-- ================= CLOUDS (far) ================= -->
+  <g filter="url(#farBlur)" opacity="0.85">
+    <!-- far wisps -->
+    <ellipse cx="330" cy="188" rx="120" ry="22" fill="#e8f2fa" opacity="0.7"/>
+    <ellipse cx="380" cy="175" rx="80" ry="16" fill="#f4f9fc" opacity="0.65"/>
+    <ellipse cx="160" cy="215" rx="95" ry="18" fill="#dcecf6" opacity="0.6"/>
+  </g>
+
+  <!-- ================= CLOUDS (main left) ================= -->
+  <g>
+    <!-- shadow under -->
+    <ellipse cx="175" cy="292" rx="150" ry="46" fill="#a8bdd2" opacity="0.42" filter="url(#midBlur)"/>
+    <g>
+      <circle cx="80" cy="268" r="48" fill="url(#cloudShade)"/>
+      <circle cx="135" cy="240" r="62" fill="url(#cloudShade)"/>
+      <circle cx="195" cy="232" r="72" fill="url(#cloudShade)"/>
+      <circle cx="255" cy="252" r="58" fill="url(#cloudShade)"/>
+      <circle cx="300" cy="272" r="44" fill="url(#cloudShade)"/>
+      <circle cx="115" cy="290" r="46" fill="#e6eef6"/>
+      <circle cx="175" cy="286" r="54" fill="#eef4f9"/>
+      <circle cx="235" cy="288" r="46" fill="#e6eef6"/>
+      <!-- warm top -->
+      <circle cx="195" cy="212" r="40" fill="#fffdf6" opacity="0.95"/>
+      <circle cx="145" cy="228" r="30" fill="#fffef9" opacity="0.9"/>
+      <circle cx="250" cy="232" r="32" fill="#fffdf4" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- ================= CLOUDS (right, warm) ================= -->
+  <g>
+    <ellipse cx="505" cy="330" rx="120" ry="38" fill="#b9c4cf" opacity="0.38" filter="url(#midBlur)"/>
+    <circle cx="430" cy="308" r="42" fill="url(#cloudWarm)"/>
+    <circle cx="485" cy="286" r="56" fill="url(#cloudWarm)"/>
+    <circle cx="545" cy="298" r="48" fill="url(#cloudWarm)"/>
+    <circle cx="595" cy="318" r="36" fill="url(#cloudWarm)"/>
+    <circle cx="510" cy="326" r="40" fill="#f4e8d2"/>
+    <circle cx="470" cy="300" r="28" fill="#fff8e8" opacity="0.9"/>
+    <circle cx="545" cy="288" r="24" fill="#fffaf0" opacity="0.85"/>
+  </g>
+
+  <!-- ================= CLOUDS (small) ================= -->
+  <g opacity="0.92">
+    <ellipse cx="85" cy="392" rx="70" ry="20" fill="#c2d2e0" opacity="0.4"/>
+    <circle cx="55" cy="380" r="26" fill="url(#cloudShade)"/>
+    <circle cx="90" cy="368" r="32" fill="url(#cloudShade)"/>
+    <circle cx="125" cy="382" r="24" fill="url(#cloudShade)"/>
+    <circle cx="88" cy="362" r="18" fill="#ffffff"/>
+  </g>
+  <g opacity="0.85">
+    <ellipse cx="345" cy="352" rx="58" ry="16" fill="#c8d6e2" opacity="0.35"/>
+    <circle cx="325" cy="342" r="22" fill="url(#cloudWarm)"/>
+    <circle cx="352" cy="332" r="27" fill="url(#cloudWarm)"/>
+    <circle cx="378" cy="344" r="20" fill="url(#cloudWarm)"/>
+    <circle cx="350" cy="328" r="15" fill="#fff6e2"/>
+  </g>
+
+  <!-- ================= BIRDS ================= -->
+  <g fill="none" stroke="#243848" stroke-width="2.2" stroke-linecap="round" opacity="0.72">
+    <path d="M250,140 q10,-8 18,0 q8,-8 18,1"/>
+    <path d="M292,118 q7,-6 13,0 q6,-6 12,1"/>
+    <path d="M212,168 q8,-6 15,0 q7,-6 14,1"/>
+    <path d="M430,210 q6,-5 11,0 q5,-5 10,1"/>
+    <path d="M458,196 q5,-4 9,0 q4,-4 8,1"/>
+  </g>
+
+  <!-- ================= PAPER PLANE ================= -->
+  <g transform="translate(415,268) rotate(-18)" opacity="0.95">
+    <path d="M0,0 L58,18 L22,22 L14,42 Z" fill="#ffffff" filter="url(#tinyBlur)"/>
+    <path d="M0,0 L22,22 L58,18 Z" fill="#e8eef4"/>
+    <path d="M22,22 L14,42 L30,28 Z" fill="#c9d6e2"/>
+    <!-- faint trail -->
+    <path d="M-8,4 C-40,14 -70,10 -96,22" stroke="#ffffff" stroke-width="1.6" fill="none" opacity="0.35" stroke-dasharray="6 8"/>
+  </g>
+
+  <!-- ================= FAR CAMPUS BUILDING ================= -->
+  <g filter="url(#farBlur)" opacity="0.92">
+    <!-- main block -->
+    <rect x="60" y="560" width="560" height="150" fill="url(#bldgLit)"/>
+    <!-- roof line -->
+    <rect x="52" y="548" width="576" height="16" fill="#8a6a42"/>
+    <rect x="52" y="548" width="576" height="5" fill="#c9a066"/>
+    <!-- left wing darker -->
+    <rect x="60" y="575" width="120" height="135" fill="url(#bldgShadow)" opacity="0.55"/>
+    <!-- clock tower hint -->
+    <rect x="300" y="512" width="80" height="42" fill="#d8c096"/>
+    <rect x="292" y="504" width="96" height="12" fill="#9a7848"/>
+    <circle cx="340" cy="533" r="14" fill="#f6ecd0" stroke="#8a6a42" stroke-width="2"/>
+    <path d="M340,533 L340,525 M340,533 L347,537" stroke="#5c4a30" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- window grid -->
+    <g>
+      <!-- row 1 -->
+      <g fill="url(#winGlass)">
+        <rect x="80" y="585" width="26" height="34"/><rect x="118" y="585" width="26" height="34"/>
+        <rect x="156" y="585" width="26" height="34"/><rect x="194" y="585" width="26" height="34"/>
+        <rect x="232" y="585" width="26" height="34"/><rect x="270" y="585" width="26" height="34"/>
+        <rect x="398" y="585" width="26" height="34"/><rect x="436" y="585" width="26" height="34"/>
+        <rect x="474" y="585" width="26" height="34"/><rect x="512" y="585" width="26" height="34"/>
+        <rect x="550" y="585" width="26" height="34"/><rect x="588" y="585" width="26" height="34"/>
+      </g>
+      <!-- some lit windows -->
+      <g fill="url(#winLit)" opacity="0.9">
+        <rect x="156" y="585" width="26" height="34"/><rect x="270" y="585" width="26" height="34"/>
+        <rect x="436" y="585" width="26" height="34"/><rect x="550" y="585" width="26" height="34"/>
+      </g>
+      <!-- row 2 -->
+      <g fill="url(#winGlass)">
+        <rect x="80" y="635" width="26" height="34"/><rect x="118" y="635" width="26" height="34"/>
+        <rect x="156" y="635" width="26" height="34"/><rect x="194" y="635" width="26" height="34"/>
+        <rect x="232" y="635" width="26" height="34"/><rect x="270" y="635" width="26" height="34"/>
+        <rect x="398" y="635" width="26" height="34"/><rect x="436" y="635" width="26" height="34"/>
+        <rect x="474" y="635" width="26" height="34"/><rect x="512" y="635" width="26" height="34"/>
+        <rect x="550" y="635" width="26" height="34"/><rect x="588" y="635" width="26" height="34"/>
+      </g>
+      <g fill="url(#winLit)" opacity="0.75">
+        <rect x="118" y="635" width="26" height="34"/><rect x="232" y="635" width="26" height="34"/>
+        <rect x="512" y="635" width="26" height="34"/>
+      </g>
+      <!-- window highlights -->
+      <g fill="#ffffff" opacity="0.28">
+        <rect x="82" y="587" width="8" height="30"/><rect x="160" y="587" width="8" height="30"/>
+        <rect x="236" y="587" width="8" height="30"/><rect x="402" y="587" width="8" height="30"/>
+        <rect x="478" y="587" width="8" height="30"/><rect x="554" y="587" width="8" height="30"/>
+      </g>
+    </g>
+
+    <!-- corridor / base shading -->
+    <rect x="60" y="688" width="560" height="22" fill="#7a6248" opacity="0.7"/>
+    <rect x="280" y="655" width="120" height="55" fill="#6b5238" opacity="0.55"/>
+  </g>
+
+  <!-- ================= LEFT TREE ================= -->
+  <g>
+    <!-- trunk -->
+    <path d="M78,1020 C70,880 62,800 74,720 C86,760 96,840 108,1020 Z" fill="url(#trunk)"/>
+    <path d="M90,760 C60,730 40,700 22,672" stroke="#5c3d24" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M96,740 C130,712 158,690 190,668" stroke="#6b4728" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- foliage clusters -->
+    <g>
+      <circle cx="40" cy="600" r="72" fill="url(#leafA)"/>
+      <circle cx="105" cy="565" r="88" fill="url(#leafB)"/>
+      <circle cx="175" cy="598" r="70" fill="url(#leafA)"/>
+      <circle cx="18" cy="668" r="58" fill="url(#leafWarm)" opacity="0.95"/>
+      <circle cx="120" cy="645" r="62" fill="url(#leafB)"/>
+      <circle cx="70" cy="530" r="54" fill="url(#leafWarm)"/>
+      <circle cx="160" cy="535" r="48" fill="url(#leafA)"/>
+      <circle cx="25" cy="545" r="40" fill="url(#leafB)"/>
+      <!-- sunlit dabs -->
+      <circle cx="95" cy="545" r="18" fill="#d8f08a" opacity="0.55"/>
+      <circle cx="55" cy="585" r="12" fill="#e8f8a8" opacity="0.5"/>
+      <circle cx="150" cy="575" r="14" fill="#c8e878" opacity="0.45"/>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT TREE ================= -->
+  <g>
+    <path d="M612,1020 C622,870 628,790 616,712 C600,760 588,850 574,1020 Z" fill="url(#trunk)"/>
+    <path d="M612,748 C648,720 672,692 690,660" stroke="#5c3d24" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M604,728 C568,700 540,676 512,652" stroke="#6b4728" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <g>
+      <circle cx="640" cy="580" r="82" fill="url(#leafB)"/>
+      <circle cx="575" cy="548" r="78" fill="url(#leafA)"/>
+      <circle cx="662" cy="650" r="66" fill="url(#leafWarm)"/>
+      <circle cx="540" cy="612" r="64" fill="url(#leafA)"/>
+      <circle cx="620" cy="512" r="58" fill="url(#leafWarm)"/>
+      <circle cx="668" cy="548" r="52" fill="url(#leafB)"/>
+      <circle cx="560" cy="505" r="40" fill="url(#leafB)"/>
+      <circle cx="505" cy="588" r="36" fill="url(#leafWarm)" opacity="0.9"/>
+      <!-- sunlit -->
+      <circle cx="635" cy="530" r="20" fill="#e4f49a" opacity="0.5"/>
+      <circle cx="590" cy="565" r="13" fill="#f0f8b0" opacity="0.45"/>
+    </g>
+  </g>
+
+  <!-- ================= FIGURE + GUITAR (backlit silhouette) ================= -->
+  <g filter="url(#shadowSoft)">
+    <!-- soft glow behind figure -->
+    <ellipse cx="368" cy="720" rx="150" ry="170" fill="#ffe6a8" opacity="0.16" filter="url(#softBlur)"/>
+
+    <!-- ===== guitar (in arms) ===== -->
+    <g>
+      <!-- neck -->
+      <g transform="rotate(-28, 300, 690)">
+        <rect x="196" y="682" width="128" height="14" rx="4" fill="url(#guitarNeck)"/>
+        <!-- frets -->
+        <g stroke="#c9a26a" stroke-width="1.2" opacity="0.7">
+          <path d="M216,682 V696"/><path d="M232,682 V696"/><path d="M248,682 V696"/>
+          <path d="M264,682 V696"/><path d="M280,682 V696"/><path d="M296,682 V696"/><path d="M312,682 V696"/>
+        </g>
+        <!-- headstock -->
+        <rect x="168" y="676" width="34" height="26" rx="5" fill="#3a220e"/>
+        <g fill="#d8b070">
+          <circle cx="176" cy="682" r="3.4"/><circle cx="176" cy="696" r="3.4"/>
+          <circle cx="188" cy="680" r="3.4"/><circle cx="188" cy="698" r="3.4"/>
+          <circle cx="198" cy="684" r="3"/><circle cx="198" cy="694" r="3"/>
+        </g>
+        <!-- strings on neck -->
+        <g stroke="#f0e0b8" stroke-width="0.9" opacity="0.85">
+          <path d="M200,686 H318"/><path d="M200,689 H318"/><path d="M200,692 H318"/>
+        </g>
+      </g>
+
+      <!-- body -->
+      <g>
+        <!-- shadow side -->
+        <path d="M292,672
+                 C268,668 250,686 252,712
+                 C254,738 272,752 286,764
+                 C268,774 258,796 264,818
+                 C272,848 302,862 334,858
+                 C368,854 396,834 404,806
+                 C412,778 402,752 384,738
+                 C400,724 408,702 400,682
+                 C390,658 360,648 332,656
+                 C318,660 302,668 292,672 Z"
+              fill="url(#guitarBody)"/>
+        <!-- top highlight -->
+        <path d="M300,676
+                 C280,674 266,690 268,712
+                 C270,732 284,744 298,754
+                 C312,746 322,732 322,712
+                 C322,692 314,680 300,676 Z"
+              fill="url(#guitarTop)" opacity="0.85"/>
+        <!-- sound hole -->
+        <circle cx="342" cy="742" r="21" fill="#1c0e06"/>
+        <circle cx="342" cy="742" r="21" fill="none" stroke="#e8c088" stroke-width="2.4" opacity="0.8"/>
+        <circle cx="342" cy="742" r="15" fill="none" stroke="#a07840" stroke-width="1.4" opacity="0.6"/>
+        <!-- rosette dots -->
+        <g fill="#e0b878" opacity="0.75">
+          <circle cx="342" cy="722" r="1.6"/><circle cx="358" cy="728" r="1.6"/>
+          <circle cx="362" cy="744" r="1.6"/><circle cx="356" cy="758" r="1.6"/>
+          <circle cx="342" cy="764" r="1.6"/><circle cx="328" cy="758" r="1.6"/>
+          <circle cx="322" cy="744" r="1.6"/><circle cx="328" cy="728" r="1.6"/>
+        </g>
+        <!-- bridge -->
+        <rect x="330" y="784" width="46" height="10" rx="3" fill="#2c1608" transform="rotate(6 353 789)"/>
+        <!-- strings over body -->
+        <g stroke="#f4e6c0" stroke-width="0.9" opacity="0.8">
+          <path d="M316,688 L348,788"/><path d="M320,691 L352,789"/>
+          <path d="M324,694 L356,790"/><path d="M328,697 L360,791"/>
+        </g>
+        <!-- binding -->
+        <path d="M292,672 C268,668 250,686 252,712 C254,738 272,752 286,764
+                 C268,774 258,796 264,818 C272,848 302,862 334,858
+                 C368,854 396,834 404,806 C412,778 402,752 384,738"
+              fill="none" stroke="#f0d098" stroke-width="1.6" opacity="0.5"/>
+      </g>
+    </g>
+
+    <!-- ===== person silhouette ===== -->
+    <!-- body -->
+    <path d="M330,660
+             C318,672 306,696 300,724
+             C292,762 288,800 288,842
+             L288,1020
+             L470,1020
+             L470,850
+             C470,806 466,766 456,728
+             C448,698 436,674 424,662
+             C410,672 392,680 376,680
+             C360,680 342,672 330,660 Z"
+          fill="url(#silhouette)"/>
+
+    <!-- arm wrapping guitar (left / front) -->
+    <path d="M302,712
+             C282,730 272,760 276,792
+             C280,820 296,838 322,846
+             C342,852 360,846 368,832
+             C372,822 366,812 354,810
+             C332,806 316,788 312,764
+             C310,744 314,724 322,710 Z"
+          fill="url(#silhouette)"/>
+    <!-- forearm highlight -->
+    <path d="M312,724 C296,742 290,766 294,790 C298,810 310,824 328,830"
+          fill="none" stroke="url(#rim)" stroke-width="2.4" opacity="0.75"/>
+
+    <!-- right arm / hand on neck -->
+    <path d="M424,672
+             C448,684 478,704 502,724
+             C516,736 524,748 518,756
+             C512,764 498,762 486,754
+             C462,738 436,720 418,710 Z"
+          fill="url(#silhouette)"/>
+    <!-- hand fingers hint -->
+    <path d="M502,722 C512,718 524,720 528,728 C532,736 526,744 516,744 C506,744 500,736 502,722 Z"
+          fill="url(#silhouette)"/>
+
+    <!-- neck -->
+    <path d="M352,618 C350,636 348,652 352,664 C360,676 396,676 404,662 C408,650 406,634 402,618 Z"
+          fill="url(#silhouette)"/>
+
+    <!-- head with cap -->
+    <g>
+      <!-- head -->
+      <path d="M344,588
+               C338,568 344,548 360,540
+               C378,531 398,536 408,552
+               C418,568 418,592 412,608
+               C406,622 392,630 376,630
+               C358,630 348,612 344,588 Z"
+            fill="url(#silhouette)"/>
+      <!-- cap crown -->
+      <path d="M338,566
+               C336,538 356,518 382,518
+               C410,518 428,538 428,566
+               C428,576 422,582 412,582
+               C392,586 358,586 342,580
+               C336,578 336,572 338,566 Z"
+            fill="url(#silhouette)"/>
+      <!-- brim -->
+      <path d="M332,576
+               C316,580 296,588 288,598
+               C284,606 290,612 302,610
+               C322,606 344,598 358,590
+               C364,586 362,578 354,576 Z"
+            fill="url(#silhouette)"/>
+      <!-- cap button -->
+      <circle cx="384" cy="522" r="5" fill="url(#silhouette)"/>
+    </g>
+
+    <!-- ===== rim light (sun from upper-right) ===== -->
+    <g fill="none" stroke="url(#rim)" stroke-linecap="round">
+      <!-- cap top-right -->
+      <path d="M404,524 C420,530 430,544 430,562" stroke-width="3.2" opacity="0.95"/>
+      <!-- face / jaw right -->
+      <path d="M414,568 C420,586 418,606 410,620" stroke-width="2.6" opacity="0.85"/>
+      <!-- neck right -->
+      <path d="M406,624 C412,638 410,652 404,662" stroke-width="2.2" opacity="0.7"/>
+      <!-- shoulder right -->
+      <path d="M426,664 C442,678 460,700 480,718" stroke-width="2.8" opacity="0.8"/>
+      <!-- arm right outer -->
+      <path d="M502,722 C516,732 524,746 518,758" stroke-width="2.2" opacity="0.7"/>
+      <!-- body right -->
+      <path d="M456,730 C468,768 472,810 472,852" stroke-width="2.6" opacity="0.65"/>
+      <!-- guitar body top-right -->
+      <path d="M396,686 C408,700 412,720 404,738" stroke-width="2" opacity="0.55"/>
+      <!-- guitar lower right -->
+      <path d="M404,800 C398,828 372,850 344,856" stroke-width="1.8" opacity="0.4"/>
+    </g>
+    <!-- warm edge glow -->
+    <path d="M402,522 C422,532 432,550 430,570 C428,588 422,606 412,620
+             C418,636 416,652 406,664 C424,680 444,702 466,724
+             C484,742 500,756 516,752"
+          fill="none" stroke="#ffe9b0" stroke-width="1.2" opacity="0.4" filter="url(#tinyBlur)"/>
+  </g>
+
+  <!-- ================= FOREGROUND: bicycle hint (left) ================= -->
+  <g opacity="0.9" filter="url(#tinyBlur)">
+    <g fill="none" stroke="#0c1620" stroke-width="5" stroke-linecap="round">
+      <circle cx="118" cy="872" r="42"/>
+      <circle cx="232" cy="872" r="42"/>
+      <path d="M118,872 L160,806 L214,806 L232,872"/>
+      <path d="M160,806 L178,872 L232,872"/>
+      <path d="M160,806 L148,784 L128,784"/>
+      <path d="M214,806 L226,782 L248,782"/>
+      <path d="M178,872 L188,846 L214,846"/>
+    </g>
+    <g fill="none" stroke="#2a3c4c" stroke-width="1.6" opacity="0.6">
+      <circle cx="118" cy="872" r="30"/><circle cx="232" cy="872" r="30"/>
+    </g>
+  </g>
+
+  <!-- ================= FOREGROUND: railing / window frame ================= -->
+  <g opacity="0.92">
+    <!-- horizontal bar -->
+    <rect x="-10" y="820" width="700" height="12" fill="#0a141c" opacity="0.75"/>
+    <rect x="-10" y="820" width="700" height="3" fill="#3a5060" opacity="0.5"/>
+    <!-- vertical bars -->
+    <g fill="#0a141c" opacity="0.7">
+      <rect x="46" y="832" width="9" height="188"/>
+      <rect x="186" y="832" width="9" height="188"/>
+      <rect x="326" y="832" width="9" height="188"/>
+      <rect x="466" y="832" width="9" height="188"/>
+      <rect x="606" y="832" width="9" height="188"/>
+    </g>
+  </g>
+
+  <!-- ================= LEAF OVERHANG (top corners) ================= -->
+  <g opacity="0.95">
+    <!-- top-left -->
+    <g>
+      <circle cx="-10" cy="20" r="70" fill="url(#leafA)"/>
+      <circle cx="60" cy="-15" r="62" fill="url(#leafB)"/>
+      <circle cx="115" cy="30" r="48" fill="url(#leafWarm)"/>
+      <circle cx="40" cy="60" r="40" fill="url(#leafA)"/>
+      <circle cx="-25" cy="85" r="44" fill="url(#leafB)"/>
+    </g>
+    <!-- top-right -->
+    <g>
+      <circle cx="690" cy="24" r="66" fill="url(#leafB)"/>
+      <circle cx="630" cy="-10" r="56" fill="url(#leafA)"/>
+      <circle cx="585" cy="42" r="42" fill="url(#leafWarm)"/>
+      <circle cx="662" cy="78" r="40" fill="url(#leafA)"/>
+    </g>
+  </g>
+
+  <!-- ================= LIGHT SHAFTS OVER FIGURE ================= -->
+  <g opacity="0.32" filter="url(#softBlur)">
+    <path d="M532,152 L300,1020 L360,1020 Z" fill="#fff0c0"/>
+    <path d="M532,152 L430,1020 L500,1020 Z" fill="#ffe9a8"/>
+  </g>
+
+  <!-- ================= BOTTOM FADE / TITLE PLATE ================= -->
+  <rect x="0" y="700" width="680" height="320" fill="url(#fadeBottom)"/>
+  <rect x="0" y="0" width="680" height="90" fill="url(#fadeTop)"/>
+
+  <!-- ================= TITLE TYPOGRAPHY ================= -->
+  <g>
+    <!-- thin rule above -->
+    <g stroke="#f0d090" opacity="0.8">
+      <path d="M150,808 H262" stroke-width="1.4"/>
+      <path d="M418,808 H530" stroke-width="1.4"/>
+    </g>
+    <circle cx="340" cy="808" r="3.4" fill="#f0d090"/>
+
+    <!-- main title 晴天 -->
+    <text x="340" y="898" text-anchor="middle" font-size="132" font-weight="700"
+          letter-spacing="18" fill="url(#titleGrad)" filter="url(#titleGlow)">晴天</text>
+    <!-- subtle stroke for crispness -->
+    <text x="340" y="898" text-anchor="middle" font-size="132" font-weight="700"
+          letter-spacing="18" fill="none" stroke="#8a5a22" stroke-width="1" opacity="0.35">晴天</text>
+
+    <!-- english -->
+    <text x="340" y="938" text-anchor="middle" font-size="21" letter-spacing="12"
+          fill="#f4e2b8" opacity="0.92" font-weight="500">SUNNY  DAY</text>
+
+    <!-- divider -->
+    <path d="M240,958 H440" stroke="#c9a870" stroke-width="1" opacity="0.55"/>
+
+    <!-- artist -->
+    <text x="340" y="988" text-anchor="middle" font-size="17" letter-spacing="6"
+          fill="#e8d4a8" opacity="0.9">周杰伦　JAY  CHOU</text>
+
+    <!-- lyric line -->
+    <text x="340" y="1012" text-anchor="middle" font-size="12.5" letter-spacing="2.5"
+          fill="#b8a888" opacity="0.78">故事的小黄花　从出生那年就飘着</text>
+  </g>
+
+  <!-- ================= LENS FLARE ================= -->
+  <g>
+    <!-- starburst at sun -->
+    <g stroke="#fff8e0" stroke-width="1.6" opacity="0.55" filter="url(#tinyBlur)">
+      <path d="M532,88 V216"/><path d="M468,152 H596"/>
+      <path d="M488,108 L576,196"/><path d="M576,108 L488,196"/>
+    </g>
+    <!-- flare ghosts along the axis to lower-left -->
+    <circle cx="430" cy="240" r="26" fill="url(#flareOrange)" opacity="0.7"/>
+    <circle cx="322" cy="330" r="40" fill="url(#flareBlue)" opacity="0.55"/>
+    <circle cx="236" cy="404" r="18" fill="url(#flareOrange)" opacity="0.5"/>
+    <circle cx="168" cy="468" r="52" fill="url(#flareBlue)" opacity="0.35"/>
+    <circle cx="96" cy="540" r="22" fill="url(#flareOrange)" opacity="0.4"/>
+    <circle cx="300" cy="270" r="12" fill="#fff2c0" opacity="0.35"/>
+  </g>
+
+  <!-- ================= BOKEH ================= -->
+  <g filter="url(#midBlur)">
+    <circle cx="586" cy="386" r="30" fill="url(#bokeh)" opacity="0.8"/>
+    <circle cx="520" cy="440" r="18" fill="url(#bokeh)" opacity="0.65"/>
+    <circle cx="612" cy="470" r="24" fill="url(#bokeh)" opacity="0.55"/>
+    <circle cx="86" cy="470" r="22" fill="url(#bokeh)" opacity="0.5"/>
+    <circle cx="140" cy="520" r="14" fill="url(#bokeh)" opacity="0.45"/>
+    <circle cx="470" cy="520" r="16" fill="url(#bokeh)" opacity="0.45"/>
+    <circle cx="250" cy="470" r="12" fill="url(#bokeh)" opacity="0.4"/>
+    <circle cx="560" cy="560" r="20" fill="url(#bokeh)" opacity="0.35"/>
+  </g>
+
+  <!-- ================= VIGNETTE + GRAIN ================= -->
+  <rect x="0" y="0" width="680" height="1020" fill="url(#vig)"/>
+  <rect x="0" y="0" width="680" height="1020" filter="url(#filmGrain)" opacity="0.5"/>
+
+  <!-- film frame edge -->
+  <rect x="0.5" y="0.5" width="679" height="1019" fill="none" stroke="#0a1420" stroke-width="1" opacity="0.35"/>
+
+</g>
+</svg>
