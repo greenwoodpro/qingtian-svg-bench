@@ -1416,6 +1416,28 @@ window.GALLERY = {
     "dsv4.1_official-high.png"
    ],
    "no": 59
+  },
+  {
+   "id": "workbuddy__hunyuan-4__high",
+   "model": "Hunyuan 4",
+   "modelSlug": "hunyuan-4",
+   "vendor": "hunyuan",
+   "vendorLabel": "腾讯混元",
+   "provider": "workbuddy",
+   "providerLabel": "WorkBuddy",
+   "effort": "high",
+   "note": "窗边逆光的吉他少年、飘落的樱瓣、木桌上的乐谱与玻璃杯；胶片颗粒 + 暗角 + 电影海报排版，信息密度最高的一张",
+   "w": 1360,
+   "h": 2040,
+   "kb": 2830,
+   "img": "images/workbuddy__hunyuan-4__high.png",
+   "thumb": "thumbs/workbuddy__hunyuan-4__high.jpg",
+   "svg": "svg/workbuddy__hunyuan-4__high.svg",
+   "source": "hy4-high.svg",
+   "orig": [
+    "hy4-high.svg"
+   ],
+   "no": 60
   }
  ]
 };

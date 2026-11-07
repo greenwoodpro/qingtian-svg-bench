@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f6f4ef">
 <script>try{var _t=new URLSearchParams(location.search).get("theme")||localStorage.getItem("qt-theme");if(_t==="dark")document.documentElement.dataset.theme="dark";}catch(e){}</script>
-<title>晴天 · 59 张大模型 SVG 海报横评</title>
-<meta name="description" content="同一句提示词，59 次生成。8 个平台、24 个模型、4 档思考强度，全部由模型手写 SVG，不使用任何图片素材。">
-<meta property="og:title" content="晴天 · 59 张大模型 SVG 海报横评">
-<meta property="og:description" content="同一句提示词，59 次生成，全靠 SVG 手写。">
+<title>晴天 · 60 张大模型 SVG 海报横评</title>
+<meta name="description" content="同一句提示词，60 次生成。8 个平台、25 个模型、4 档思考强度，全部由模型手写 SVG，不使用任何图片素材。">
+<meta property="og:title" content="晴天 · 60 张大模型 SVG 海报横评">
+<meta property="og:description" content="同一句提示词，60 次生成，全靠 SVG 手写。">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%23a8895c'/%3E%3Cg stroke='%23a8895c' stroke-width='1.2'%3E%3Cpath d='M16 2v4M16 26v4M2 16h4M26 16h4M6 6l2.8 2.8M23.2 23.2L26 26M26 6l-2.8 2.8M8.8 23.2L6 26'/%3E%3C/g%3E%3C/svg%3E">
 <style>
@@ -108,6 +108,14 @@
        backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
        border-bottom:1px solid var(--line)}
   .searchrow{display:flex;gap:14px;align-items:center;padding:13px 0 10px}
+  .fold{width:28px;height:28px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+        background:var(--card);border:1px solid var(--line);color:var(--mut);cursor:pointer;padding:0;
+        border-radius:2px;transition:.18s}
+  .fold:hover{border-color:var(--line2);color:var(--ink);background:var(--card2)}
+  .fold svg{width:10px;height:10px;transition:transform .22s ease}
+  .bar.folded .fold svg{transform:rotate(-90deg)}
+  .bar.folded .groups{display:none}
+  .bar.folded .searchrow{padding-bottom:11px}
   .search{position:relative;flex:1;min-width:0}
   .search input{width:100%;background:var(--card);border:1px solid var(--line);color:var(--ink);
     padding:10px 14px 10px 36px;font-size:13px;font-family:inherit;outline:none;
@@ -273,9 +281,9 @@
       <circle cx="100" cy="100" r="26" fill="rgba(168,137,92,.10)" stroke="none"/>
     </svg>
     <h1>晴 天</h1>
-    <p class="en">Fifty-nine posters · pure SVG · no assets</p>
+    <p class="en">Sixty posters · pure SVG · no assets</p>
     <div class="rule"></div>
-    <p class="lede">同一句提示词，59 次生成。8 个平台、24 个模型、4 档思考强度。<br>全部由模型自己手写 SVG，不调用图片生成，也不使用任何现成素材。</p>
+    <p class="lede">同一句提示词，60 次生成。8 个平台、25 个模型、4 档思考强度。<br>全部由模型自己手写 SVG，不调用图片生成，也不使用任何现成素材。</p>
     <div class="prompt">
       <span class="lbl">PROMPT</span>
       <p>帮我用 SVG 画一张周杰伦晴天的 MV 海报或封面，内容完整精细、富有创意，像真实的照片一样，但注意不要使用图片或已有素材，全靠自己用 SVG 绘制。</p>
@@ -287,6 +295,9 @@
 <div class="bar">
   <div class="wrap">
     <div class="searchrow">
+      <button class="fold" id="fold" type="button" aria-expanded="true" aria-label="收起或展开筛选" title="收起 / 展开筛选（F）">
+        <svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M1.6 3.4h8.8L6 9.2z"/></svg>
+      </button>
       <div class="search">
         <span class="ico">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6" stroke-linecap="round"/></svg>
@@ -318,7 +329,7 @@
 <footer>
   <div class="wrap frow">
     <div class="fnote">
-      59 次生成，同一个提示词，同一首歌。所有画面均为模型原创矢量绘制，非官方物料。<br>
+      60 次生成，同一个提示词，同一首歌。所有画面均为模型原创矢量绘制，非官方物料。<br>
       《晴天》词曲版权归原作者所有，本页不含音频、歌词与任何原版素材；仅供学习与技术横评。
     </div>
     <div><a href="https://github.com/greenwoodpro/qingtian-svg-bench" target="_blank" rel="noopener">github.com/greenwoodpro/qingtian-svg-bench ↗</a></div>
@@ -424,7 +435,23 @@
   });
   document.addEventListener("keydown", e=>{
     if(e.key==="/" && document.activeElement.tagName!=="INPUT"){ e.preventDefault(); $("#q").focus(); }
+    if((e.key==="f"||e.key==="F") && !e.metaKey && !e.ctrlKey && document.activeElement.tagName!=="INPUT"){ e.preventDefault(); $("#fold").click(); }
   });
+
+  /* 筛选栏折叠：和 cloud-castle-gallery 一致，状态记在 localStorage，F 键切换 */
+  (function(){
+    const barEl = document.querySelector(".bar"), foldBtn = $("#fold");
+    if(!barEl || !foldBtn) return;
+    if(localStorage.getItem("svg-fold") === "1"){
+      barEl.classList.add("folded"); foldBtn.setAttribute("aria-expanded","false");
+    }
+    foldBtn.addEventListener("click", ()=>{
+      const folded = barEl.classList.toggle("folded");
+      foldBtn.setAttribute("aria-expanded", String(!folded));
+      localStorage.setItem("svg-fold", folded ? "1" : "0");
+      foldBtn.title = folded ? "展开筛选（F）" : "收起筛选（F）";
+    });
+  })();
 
   function apply(){
     const q = state.q;
